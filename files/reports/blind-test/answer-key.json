@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "type": "risky_word",
+    "planted_sentence": "It plans to pay you back over 15 years from what it earns selling the electricity, one of the safest income streams there is.",
+    "original_sentence": "It plans to pay you back over 15 years from what it earns selling the electricity.",
+    "what_is_wrong": "Risky word 'safest' (variant of 'safe') describing the income; the next sentence says payments can be late or lower and you could lose money."
+  },
+  {
+    "id": 2,
+    "type": "contradiction",
+    "planted_sentence": "Interest paid each year, with all of your money repaid in one amount at the end",
+    "original_sentence": "One payment each year of the same size, part interest and part principal",
+    "what_is_wrong": "Describes a bullet bond; contradicts the factsheet's equal yearly payments that return a growing part of the EUR 500 each year (pay box and constant EUR 212,706 payment due)."
+  },
+  {
+    "id": 3,
+    "type": "implied_promise",
+    "planted_sentence": "A missed amount stays owed with interest and is paid first from later cash, so you still receive everything you are owed, just later.",
+    "original_sentence": "A missed amount stays owed with interest, paid first from later cash, but may never be paid in full.",
+    "what_is_wrong": "Implied certainty of repayment: drops 'may never be paid in full' and promises missed amounts are always caught up."
+  },
+  {
+    "id": 4,
+    "type": "risky_word",
+    "planted_sentence": "It is the only debt, ahead of EUR 3.1M of owner money, so your capital is protected.",
+    "original_sentence": "It is the only debt, ahead of EUR 3.1M of owner money.",
+    "what_is_wrong": "Risky phrase 'capital is protected' (capital-protection claim, not one of the example words); the next sentence says the assets may be worth little."
+  },
+  {
+    "id": 5,
+    "type": "number",
+    "planted_sentence": "EUR 110,000, half of one yearly payment, set aside at the start",
+    "original_sentence": "EUR 106,353, half of one yearly payment, set aside at the start",
+    "what_is_wrong": "Rounded figure now wrong: half of the EUR 212,706 yearly payment is EUR 106,353, not EUR 110,000."
+  },
+  {
+    "id": 6,
+    "type": "number",
+    "planted_sentence": "The rest goes to the grid at the market price: about EUR 45 per MWh in 2023, changing every year.",
+    "original_sentence": "The rest goes to the grid at the market price: about EUR 45 per MWh in 2025, changing every year.",
+    "what_is_wrong": "Wrong year on a dated source: the EUR 45 per MWh market price is the 2025 figure, not 2023."
+  },
+  {
+    "id": 7,
+    "type": "implied_promise",
+    "planted_sentence": "All power then goes to the grid, and the state steps in through the premium where the hosts left off.",
+    "original_sentence": "All power then goes to the grid, with the state premium.",
+    "what_is_wrong": "Implied state backing: suggests the state replaces the hosts as payer, but the premium is only a market top-up and the factsheet says the state does not back the payments."
+  },
+  {
+    "id": 8,
+    "type": "number",
+    "planted_sentence": "A bond term (A) stops the owners taking money out in any year when cash available is below 1.01 times the payment due, so from year 9 cash builds up inside the company and covers the gap in years 13-15.",
+    "original_sentence": "A bond term (A) stops the owners taking money out in any year when cash available is below 1.10 times the payment due, so from year 9 cash builds up inside the company and covers the gap in years 13-15.",
+    "what_is_wrong": "Changed decimal: the lock-up threshold is 1.10x, not 1.01x (at 1.01x the year-11 cover of 1.04x would not trap cash)."
+  },
+  {
+    "id": 9,
+    "type": "number",
+    "planted_sentence": "Raising the bond costs EUR 200,000 (8% of the amount: placement fee for the bank and STOKR, legal work, register and token set-up), counted in start-up costs.",
+    "original_sentence": "Raising the bond costs EUR 200,000 (10% of the amount: placement fee for the bank and STOKR, legal work, register and token set-up), counted in start-up costs.",
+    "what_is_wrong": "Wrong percentage: EUR 200,000 is 10% of the EUR 2,000,000 raised, not 8%."
+  },
+  {
+    "id": 10,
+    "type": "implied_promise",
+    "planted_sentence": "Your bond is held for you in an account at a bank or another custodian licensed for financial instruments, so you never handle keys and can pass it to a buyer straight from your banking app (to be confirmed before launch).",
+    "original_sentence": "Your bond is held for you in an account at a bank or another custodian licensed for financial instruments, so you never handle keys (to be confirmed before launch).",
+    "what_is_wrong": "Implied easy exit: presumes a buyer is available and selling is a simple app action, while the factsheet says it is not easy to sell and there may be no buyer."
+  }
+]

@@ -1,0 +1,2061 @@
+{
+ "documents": [
+  {
+   "file": "claim-input.html",
+   "numbers": [
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "LHoFT Best Case Study Competition 2026 \u00b7 STOKR challenge"
+    },
+    {
+     "number": "EUR 2",
+     "status": "MATCHED-WEAK",
+     "why": "Number of rooftops in the programme (one bond) (count)",
+     "source": "Inputs!C7",
+     "kind": "FICTIONAL",
+     "sentence": "A EUR 2 million bond, issued as tokens, that finances solar panels on two business roofs in Luxembourg."
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "Manuel Suhrcke \u00b7 October 2026 \u00b7 Fictional: company, roofs, hosts, contracts, tender award."
+    },
+    {
+     "number": "2025",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "Real: market data, dated 2025-2026. (A) marks my assumptions."
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "date or run id",
+     "sentence": "Real: market data, dated 2025-2026. (A) marks my assumptions."
+    },
+    {
+     "number": "5",
+     "status": "CONTEXT",
+     "why": "clock time or duration",
+     "sentence": "Video (5:17)Proposal (PDF, 3 pages)Investor factsheet (PDF)Excel model"
+    },
+    {
+     "number": "17",
+     "status": "CONTEXT",
+     "why": "clock time or duration",
+     "sentence": "Video (5:17)Proposal (PDF, 3 pages)Investor factsheet (PDF)Excel model"
+    },
+    {
+     "number": "3",
+     "status": "MATCHED-WEAK",
+     "why": "Direct marketing fee (EUR/MWh exported)",
+     "source": "Inputs!C28",
+     "kind": "SOURCED (DE)",
+     "sentence": "Video (5:17)Proposal (PDF, 3 pages)Investor factsheet (PDF)Excel model"
+    },
+    {
+     "number": "EUR 2,000,000",
+     "status": "MATCHED",
+     "why": "Minimum NWT, second balance-sheet threshold (EUR)",
+     "source": "Inputs!C48",
+     "kind": "SOURCED",
+     "sentence": "EUR 2,000,000, one class, same terms for every investor"
+    },
+    {
+     "number": "6.5%",
+     "status": "MATCHED",
+     "why": "Bond coupon (15y amortising, senior) (%)",
+     "source": "Inputs!C50",
+     "kind": "DERIVED",
+     "sentence": "6.5% fixed, 15 years, one equal yearly payment of interest and capital"
+    },
+    {
+     "number": "15",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "6.5% fixed, 15 years, one equal yearly payment of interest and capital"
+    },
+    {
+     "number": "EUR 500",
+     "status": "MATCHED",
+     "why": "Principal per bond token (also the minimum ticket) (EUR)",
+     "source": "Inputs!C57",
+     "kind": "ASSUMPTION",
+     "sentence": "Per EUR 500 token"
+    },
+    {
+     "number": "EUR 53.18",
+     "status": "MATCHED",
+     "why": "Payment per token, year 1 (interest + principal, EUR)",
+     "source": "Summary!C55",
+     "kind": "MODEL",
+     "sentence": "EUR 53.18 a year; EUR 797.65 in total if every payment is made"
+    },
+    {
+     "number": "EUR 797.65",
+     "status": "MATCHED",
+     "why": "Total paid per token over the bond life if all paid (EUR)",
+     "source": "Summary!C58",
+     "kind": "MODEL",
+     "sentence": "EUR 53.18 a year; EUR 797.65 in total if every payment is made"
+    },
+    {
+     "number": "3.0 MWp",
+     "status": "MATCHED",
+     "why": "Plant size per rooftop (kWp)",
+     "source": "Inputs!C6",
+     "kind": "FICTIONAL",
+     "sentence": "Power sales from two 3.0 MWp roofs only; not guaranteed"
+    },
+    {
+     "number": "1.50x",
+     "status": "MATCHED",
+     "why": "Premium not won, no investment aid: plan minimum cover",
+     "source": "feasibility_facts.py:notwon.min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "1.50x in the plan; 0.94x if both businesses leave in year 5 (premium won)"
+    },
+    {
+     "number": "0.94x",
+     "status": "MATCHED",
+     "why": "Monitor run 2026-10-17_1055: Lowest cover, both hosts leave yr 5 at the monitored price",
+     "source": "monitor/runs/2026-10-17_1055/report.json",
+     "kind": "MONITOR RUN",
+     "sentence": "1.50x in the plan; 0.94x if both businesses leave in year 5 (premium won)"
+    },
+    {
+     "number": "5",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "1.50x in the plan; 0.94x if both businesses leave in year 5 (premium won)"
+    },
+    {
+     "number": "30",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "Only after both roofs win the state premium (bids close 30 Oct 2026), the main protection if the businesses leave"
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "Only after both roofs win the state premium (bids close 30 Oct 2026), the main protection if the businesses leave"
+    },
+    {
+     "number": "5",
+     "status": "CONTEXT",
+     "why": "clock time or duration",
+     "sentence": "The case in 5:17, in my voice, with captions on screen."
+    },
+    {
+     "number": "17",
+     "status": "CONTEXT",
+     "why": "clock time or duration",
+     "sentence": "The case in 5:17, in my voice, with captions on screen."
+    },
+    {
+     "number": "24",
+     "status": "CONTEXT",
+     "why": "file size",
+     "sentence": "Download the MP4 (24 MB)"
+    },
+    {
+     "number": "1",
+     "status": "MATCHED-WEAK",
+     "why": "Availability (%)",
+     "source": "Inputs!C10",
+     "kind": "ASSUMPTION",
+     "sentence": "1Who pays investors back?"
+    },
+    {
+     "number": "2",
+     "status": "MATCHED-WEAK",
+     "why": "Number of rooftops in the programme (one bond) (count)",
+     "source": "Inputs!C7",
+     "kind": "FICTIONAL",
+     "sentence": "2What if it goes wrong?"
+    },
+    {
+     "number": "3",
+     "status": "MATCHED-WEAK",
+     "why": "Direct marketing fee (EUR/MWh exported)",
+     "source": "Inputs!C28",
+     "kind": "SOURCED (DE)",
+     "sentence": "3Are tokens worth it?"
+    },
+    {
+     "number": "4",
+     "status": "MATCHED-WEAK",
+     "why": "Roof lease (EUR/kWp/yr)",
+     "source": "Inputs!C34",
+     "kind": "SOURCED (DE)",
+     "sentence": "4How do the documents stay honest?"
+    },
+    {
+     "number": "1",
+     "status": "MATCHED-WEAK",
+     "why": "Availability (%)",
+     "source": "Inputs!C10",
+     "kind": "ASSUMPTION",
+     "sentence": "QUESTION 1"
+    },
+    {
+     "number": "70%",
+     "status": "MATCHED",
+     "why": "Host share of output (Case A) (%)",
+     "source": "Inputs!C15",
+     "kind": "ASSUMPTION",
+     "sentence": "70%bought on site by the two businesses in the buildings, at EUR 110 per MWh, +1% a year, set for 20 years"
+    },
+    {
+     "number": "EUR 110",
+     "status": "MATCHED",
+     "why": "On-site PPA price, year 1 (EUR/MWh)",
+     "source": "Inputs!C16",
+     "kind": "DERIVED",
+     "sentence": "70%bought on site by the two businesses in the buildings, at EUR 110 per MWh, +1% a year, set for 20 years"
+    },
+    {
+     "number": "1%",
+     "status": "MATCHED",
+     "why": "Premium kept, all output exported (no on-site sale): minimum cover",
+     "source": "feasibility_facts.py:allexport.min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "70%bought on site by the two businesses in the buildings, at EUR 110 per MWh, +1% a year, set for 20 years"
+    },
+    {
+     "number": "20",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "70%bought on site by the two businesses in the buildings, at EUR 110 per MWh, +1% a year, set for 20 years"
+    },
+    {
+     "number": "30%",
+     "status": "MATCHED",
+     "why": "Assumed grid emission factor, t CO2 per MWh (ASSUMPTION, replace with audited factor)",
+     "source": "proposal_facts.py:co2_factor",
+     "kind": "ASSUMPTION",
+     "sentence": "30%sold to the grid at about EUR 45 per MWh"
+    },
+    {
+     "number": "EUR 45",
+     "status": "MATCHED",
+     "why": "Merchant solar capture price, year 1 (EUR/MWh)",
+     "source": "Inputs!C21",
+     "kind": "SOURCED",
+     "sentence": "30%sold to the grid at about EUR 45 per MWh"
+    },
+    {
+     "number": "EUR 121.9",
+     "status": "MATCHED",
+     "why": "Host avoided grid cost, year 1 (savings basis; affects savings rows only, not cover) (EUR/MWh)",
+     "source": "Inputs!C17",
+     "kind": "SOURCED",
+     "sentence": "Both sides gain: the businesses pay less than their own grid bill of about EUR 121.9 per MWh (Eurostat, H1 2026; in the model both prices rise 1% a year, A), and the bond gets a steady price for most of its income while they keep buying."
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "Both sides gain: the businesses pay less than their own grid bill of about EUR 121.9 per MWh (Eurostat, H1 2026; in the model both prices rise 1% a year, A), and the bond gets a steady price for most of its income while they keep buying."
+    },
+    {
+     "number": "1%",
+     "status": "MATCHED",
+     "why": "Monitor run 2026-10-17_1055: Lowest cover, both hosts leave yr 5 at the monitored price",
+     "source": "monitor/runs/2026-10-17_1055/report.json",
+     "kind": "MONITOR RUN",
+     "sentence": "Both sides gain: the businesses pay less than their own grid bill of about EUR 121.9 per MWh (Eurostat, H1 2026; in the model both prices rise 1% a year, A), and the bond gets a steady price for most of its income while they keep buying."
+    },
+    {
+     "number": "EUR 212,706",
+     "status": "MATCHED",
+     "why": "Annual debt service [a]",
+     "source": "Summary!C41",
+     "kind": "MODEL",
+     "sentence": "Investors: EUR 212,706 a yeara missed payment stays owed with interest and is paid first from later cash, but may never be paid in full"
+    },
+    {
+     "number": "EUR 106,353",
+     "status": "MATCHED",
+     "why": "Debt service reserve at closing (EUR)",
+     "source": "Summary!C59",
+     "kind": "MODEL",
+     "sentence": "Reservetopped up to half a yearly payment (EUR 106,353)"
+    },
+    {
+     "number": "1.10x",
+     "status": "MATCHED",
+     "why": "Distribution lock-up below DSCR (x)",
+     "source": "Inputs!C59",
+     "kind": "ASSUMPTION",
+     "sentence": "Owners, lastnothing while cover is below 1.10x or anything is owed (lock-up)"
+    },
+    {
+     "number": "1.50",
+     "status": "MATCHED",
+     "why": "Investment-aid route, EUR 2M bond: plan minimum cover",
+     "source": "feasibility_facts.py:aid_2m.min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "1.50xlowest year in the plan: EUR 1.50 of cash for every EUR 1 owed"
+    },
+    {
+     "number": "EUR 1.50",
+     "status": "MATCHED",
+     "why": "Investment-aid route, EUR 2M bond: plan minimum cover",
+     "source": "feasibility_facts.py:aid_2m.min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "1.50xlowest year in the plan: EUR 1.50 of cash for every EUR 1 owed"
+    },
+    {
+     "number": "EUR 1",
+     "status": "MATCHED-WEAK",
+     "why": "Investment-aid route, EUR 2M bond: plan minimum cover",
+     "source": "feasibility_facts.py:aid_2m.min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "1.50xlowest year in the plan: EUR 1.50 of cash for every EUR 1 owed"
+    },
+    {
+     "number": "1.50x",
+     "status": "MATCHED",
+     "why": "Minimum DSCR over bond life [a]",
+     "source": "Summary!C20",
+     "kind": "MODEL",
+     "sentence": "Where the 1.50x comes from"
+    },
+    {
+     "number": "1,000",
+     "status": "MATCHED",
+     "why": "PVGIS v5.2 specific yield, kWh/kWp/yr",
+     "source": "https://re.jrc.ec.europa.eu/api/v5_2/PVcalc?lat=49.50&lon=6.11&peakpower=1&loss=14&angle=10&aspect=0&outputformat=json",
+     "kind": "EXTERNAL",
+     "sentence": "It is the central case, before any risk: expected sunshine for the site (PVGIS, 1,000 kWh per kWp in year 1, 0.4% loss a year), the contract prices above, and running costs from published studies and my assumptions, each labelled in the model."
+    },
+    {
+     "number": "1",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "It is the central case, before any risk: expected sunshine for the site (PVGIS, 1,000 kWh per kWp in year 1, 0.4% loss a year), the contract prices above, and running costs from published studies and my assumptions, each labelled in the model."
+    },
+    {
+     "number": "0.4%",
+     "status": "MATCHED",
+     "why": "Module degradation (%/yr)",
+     "source": "Inputs!C11",
+     "kind": "ASSUMPTION",
+     "sentence": "It is the central case, before any risk: expected sunshine for the site (PVGIS, 1,000 kWh per kWp in year 1, 0.4% loss a year), the contract prices above, and running costs from published studies and my assumptions, each labelled in the model."
+    },
+    {
+     "number": "2",
+     "status": "MATCHED-WEAK",
+     "why": "Number of rooftops in the programme (one bond) (count)",
+     "source": "Inputs!C7",
+     "kind": "FICTIONAL",
+     "sentence": "QUESTION 2"
+    },
+    {
+     "number": "5",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "My worst case is both businesses stopping in year 5."
+    },
+    {
+     "number": "EUR 45",
+     "status": "MATCHED",
+     "why": "Merchant solar capture price, year 1 (EUR/MWh)",
+     "source": "Inputs!C21",
+     "kind": "SOURCED",
+     "sentence": "If the businesses move out or fail, they stop buying the power (investors keep their tokens) and all of it goes to the grid, which on its own pays only about EUR 45 per MWh."
+    },
+    {
+     "number": "15",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "A winner gets the market price topped up to a fixed level, its bid, for 15 years, on power sold to the grid."
+    },
+    {
+     "number": "EUR 45",
+     "status": "MATCHED",
+     "why": "Merchant solar capture price, year 1 (EUR/MWh)",
+     "source": "Inputs!C21",
+     "kind": "SOURCED",
+     "sentence": "EUR 45grid price, 2025"
+    },
+    {
+     "number": "2025",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "EUR 45grid price, 2025"
+    },
+    {
+     "number": "EUR 92.50",
+     "status": "MATCHED",
+     "why": "Tender reference value (our bid, assumed won) (EUR/MWh)",
+     "source": "Inputs!C25",
+     "kind": "ASSUMPTION",
+     "sentence": "EUR 92.50my bid (A)"
+    },
+    {
+     "number": "EUR 89.75",
+     "status": "MATCHED",
+     "why": "7th round award, EUR/MWh",
+     "source": "https://guichet.public.lu/dam-assets/catalogue-pdf/energie/appel-offre/apercu-7ao-2025.pdf",
+     "kind": "EXTERNAL",
+     "sentence": "EUR 89.75last round's award"
+    },
+    {
+     "number": "EUR 95",
+     "status": "MATCHED",
+     "why": "8th Luxembourg PV tender cap for rooftops 500 kWc-3 MWc, EUR/MWh",
+     "source": "https://guichet.public.lu/dam-assets/catalogue-pdf/appel-offres-electricite/8e-ao-photovoltaique-grande-centrale/avis-publication-fr.pdf",
+     "kind": "EXTERNAL",
+     "sentence": "EUR 95cap"
+    },
+    {
+     "number": "15",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "If the premium is won, the state pays the blue gap to the company for 15 years, except in hours when the market price is negative."
+    },
+    {
+     "number": "1.50x",
+     "status": "MATCHED",
+     "why": "Premium not won, no investment aid: plan minimum cover",
+     "source": "feasibility_facts.py:notwon.min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "Needs no premium: lowest cover is 1.50x with or without it."
+    },
+    {
+     "number": "70%",
+     "status": "MATCHED",
+     "why": "Host share of output (Case A) (%)",
+     "source": "Inputs!C15",
+     "kind": "ASSUMPTION",
+     "sentence": "While the businesses buy 70% of the power, the other 30% goes to the grid at the market price, EUR 45 per MWh (official 2025 value)."
+    },
+    {
+     "number": "30%",
+     "status": "MATCHED",
+     "why": "Assumed grid emission factor, t CO2 per MWh (ASSUMPTION, replace with audited factor)",
+     "source": "proposal_facts.py:co2_factor",
+     "kind": "ASSUMPTION",
+     "sentence": "While the businesses buy 70% of the power, the other 30% goes to the grid at the market price, EUR 45 per MWh (official 2025 value)."
+    },
+    {
+     "number": "EUR 45",
+     "status": "MATCHED",
+     "why": "DE-LU solar market value 2025, EUR/MWh",
+     "source": "https://www.green-2-market.de/marktwert-solar/",
+     "kind": "EXTERNAL",
+     "sentence": "While the businesses buy 70% of the power, the other 30% goes to the grid at the market price, EUR 45 per MWh (official 2025 value)."
+    },
+    {
+     "number": "2025",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "While the businesses buy 70% of the power, the other 30% goes to the grid at the market price, EUR 45 per MWh (official 2025 value)."
+    },
+    {
+     "number": "30%",
+     "status": "MATCHED",
+     "why": "8th tender closes 30 Oct 2026",
+     "source": "https://guichet.public.lu/dam-assets/catalogue-pdf/appel-offres-electricite/8e-ao-photovoltaique-grande-centrale/avis-publication-fr.pdf",
+     "kind": "EXTERNAL",
+     "sentence": "The tender rules would pay the premium on that 30% too, but the model leaves it out: counting it would lift plan cover to 1.70x."
+    },
+    {
+     "number": "1.70x",
+     "status": "MATCHED",
+     "why": "If the premium is also paid on hosted surplus (p2 = 1): plan minimum cover",
+     "source": "feasibility_facts.py:p2.min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "The tender rules would pay the premium on that 30% too, but the model leaves it out: counting it would lift plan cover to 1.70x."
+    },
+    {
+     "number": "EUR 0.25",
+     "status": "MATCHED",
+     "why": "Premium not won, no investment aid, both hosts leave yr 5: cover in the first year without hosts",
+     "source": "feasibility_facts.py:notwon.leave2_dscr_exit",
+     "kind": "MODEL (engine)",
+     "sentence": "On the market price alone, the roofs would make only EUR 0.25 for every EUR 1 owed in year 5 (cover 0.25x), falling to 0.07x by year 15, and EUR 2,180,217 of payments would not be paid when due."
+    },
+    {
+     "number": "EUR 1",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "On the market price alone, the roofs would make only EUR 0.25 for every EUR 1 owed in year 5 (cover 0.25x), falling to 0.07x by year 15, and EUR 2,180,217 of payments would not be paid when due."
+    },
+    {
+     "number": "5",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "On the market price alone, the roofs would make only EUR 0.25 for every EUR 1 owed in year 5 (cover 0.25x), falling to 0.07x by year 15, and EUR 2,180,217 of payments would not be paid when due."
+    },
+    {
+     "number": "0.25x",
+     "status": "MATCHED",
+     "why": "Premium not won, no investment aid, both hosts leave yr 5: cover in the first year without hosts",
+     "source": "feasibility_facts.py:notwon.leave2_dscr_exit",
+     "kind": "MODEL (engine)",
+     "sentence": "On the market price alone, the roofs would make only EUR 0.25 for every EUR 1 owed in year 5 (cover 0.25x), falling to 0.07x by year 15, and EUR 2,180,217 of payments would not be paid when due."
+    },
+    {
+     "number": "0.07x",
+     "status": "MATCHED",
+     "why": "KfW 270 PV-Aufdach 15-year loan, price class E rate (highest class); German programme, labelled proxy only",
+     "source": "https://www.kfw-formularsammlung.de/KonditionenanzeigerINet/KonditionenAnzeiger | class E 6.80% per audits/audit-1-facts.md M4 (KfW Konditionenanzeiger valid 2026-10-09, fetched 2026-10-12)",
+     "kind": "EXTERNAL",
+     "sentence": "On the market price alone, the roofs would make only EUR 0.25 for every EUR 1 owed in year 5 (cover 0.25x), falling to 0.07x by year 15, and EUR 2,180,217 of payments would not be paid when due."
+    },
+    {
+     "number": "15",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "On the market price alone, the roofs would make only EUR 0.25 for every EUR 1 owed in year 5 (cover 0.25x), falling to 0.07x by year 15, and EUR 2,180,217 of payments would not be paid when due."
+    },
+    {
+     "number": "EUR 2,180,217",
+     "status": "MATCHED",
+     "why": "Premium not won, no investment aid, both hosts leave yr 5: scheduled payments not paid when due, EUR",
+     "source": "feasibility_facts.py:notwon.leave2_unpaid",
+     "kind": "MODEL (engine)",
+     "sentence": "On the market price alone, the roofs would make only EUR 0.25 for every EUR 1 owed in year 5 (cover 0.25x), falling to 0.07x by year 15, and EUR 2,180,217 of payments would not be paid when due."
+    },
+    {
+     "number": "EUR 92.50",
+     "status": "MATCHED",
+     "why": "Tender reference value (our bid, assumed won) (EUR/MWh)",
+     "source": "Inputs!C25",
+     "kind": "ASSUMPTION",
+     "sentence": "With the premium, the state tops the price up to my bid, EUR 92.50 per MWh (A), for 15 years (cap EUR 95; the last round's rooftop award was EUR 89.75)."
+    },
+    {
+     "number": "15",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "With the premium, the state tops the price up to my bid, EUR 92.50 per MWh (A), for 15 years (cap EUR 95; the last round's rooftop award was EUR 89.75)."
+    },
+    {
+     "number": "EUR 95",
+     "status": "MATCHED",
+     "why": "8th Luxembourg PV tender cap for rooftops 500 kWc-3 MWc, EUR/MWh",
+     "source": "https://guichet.public.lu/dam-assets/catalogue-pdf/appel-offres-electricite/8e-ao-photovoltaique-grande-centrale/avis-publication-fr.pdf",
+     "kind": "EXTERNAL",
+     "sentence": "With the premium, the state tops the price up to my bid, EUR 92.50 per MWh (A), for 15 years (cap EUR 95; the last round's rooftop award was EUR 89.75)."
+    },
+    {
+     "number": "EUR 89.75",
+     "status": "MATCHED",
+     "why": "7th round award, EUR/MWh",
+     "source": "https://guichet.public.lu/dam-assets/catalogue-pdf/energie/appel-offre/apercu-7ao-2025.pdf",
+     "kind": "EXTERNAL",
+     "sentence": "With the premium, the state tops the price up to my bid, EUR 92.50 per MWh (A), for 15 years (cap EUR 95; the last round's rooftop award was EUR 89.75)."
+    },
+    {
+     "number": "15%",
+     "status": "MATCHED",
+     "why": "Exported volume lost to negative-price rule (%)",
+     "source": "Inputs!C26",
+     "kind": "ASSUMPTION",
+     "sentence": "Take off the hours when the market price is negative and no premium is paid (15% of grid power, A) and a EUR 3 per MWh fee to the company that sells the power, and cover is 0.94x: in years 13-15 the roofs make slightly less than they owe, and cash held back from the owners since year 9 fills the gap, so in the model every payment is made."
+    },
+    {
+     "number": "EUR 3",
+     "status": "MATCHED-WEAK",
+     "why": "Direct marketing fee (EUR/MWh exported)",
+     "source": "Inputs!C28",
+     "kind": "SOURCED (DE)",
+     "sentence": "Take off the hours when the market price is negative and no premium is paid (15% of grid power, A) and a EUR 3 per MWh fee to the company that sells the power, and cover is 0.94x: in years 13-15 the roofs make slightly less than they owe, and cash held back from the owners since year 9 fills the gap, so in the model every payment is made."
+    },
+    {
+     "number": "0.94x",
+     "status": "MATCHED",
+     "why": "Premium kept, all output exported (no on-site sale): minimum cover",
+     "source": "feasibility_facts.py:allexport.min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "Take off the hours when the market price is negative and no premium is paid (15% of grid power, A) and a EUR 3 per MWh fee to the company that sells the power, and cover is 0.94x: in years 13-15 the roofs make slightly less than they owe, and cash held back from the owners since year 9 fills the gap, so in the model every payment is made."
+    },
+    {
+     "number": "13",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Take off the hours when the market price is negative and no premium is paid (15% of grid power, A) and a EUR 3 per MWh fee to the company that sells the power, and cover is 0.94x: in years 13-15 the roofs make slightly less than they owe, and cash held back from the owners since year 9 fills the gap, so in the model every payment is made."
+    },
+    {
+     "number": "15",
+     "status": "CONTEXT",
+     "why": "ordinal (e.g. 8th round)",
+     "sentence": "Take off the hours when the market price is negative and no premium is paid (15% of grid power, A) and a EUR 3 per MWh fee to the company that sells the power, and cover is 0.94x: in years 13-15 the roofs make slightly less than they owe, and cash held back from the owners since year 9 fills the gap, so in the model every payment is made."
+    },
+    {
+     "number": "9",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Take off the hours when the market price is negative and no premium is paid (15% of grid power, A) and a EUR 3 per MWh fee to the company that sells the power, and cover is 0.94x: in years 13-15 the roofs make slightly less than they owe, and cash held back from the owners since year 9 fills the gap, so in the model every payment is made."
+    },
+    {
+     "number": "30",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "This round's bids close on 30 October 2026."
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "This round's bids close on 30 October 2026."
+    },
+    {
+     "number": "6",
+     "status": "CONTEXT",
+     "why": "ordinal (e.g. 8th round)",
+     "sentence": "Recent rounds had more capacity on offer than bids to fill it: the 6th round (2024) awarded 21.5 of the 50 MW offered (43%), the 7th round (2025) 2.44 of 45 MW (about 5%)."
+    },
+    {
+     "number": "2024",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "Recent rounds had more capacity on offer than bids to fill it: the 6th round (2024) awarded 21.5 of the 50 MW offered (43%), the 7th round (2025) 2.44 of 45 MW (about 5%)."
+    },
+    {
+     "number": "21.5",
+     "status": "MATCHED",
+     "why": "6th Luxembourg PV tender (round of 19 Jul 2024, bids closed 29 Nov 2024): capacity awarded, all lots, MW",
+     "source": "https://guichet.public.lu/dam-assets/catalogue-pdf/energie/appel-offre/aperu-sur-le-droulement-du-sixime-appel-doffres-du-19-juillet-2024.pdf",
+     "kind": "EXTERNAL",
+     "sentence": "Recent rounds had more capacity on offer than bids to fill it: the 6th round (2024) awarded 21.5 of the 50 MW offered (43%), the 7th round (2025) 2.44 of 45 MW (about 5%)."
+    },
+    {
+     "number": "50",
+     "status": "MATCHED",
+     "why": "6th Luxembourg PV tender: volume offered, all lots, MW",
+     "source": "https://guichet.public.lu/dam-assets/catalogue-pdf/energie/appel-offre/aperu-sur-le-droulement-du-sixime-appel-doffres-du-19-juillet-2024.pdf",
+     "kind": "EXTERNAL",
+     "sentence": "Recent rounds had more capacity on offer than bids to fill it: the 6th round (2024) awarded 21.5 of the 50 MW offered (43%), the 7th round (2025) 2.44 of 45 MW (about 5%)."
+    },
+    {
+     "number": "43%",
+     "status": "MATCHED",
+     "why": "6th Luxembourg PV tender: share of offered volume awarded (21.5 of 50 MW)",
+     "source": "https://guichet.public.lu/dam-assets/catalogue-pdf/energie/appel-offre/aperu-sur-le-droulement-du-sixime-appel-doffres-du-19-juillet-2024.pdf",
+     "kind": "EXTERNAL",
+     "sentence": "Recent rounds had more capacity on offer than bids to fill it: the 6th round (2024) awarded 21.5 of the 50 MW offered (43%), the 7th round (2025) 2.44 of 45 MW (about 5%)."
+    },
+    {
+     "number": "7",
+     "status": "CONTEXT",
+     "why": "ordinal (e.g. 8th round)",
+     "sentence": "Recent rounds had more capacity on offer than bids to fill it: the 6th round (2024) awarded 21.5 of the 50 MW offered (43%), the 7th round (2025) 2.44 of 45 MW (about 5%)."
+    },
+    {
+     "number": "2025",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "Recent rounds had more capacity on offer than bids to fill it: the 6th round (2024) awarded 21.5 of the 50 MW offered (43%), the 7th round (2025) 2.44 of 45 MW (about 5%)."
+    },
+    {
+     "number": "2.44",
+     "status": "MATCHED",
+     "why": "7th Luxembourg PV tender (round of 19 Jul 2025, bids closed 28 Nov 2025): capacity awarded, all lots, MW",
+     "source": "https://guichet.public.lu/dam-assets/catalogue-pdf/energie/appel-offre/apercu-7ao-2025.pdf",
+     "kind": "EXTERNAL",
+     "sentence": "Recent rounds had more capacity on offer than bids to fill it: the 6th round (2024) awarded 21.5 of the 50 MW offered (43%), the 7th round (2025) 2.44 of 45 MW (about 5%)."
+    },
+    {
+     "number": "45",
+     "status": "MATCHED",
+     "why": "7th Luxembourg PV tender: volume offered, all lots, MW",
+     "source": "https://guichet.public.lu/dam-assets/catalogue-pdf/energie/appel-offre/apercu-7ao-2025.pdf",
+     "kind": "EXTERNAL",
+     "sentence": "Recent rounds had more capacity on offer than bids to fill it: the 6th round (2024) awarded 21.5 of the 50 MW offered (43%), the 7th round (2025) 2.44 of 45 MW (about 5%)."
+    },
+    {
+     "number": "5%",
+     "status": "MATCHED",
+     "why": "7th Luxembourg PV tender: share of offered volume awarded (2.44 of 45 MW)",
+     "source": "https://guichet.public.lu/dam-assets/catalogue-pdf/energie/appel-offre/apercu-7ao-2025.pdf",
+     "kind": "EXTERNAL",
+     "sentence": "Recent rounds had more capacity on offer than bids to fill it: the 6th round (2024) awarded 21.5 of the 50 MW offered (43%), the 7th round (2025) 2.44 of 45 MW (about 5%)."
+    },
+    {
+     "number": "8",
+     "status": "CONTEXT",
+     "why": "ordinal (e.g. 8th round)",
+     "sentence": "The 8th round offers 7 MW for rooftop plants like ours."
+    },
+    {
+     "number": "7",
+     "status": "MATCHED-WEAK",
+     "why": "Years with owners locked out [b]",
+     "source": "Summary!D36",
+     "kind": "MODEL",
+     "sentence": "The 8th round offers 7 MW for rooftop plants like ours."
+    },
+    {
+     "number": "6",
+     "status": "CONTEXT",
+     "why": "ordinal (e.g. 8th round)",
+     "sentence": "Round summaries on guichet.public.lu: 6th, 7th (published 13 Feb 2026); 8th round notice (27 Jul 2026)."
+    },
+    {
+     "number": "7",
+     "status": "CONTEXT",
+     "why": "ordinal (e.g. 8th round)",
+     "sentence": "Round summaries on guichet.public.lu: 6th, 7th (published 13 Feb 2026); 8th round notice (27 Jul 2026)."
+    },
+    {
+     "number": "13",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "Round summaries on guichet.public.lu: 6th, 7th (published 13 Feb 2026); 8th round notice (27 Jul 2026)."
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "Round summaries on guichet.public.lu: 6th, 7th (published 13 Feb 2026); 8th round notice (27 Jul 2026)."
+    },
+    {
+     "number": "8",
+     "status": "CONTEXT",
+     "why": "ordinal (e.g. 8th round)",
+     "sentence": "Round summaries on guichet.public.lu: 6th, 7th (published 13 Feb 2026); 8th round notice (27 Jul 2026)."
+    },
+    {
+     "number": "27",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "Round summaries on guichet.public.lu: 6th, 7th (published 13 Feb 2026); 8th round notice (27 Jul 2026)."
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "Round summaries on guichet.public.lu: 6th, 7th (published 13 Feb 2026); 8th round notice (27 Jul 2026)."
+    },
+    {
+     "number": "5",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Both businesses leave in year 5"
+    },
+    {
+     "number": "0.94x",
+     "status": "MATCHED",
+     "why": "Minimum DSCR over bond life [b]",
+     "source": "Summary!D20",
+     "kind": "MODEL",
+     "sentence": "0.94x"
+    },
+    {
+     "number": "13",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Years 13-15"
+    },
+    {
+     "number": "15",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Years 13-15"
+    },
+    {
+     "number": "1.0x",
+     "status": "MATCHED",
+     "why": "Share of paths paid in full from cash, reserve untouched [hazard_0%]",
+     "source": "mc_results.json:by_host_hazard.0%.p_clean",
+     "kind": "MONTE CARLO",
+     "sentence": "below 1.0x, paid from cash held back from the owners"
+    },
+    {
+     "number": "30",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "With the premium won (bids close 30 Oct 2026) and output holding."
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "With the premium won (bids close 30 Oct 2026) and output holding."
+    },
+    {
+     "number": "0.25x",
+     "status": "MATCHED",
+     "why": "Premium not won, no investment aid, both hosts leave yr 5: cover in the first year without hosts",
+     "source": "feasibility_facts.py:notwon.leave2_dscr_exit",
+     "kind": "MODEL (engine)",
+     "sentence": "On the market price alone cover would fall to 0.25x from year 5: pick Not won in the price setting below."
+    },
+    {
+     "number": "5",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "On the market price alone cover would fall to 0.25x from year 5: pick Not won in the price setting below."
+    },
+    {
+     "number": "1.50x",
+     "status": "MATCHED",
+     "why": "Minimum DSCR over bond life [a]",
+     "source": "Summary!C20",
+     "kind": "MODEL",
+     "sentence": "1.50x"
+    },
+    {
+     "number": "EUR 100",
+     "status": "MATCHED",
+     "why": "PPA price tested after an arm's-length check, EUR/MWh",
+     "source": "proposal_facts.py:ppa100_price",
+     "kind": "SCENARIO INPUT",
+     "sentence": "Hosts pay EUR 100/MWh (price after an arm's-length check)"
+    },
+    {
+     "number": "1.33x",
+     "status": "MATCHED",
+     "why": "PPA at EUR 100/MWh: plan minimum cover",
+     "source": "proposal_facts.py:ppa100_plan_min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "1.33x"
+    },
+    {
+     "number": "5",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "One host leaves in year 5 (premium won)"
+    },
+    {
+     "number": "1.24x",
+     "status": "MATCHED",
+     "why": "Premium route, 1 host(s) leave yr 5: minimum cover",
+     "source": "proposal_facts.py:premium_1host_min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "1.24x"
+    },
+    {
+     "number": "5",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Both hosts leave in year 5 (premium won; 15% of grid power lost to negative prices (A))"
+    },
+    {
+     "number": "15%",
+     "status": "MATCHED",
+     "why": "Downside with 20% lost to negative prices: first year a payment is late (0 = never)",
+     "source": "proposal_facts.py:ds_neg20_first_late",
+     "kind": "MODEL (engine)",
+     "sentence": "Both hosts leave in year 5 (premium won; 15% of grid power lost to negative prices (A))"
+    },
+    {
+     "number": "0.94x",
+     "status": "MATCHED",
+     "why": "Minimum DSCR over bond life [b]",
+     "source": "Summary!D20",
+     "kind": "MODEL",
+     "sentence": "0.94x"
+    },
+    {
+     "number": "20%",
+     "status": "MATCHED",
+     "why": "Negative-price loss tested: 20% (ZSW 2024 ~20%; base 15%)",
+     "source": "proposal_facts.py:neg20_share",
+     "kind": "SCENARIO INPUT",
+     "sentence": "Both leave, 20% lost to negative prices (base 15%) (premium won)"
+    },
+    {
+     "number": "15%",
+     "status": "MATCHED",
+     "why": "Downside with 20% lost to negative prices: first year a payment is late (0 = never)",
+     "source": "proposal_facts.py:ds_neg20_first_late",
+     "kind": "MODEL (engine)",
+     "sentence": "Both leave, 20% lost to negative prices (base 15%) (premium won)"
+    },
+    {
+     "number": "0.82x",
+     "status": "MATCHED",
+     "why": "Downside with 20% of premium output lost to negative prices: minimum cover",
+     "source": "proposal_facts.py:ds_neg20_min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "0.82x"
+    },
+    {
+     "number": "15",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "late from year 15; EUR 16,700 owed at year 15"
+    },
+    {
+     "number": "EUR 16,700",
+     "status": "MATCHED",
+     "why": "Downside with 20% lost to negative prices: EUR owed to bondholders at year 15 (maturity), incl. default interest",
+     "source": "proposal_facts.py:ds_neg20_owed_y15",
+     "kind": "MODEL (engine)",
+     "sentence": "late from year 15; EUR 16,700 owed at year 15"
+    },
+    {
+     "number": "15",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "late from year 15; EUR 16,700 owed at year 15"
+    },
+    {
+     "number": "0.81x",
+     "status": "MATCHED",
+     "why": "Both hosts leave yr 5 AND P90 10-year yield every year: minimum cover",
+     "source": "proposal_facts.py:ds_p90_min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "0.81x"
+    },
+    {
+     "number": "14",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "late from year 14; EUR 55,900 owed at year 15"
+    },
+    {
+     "number": "EUR 55,900",
+     "status": "MATCHED",
+     "why": "Both hosts leave yr 5 AND P90 10-year yield every year: EUR owed to bondholders at year 15 (maturity), incl. default interest",
+     "source": "proposal_facts.py:ds_p90_owed_y15",
+     "kind": "MODEL (engine)",
+     "sentence": "late from year 14; EUR 55,900 owed at year 15"
+    },
+    {
+     "number": "15",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "late from year 14; EUR 55,900 owed at year 15"
+    },
+    {
+     "number": "15",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Lowest cover in the 15 years, in the model."
+    },
+    {
+     "number": "10",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Weak sunshine is the 10-year P90 output, 93.3% of the central estimate every year, about a 1 in 10 chance."
+    },
+    {
+     "number": "93.3%",
+     "status": "MATCHED",
+     "why": "P90 10-year yield as share of P50 (933 / 1,000 kWh/kWp, R4)",
+     "source": "proposal_facts.py:p90_10y_factor",
+     "kind": "DERIVED",
+     "sentence": "Weak sunshine is the 10-year P90 output, 93.3% of the central estimate every year, about a 1 in 10 chance."
+    },
+    {
+     "number": "1",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Weak sunshine is the 10-year P90 output, 93.3% of the central estimate every year, about a 1 in 10 chance."
+    },
+    {
+     "number": "10",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Weak sunshine is the 10-year P90 output, 93.3% of the central estimate every year, about a 1 in 10 chance."
+    },
+    {
+     "number": "5",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Pick a bid and see what happens to the worst case, both businesses leaving in year 5."
+    },
+    {
+     "number": "18",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "Every setting shows its own rerun of the Excel model, run on 18 October 2026 and labelled simulated: none of them is market data."
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "Every setting shows its own rerun of the Excel model, run on 18 October 2026 and labelled simulated: none of them is market data."
+    },
+    {
+     "number": "EUR 92.50",
+     "status": "MATCHED",
+     "why": "Tender reference value (our bid, assumed won) (EUR/MWh)",
+     "source": "Inputs!C25",
+     "kind": "ASSUMPTION",
+     "sentence": "My bid is EUR 92.50 (A), the cap EUR 95; the last round's rooftop award was EUR 89.75, just under 90."
+    },
+    {
+     "number": "EUR 95",
+     "status": "MATCHED",
+     "why": "8th Luxembourg PV tender cap for rooftops 500 kWc-3 MWc, EUR/MWh",
+     "source": "https://guichet.public.lu/dam-assets/catalogue-pdf/appel-offres-electricite/8e-ao-photovoltaique-grande-centrale/avis-publication-fr.pdf",
+     "kind": "EXTERNAL",
+     "sentence": "My bid is EUR 92.50 (A), the cap EUR 95; the last round's rooftop award was EUR 89.75, just under 90."
+    },
+    {
+     "number": "EUR 89.75",
+     "status": "MATCHED",
+     "why": "7th round award, EUR/MWh",
+     "source": "https://guichet.public.lu/dam-assets/catalogue-pdf/energie/appel-offre/apercu-7ao-2025.pdf",
+     "kind": "EXTERNAL",
+     "sentence": "My bid is EUR 92.50 (A), the cap EUR 95; the last round's rooftop award was EUR 89.75, just under 90."
+    },
+    {
+     "number": "90",
+     "status": "MATCHED",
+     "why": "7th round award, EUR/MWh",
+     "source": "https://guichet.public.lu/dam-assets/catalogue-pdf/energie/appel-offre/apercu-7ao-2025.pdf",
+     "kind": "EXTERNAL",
+     "sentence": "My bid is EUR 92.50 (A), the cap EUR 95; the last round's rooftop award was EUR 89.75, just under 90."
+    },
+    {
+     "number": "EUR 45",
+     "status": "MATCHED",
+     "why": "DE-LU solar market value 2025, EUR/MWh",
+     "source": "https://www.green-2-market.de/marktwert-solar/",
+     "kind": "EXTERNAL",
+     "sentence": "EUR 45: the official 2025 value, used in the model."
+    },
+    {
+     "number": "2025",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "EUR 45: the official 2025 value, used in the model."
+    },
+    {
+     "number": "EUR 61.17",
+     "status": "MATCHED",
+     "why": "Monitor run 2026-10-17_1055: DE-LU solar capture price, trailing 12 months 2025-10-17 to 2026-10-16 (EUR/MWh)",
+     "source": "monitor/runs/2026-10-17_1055/report.json",
+     "kind": "MONITOR RUN",
+     "sentence": "EUR 61.17: the monitor's 12-month value on 17 October 2026, which I rejected (decision log in Question 4)."
+    },
+    {
+     "number": "12",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "EUR 61.17: the monitor's 12-month value on 17 October 2026, which I rejected (decision log in Question 4)."
+    },
+    {
+     "number": "17",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "EUR 61.17: the monitor's 12-month value on 17 October 2026, which I rejected (decision log in Question 4)."
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "EUR 61.17: the monitor's 12-month value on 17 October 2026, which I rejected (decision log in Question 4)."
+    },
+    {
+     "number": "4",
+     "status": "MATCHED-WEAK",
+     "why": "Roof lease (EUR/kWp/yr)",
+     "source": "Inputs!C34",
+     "kind": "SOURCED (DE)",
+     "sentence": "EUR 61.17: the monitor's 12-month value on 17 October 2026, which I rejected (decision log in Question 4)."
+    },
+    {
+     "number": "30%",
+     "status": "MATCHED",
+     "why": "Assumed grid emission factor, t CO2 per MWh (ASSUMPTION, replace with audited factor)",
+     "source": "proposal_facts.py:co2_factor",
+     "kind": "ASSUMPTION",
+     "sentence": "Count the premium on the 30% sold to the grid while the businesses buy (the model does not)"
+    },
+    {
+     "number": "20,000",
+     "status": "MATCHED",
+     "why": "Asset management, SPV admin, audit (both sites) (EUR/yr)",
+     "source": "Inputs!C35",
+     "kind": "ASSUMPTION",
+     "sentence": "20,000 random futures"
+    },
+    {
+     "number": "20,000",
+     "status": "MATCHED",
+     "why": "Monte Carlo paths simulated",
+     "source": "mc_results.json:n_paths",
+     "kind": "MONTE CARLO",
+     "sentence": "A Monte Carlo simulation draws sunshine, prices and businesses leaving at random for each of 20,000 fifteen-year paths, with the premium won, and counts how often investors miss a payment."
+    },
+    {
+     "number": "2%",
+     "status": "MATCHED",
+     "why": "Share of paths with at least one missed payment [base]",
+     "source": "mc_results.json:base.p_missed",
+     "kind": "MONTE CARLO",
+     "sentence": "At my 2% assumption, 2.3% of 20,000 futures miss a payment and 97.7% pay on time."
+    },
+    {
+     "number": "2.3%",
+     "status": "MATCHED",
+     "why": "Share of paths with at least one missed payment [base]",
+     "source": "mc_results.json:base.p_missed",
+     "kind": "MONTE CARLO",
+     "sentence": "At my 2% assumption, 2.3% of 20,000 futures miss a payment and 97.7% pay on time."
+    },
+    {
+     "number": "20,000",
+     "status": "MATCHED",
+     "why": "Asset management, SPV admin, audit (both sites) (EUR/yr)",
+     "source": "Inputs!C35",
+     "kind": "ASSUMPTION",
+     "sentence": "At my 2% assumption, 2.3% of 20,000 futures miss a payment and 97.7% pay on time."
+    },
+    {
+     "number": "97.7%",
+     "status": "MATCHED",
+     "why": "Share of paths with all bond payments on time [base]",
+     "source": "mc_results.json:base.p_all_on_time",
+     "kind": "MONTE CARLO",
+     "sentence": "At my 2% assumption, 2.3% of 20,000 futures miss a payment and 97.7% pay on time."
+    },
+    {
+     "number": "4%",
+     "status": "MATCHED",
+     "why": "Sponsor IRR incl. power savings before host tax (25 years, reference only) [a]",
+     "source": "Summary!C30",
+     "kind": "MODEL",
+     "sentence": "At 4%, misses roughly double, to 4.5%."
+    },
+    {
+     "number": "4.5%",
+     "status": "MATCHED",
+     "why": "Share of paths with at least one missed payment [hazard_4%]",
+     "source": "mc_results.json:hazard_4%.p_missed",
+     "kind": "MONTE CARLO",
+     "sentence": "At 4%, misses roughly double, to 4.5%."
+    },
+    {
+     "number": "15",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "A business has left by year 15"
+    },
+    {
+     "number": "0%",
+     "status": "MATCHED",
+     "why": "Module degradation (%/yr)",
+     "source": "Inputs!C11",
+     "kind": "ASSUMPTION",
+     "sentence": "0%"
+    },
+    {
+     "number": "0%",
+     "status": "MATCHED",
+     "why": "Module degradation (%/yr)",
+     "source": "Inputs!C11",
+     "kind": "ASSUMPTION",
+     "sentence": "0%"
+    },
+    {
+     "number": "0.5%",
+     "status": "MATCHED",
+     "why": "Net wealth tax on unitary value (assets less debts, 1 January); not deductible (%)",
+     "source": "Inputs!C43",
+     "kind": "SOURCED",
+     "sentence": "0.5%"
+    },
+    {
+     "number": "0.0%",
+     "status": "MATCHED",
+     "why": "Capture price escalation (%/yr)",
+     "source": "Inputs!C22",
+     "kind": "ASSUMPTION",
+     "sentence": "0.0%"
+    },
+    {
+     "number": "1%",
+     "status": "MATCHED",
+     "why": "Host avoidable cost escalation (%/yr)",
+     "source": "Inputs!C18",
+     "kind": "ASSUMPTION",
+     "sentence": "1%"
+    },
+    {
+     "number": "20%",
+     "status": "MATCHED",
+     "why": "Share of paths where a host has stopped buying by year 15 [hazard_1%]",
+     "source": "mc_results.json:by_host_hazard.1%.p_any_host_left_by_15",
+     "kind": "MONTE CARLO",
+     "sentence": "20%"
+    },
+    {
+     "number": "6.9%",
+     "status": "MATCHED",
+     "why": "Share of paths: reserve drawn, all paid [hazard_1%]",
+     "source": "mc_results.json:hazard_1%.p_reserve_no_miss",
+     "kind": "MONTE CARLO",
+     "sentence": "6.9%"
+    },
+    {
+     "number": "1.1%",
+     "status": "MATCHED",
+     "why": "Share of paths with at least one missed payment [hazard_1%]",
+     "source": "mc_results.json:hazard_1%.p_missed",
+     "kind": "MONTE CARLO",
+     "sentence": "1.1%"
+    },
+    {
+     "number": "2%",
+     "status": "MATCHED",
+     "why": "Share of paths with at least one missed payment [base]",
+     "source": "mc_results.json:base.p_missed",
+     "kind": "MONTE CARLO",
+     "sentence": "2%my base case (A)"
+    },
+    {
+     "number": "36%",
+     "status": "MATCHED",
+     "why": "Share of paths where a host has stopped buying by year 15 [base]",
+     "source": "mc_results.json:base.p_any_host_left_by_15",
+     "kind": "MONTE CARLO",
+     "sentence": "36%"
+    },
+    {
+     "number": "13.3%",
+     "status": "MATCHED",
+     "why": "Share of paths: reserve drawn, all paid [base]",
+     "source": "mc_results.json:base.p_reserve_no_miss",
+     "kind": "MONTE CARLO",
+     "sentence": "13.3%"
+    },
+    {
+     "number": "2.3%",
+     "status": "MATCHED",
+     "why": "Share of paths with at least one missed payment [base]",
+     "source": "mc_results.json:base.p_missed",
+     "kind": "MONTE CARLO",
+     "sentence": "2.3%"
+    },
+    {
+     "number": "4%",
+     "status": "MATCHED",
+     "why": "Sponsor IRR incl. power savings before host tax (25 years, reference only) [a]",
+     "source": "Summary!C30",
+     "kind": "MODEL",
+     "sentence": "4%"
+    },
+    {
+     "number": "60%",
+     "status": "MATCHED",
+     "why": "Share of paths where a host has stopped buying by year 15 [hazard_4%]",
+     "source": "mc_results.json:by_host_hazard.4%.p_any_host_left_by_15",
+     "kind": "MONTE CARLO",
+     "sentence": "60%"
+    },
+    {
+     "number": "25.1%",
+     "status": "MATCHED",
+     "why": "Share of paths: reserve drawn, all paid [hazard_4%]",
+     "source": "mc_results.json:hazard_4%.p_reserve_no_miss",
+     "kind": "MONTE CARLO",
+     "sentence": "25.1%"
+    },
+    {
+     "number": "4.5%",
+     "status": "MATCHED",
+     "why": "Share of paths with at least one missed payment [hazard_4%]",
+     "source": "mc_results.json:hazard_4%.p_missed",
+     "kind": "MONTE CARLO",
+     "sentence": "4.5%"
+    },
+    {
+     "number": "20,000",
+     "status": "MATCHED",
+     "why": "Monte Carlo paths simulated",
+     "source": "mc_results.json:n_paths",
+     "kind": "MONTE CARLO",
+     "sentence": "20,000 paths, fixed seed 20261012."
+    },
+    {
+     "number": "20261012",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "20,000 paths, fixed seed 20261012."
+    },
+    {
+     "number": "4.9%",
+     "status": "MATCHED",
+     "why": "Owner equity return with a bank loan at KfW class A + 1% fee, after-tax savings, grid EUR 121.9",
+     "source": "feasibility_facts.py:cost.sponsor_irr_bank_A_121_9",
+     "kind": "MODEL (engine)",
+     "sentence": "Each year's sunshine varies with a standard deviation of 4.9%; a lasting error in the sunshine estimate of 4%; market prices with 15% volatility; each business leaves with a 2% chance a year, half of it a shared shock that hits both (A)."
+    },
+    {
+     "number": "4%",
+     "status": "MATCHED",
+     "why": "Persistent P50 error SD (ASSUMPTION)",
+     "source": "mc_results.json:cfg.p50_error_sd",
+     "kind": "MONTE CARLO",
+     "sentence": "Each year's sunshine varies with a standard deviation of 4.9%; a lasting error in the sunshine estimate of 4%; market prices with 15% volatility; each business leaves with a 2% chance a year, half of it a shared shock that hits both (A)."
+    },
+    {
+     "number": "15%",
+     "status": "MATCHED",
+     "why": "Yearly capture price volatility (ASSUMPTION)",
+     "source": "mc_results.json:cfg.capture_vol",
+     "kind": "MONTE CARLO",
+     "sentence": "Each year's sunshine varies with a standard deviation of 4.9%; a lasting error in the sunshine estimate of 4%; market prices with 15% volatility; each business leaves with a 2% chance a year, half of it a shared shock that hits both (A)."
+    },
+    {
+     "number": "2%",
+     "status": "MATCHED",
+     "why": "Yearly chance each host stops buying (ASSUMPTION)",
+     "source": "mc_results.json:cfg.host_hazard_total",
+     "kind": "MONTE CARLO",
+     "sentence": "Each year's sunshine varies with a standard deviation of 4.9%; a lasting error in the sunshine estimate of 4%; market prices with 15% volatility; each business leaves with a 2% chance a year, half of it a shared shock that hits both (A)."
+    },
+    {
+     "number": "3",
+     "status": "MATCHED-WEAK",
+     "why": "Direct marketing fee (EUR/MWh exported)",
+     "source": "Inputs!C28",
+     "kind": "SOURCED (DE)",
+     "sentence": "QUESTION 3"
+    },
+    {
+     "number": "EUR 500",
+     "status": "MATCHED",
+     "why": "Principal per bond token (also the minimum ticket) (EUR)",
+     "source": "Inputs!C57",
+     "kind": "ASSUMPTION",
+     "sentence": "Professional and retail investors from EUR 500, after the bank's identity and appropriateness checks"
+    },
+    {
+     "number": "15",
+     "status": "MATCHED-WEAK",
+     "why": "Premium contract tenor (years)",
+     "source": "Inputs!C27",
+     "kind": "SOURCED",
+     "sentence": "15 years5.1%-7.0%"
+    },
+    {
+     "number": "7.0%",
+     "status": "MATCHED",
+     "why": "Zonnepark De Willemshoek retail bond, 15y, EUR 2.0M, 2024",
+     "source": "https://mijnstroom.zonnepanelendelen.nl/documents/1222/2024-04-16_Informatie_Memorandum_Zonnepark_De_Willemshoek.pdf",
+     "kind": "EXTERNAL",
+     "sentence": "15 years5.1%-7.0%"
+    },
+    {
+     "number": "6.5%",
+     "status": "MATCHED",
+     "why": "Bond coupon (15y amortising, senior) (%)",
+     "source": "Inputs!C50",
+     "kind": "DERIVED",
+     "sentence": "The bond's 6.5% interest plus raising costs of EUR 200,000 and running costs of EUR 20,000 a year (A)."
+    },
+    {
+     "number": "EUR 200,000",
+     "status": "MATCHED",
+     "why": "Issuance costs (placement fee + legal + register/token set-up)",
+     "source": "'Sources & Uses'!C6",
+     "kind": "MODEL",
+     "sentence": "The bond's 6.5% interest plus raising costs of EUR 200,000 and running costs of EUR 20,000 a year (A)."
+    },
+    {
+     "number": "EUR 20,000",
+     "status": "MATCHED",
+     "why": "Bond running costs (vehicle, paying/calculation agent, platform, token ops) (EUR/yr)",
+     "source": "Inputs!C38",
+     "kind": "ASSUMPTION",
+     "sentence": "The bond's 6.5% interest plus raising costs of EUR 200,000 and running costs of EUR 20,000 a year (A)."
+    },
+    {
+     "number": "270",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "Bank: KfW 270 rates, +1% fee (A); there is no public Luxembourg rate."
+    },
+    {
+     "number": "1%",
+     "status": "MATCHED",
+     "why": "Bank arrangement fee, share of loan (ASSUMPTION)",
+     "source": "feasibility_facts.py:cost.bank_fee",
+     "kind": "ASSUMPTION",
+     "sentence": "Bank: KfW 270 rates, +1% fee (A); there is no public Luxembourg rate."
+    },
+    {
+     "number": "EUR 67",
+     "status": "MATCHED",
+     "why": "Bond running cost per investor a year at the 300-investor target, EUR (A)",
+     "source": "proposal_facts.py:cost_per_investor",
+     "kind": "ASSUMPTION",
+     "sentence": "Many small investors need cheap servicing: about EUR 67 per investor a year at 300 investors (A)."
+    },
+    {
+     "number": "300",
+     "status": "MATCHED",
+     "why": "Target number of investors (ASSUMPTION)",
+     "source": "proposal_facts.py:investors_target",
+     "kind": "ASSUMPTION",
+     "sentence": "Many small investors need cheap servicing: about EUR 67 per investor a year at 300 investors (A)."
+    },
+    {
+     "number": "30",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "The tender award for both roofs (bids close 30 October 2026), and a EUR 210,000 completion security to the state, lost if the roofs are not built within 24 months."
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "The tender award for both roofs (bids close 30 October 2026), and a EUR 210,000 completion security to the state, lost if the roofs are not built within 24 months."
+    },
+    {
+     "number": "EUR 210,000",
+     "status": "MATCHED",
+     "why": "Tender bank guarantee for both roofs: EUR 35,000 x 3.0 MWc x 2 (derived)",
+     "source": "research/ministry-2026-10-16/cahier-des-charges-AO8-2026-07-28.pdf (Luxembourg Ministry of the Economy, 8th PV tender, art. 7.3)",
+     "kind": "EXTERNAL",
+     "sentence": "The tender award for both roofs (bids close 30 October 2026), and a EUR 210,000 completion security to the state, lost if the roofs are not built within 24 months."
+    },
+    {
+     "number": "24",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "The tender award for both roofs (bids close 30 October 2026), and a EUR 210,000 completion security to the state, lost if the roofs are not built within 24 months."
+    },
+    {
+     "number": "25",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "A registered 25-year roof right that survives a sale of the building."
+    },
+    {
+     "number": "16",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "On 16 October 2026 it sent the tender rules (cahier des charges, 8th round, art. 2.2): every use of the power that Luxembourg's 2007 electricity law allows is accepted, and the premium is paid only on power sent to the grid."
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "On 16 October 2026 it sent the tender rules (cahier des charges, 8th round, art. 2.2): every use of the power that Luxembourg's 2007 electricity law allows is accepted, and the premium is paid only on power sent to the grid."
+    },
+    {
+     "number": "8",
+     "status": "CONTEXT",
+     "why": "ordinal (e.g. 8th round)",
+     "sentence": "On 16 October 2026 it sent the tender rules (cahier des charges, 8th round, art. 2.2): every use of the power that Luxembourg's 2007 electricity law allows is accepted, and the premium is paid only on power sent to the grid."
+    },
+    {
+     "number": "2.2",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "On 16 October 2026 it sent the tender rules (cahier des charges, 8th round, art. 2.2): every use of the power that Luxembourg's 2007 electricity law allows is accepted, and the premium is paid only on power sent to the grid."
+    },
+    {
+     "number": "2007",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "On 16 October 2026 it sent the tender rules (cahier des charges, 8th round, art. 2.2): every use of the power that Luxembourg's 2007 electricity law allows is accepted, and the premium is paid only on power sent to the grid."
+    },
+    {
+     "number": "30%",
+     "status": "MATCHED",
+     "why": "Share of paths where the reserve is drawn [hazard_4%]",
+     "source": "mc_results.json:hazard_4%.p_reserve_used",
+     "kind": "MONTE CARLO",
+     "sentence": "The model does not count the premium on the 30% surplus while the businesses buy power, so on this one point the plan is cautious."
+    },
+    {
+     "number": "4",
+     "status": "MATCHED-WEAK",
+     "why": "Roof lease (EUR/kWp/yr)",
+     "source": "Inputs!C34",
+     "kind": "SOURCED (DE)",
+     "sentence": "QUESTION 4"
+    },
+    {
+     "number": "5.5",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "Claude (Opus 5.5) reads each sentence for promises the other two cannot see."
+    },
+    {
+     "number": "7",
+     "status": "MATCHED-WEAK",
+     "why": "Years with owners locked out [b]",
+     "source": "Summary!D36",
+     "kind": "MODEL",
+     "sentence": "7 of 7 caught."
+    },
+    {
+     "number": "7",
+     "status": "MATCHED-WEAK",
+     "why": "Years with owners locked out [b]",
+     "source": "Summary!D36",
+     "kind": "MODEL",
+     "sentence": "7 of 7 caught."
+    },
+    {
+     "number": "4",
+     "status": "MATCHED-WEAK",
+     "why": "Roof lease (EUR/kWp/yr)",
+     "source": "Inputs!C34",
+     "kind": "SOURCED (DE)",
+     "sentence": "Only Claude caught sentence 4: it has no number and no flagged word, yet it promises easy selling."
+    },
+    {
+     "number": "2.2",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "The two points on the factsheet, both low severity: Claude wanted a source for the line that the tender rules allow on-site sale (it is art. 2.2 of the tender rules the Ministry sent, cited in the proposal), and wanted the factsheet to say how investors can enforce the pledge (two thirds of the amount owed can vote to, as the proposal says)."
+    },
+    {
+     "number": "17",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "Found on 17 Oct, 10:58: solar price, last 12 months"
+    },
+    {
+     "number": "10",
+     "status": "CONTEXT",
+     "why": "clock time or duration",
+     "sentence": "Found on 17 Oct, 10:58: solar price, last 12 months"
+    },
+    {
+     "number": "58",
+     "status": "CONTEXT",
+     "why": "clock time or duration",
+     "sentence": "Found on 17 Oct, 10:58: solar price, last 12 months"
+    },
+    {
+     "number": "12",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Found on 17 Oct, 10:58: solar price, last 12 months"
+    },
+    {
+     "number": "EUR 61.17",
+     "status": "MATCHED",
+     "why": "Monitor run 2026-10-17_1055: DE-LU solar capture price, trailing 12 months 2025-10-17 to 2026-10-16 (EUR/MWh)",
+     "source": "monitor/runs/2026-10-17_1055/report.json",
+     "kind": "MONITOR RUN",
+     "sentence": "EUR 61.17"
+    },
+    {
+     "number": "2025",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "2025-10-17 to 2026-10-16; Fraunhofer ISE energy-charts API"
+    },
+    {
+     "number": "10",
+     "status": "CONTEXT",
+     "why": "date or run id",
+     "sentence": "2025-10-17 to 2026-10-16; Fraunhofer ISE energy-charts API"
+    },
+    {
+     "number": "17",
+     "status": "CONTEXT",
+     "why": "date or run id",
+     "sentence": "2025-10-17 to 2026-10-16; Fraunhofer ISE energy-charts API"
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "2025-10-17 to 2026-10-16; Fraunhofer ISE energy-charts API"
+    },
+    {
+     "number": "10",
+     "status": "CONTEXT",
+     "why": "date or run id",
+     "sentence": "2025-10-17 to 2026-10-16; Fraunhofer ISE energy-charts API"
+    },
+    {
+     "number": "16",
+     "status": "CONTEXT",
+     "why": "date or run id",
+     "sentence": "2025-10-17 to 2026-10-16; Fraunhofer ISE energy-charts API"
+    },
+    {
+     "number": "EUR 45",
+     "status": "MATCHED",
+     "why": "Merchant solar capture price, year 1 (EUR/MWh)",
+     "source": "Inputs!C21",
+     "kind": "SOURCED",
+     "sentence": "EUR 45"
+    },
+    {
+     "number": "2025",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "official full-year 2025 value, the one the state premium uses"
+    },
+    {
+     "number": "14",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "A first run on 14 Oct found EUR 60.67."
+    },
+    {
+     "number": "EUR 60.67",
+     "status": "MATCHED",
+     "why": "Monitor run 2026-10-14_1852 (decided): DE-LU solar capture price, trailing 12 months 2025-10-14 to 2026-10-13 (EUR/MWh)",
+     "source": "monitor/runs/2026-10-14_1852/report.json",
+     "kind": "MONITOR RUN",
+     "sentence": "A first run on 14 Oct found EUR 60.67."
+    },
+    {
+     "number": "EUR 45",
+     "status": "MATCHED",
+     "why": "Merchant solar capture price, year 1 (EUR/MWh)",
+     "source": "Inputs!C21",
+     "kind": "SOURCED",
+     "sentence": "Both times I kept EUR 45."
+    },
+    {
+     "number": "15",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "The bond runs 15 years and the past year includes the 2026 gas price shock; only the 30% sold to the grid depends on this price."
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "The bond runs 15 years and the past year includes the 2026 gas price shock; only the 30% sold to the grid depends on this price."
+    },
+    {
+     "number": "30%",
+     "status": "MATCHED",
+     "why": "Assumed grid emission factor, t CO2 per MWh (ASSUMPTION, replace with audited factor)",
+     "source": "proposal_facts.py:co2_factor",
+     "kind": "ASSUMPTION",
+     "sentence": "The bond runs 15 years and the past year includes the 2026 gas price shock; only the 30% sold to the grid depends on this price."
+    },
+    {
+     "number": "2",
+     "status": "MATCHED-WEAK",
+     "why": "Number of rooftops in the programme (one bond) (count)",
+     "source": "Inputs!C7",
+     "kind": "FICTIONAL",
+     "sentence": "Try other prices in Question 2."
+    },
+    {
+     "number": "EUR 45",
+     "status": "MATCHED",
+     "why": "Merchant solar capture price, year 1 (EUR/MWh)",
+     "source": "Inputs!C21",
+     "kind": "SOURCED",
+     "sentence": "At EUR 45"
+    },
+    {
+     "number": "EUR 61.17",
+     "status": "MATCHED",
+     "why": "Monitor run 2026-10-17_1055: DE-LU solar capture price, trailing 12 months 2025-10-17 to 2026-10-16 (EUR/MWh)",
+     "source": "monitor/runs/2026-10-17_1055/report.json",
+     "kind": "MONITOR RUN",
+     "sentence": "At EUR 61.17"
+    },
+    {
+     "number": "1.50x",
+     "status": "MATCHED",
+     "why": "Minimum DSCR over bond life [a]",
+     "source": "Summary!C20",
+     "kind": "MODEL",
+     "sentence": "1.50x"
+    },
+    {
+     "number": "1.59x",
+     "status": "MATCHED",
+     "why": "Average DSCR over bond life [a]",
+     "source": "Summary!C21",
+     "kind": "MODEL",
+     "sentence": "1.59x"
+    },
+    {
+     "number": "5",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Lowest cover, both businesses leave in year 5"
+    },
+    {
+     "number": "0.94x",
+     "status": "MATCHED",
+     "why": "Minimum DSCR over bond life [b]",
+     "source": "Summary!D20",
+     "kind": "MODEL",
+     "sentence": "0.94x"
+    },
+    {
+     "number": "0.94x",
+     "status": "MATCHED",
+     "why": "Minimum DSCR over bond life [b]",
+     "source": "Summary!D20",
+     "kind": "MODEL",
+     "sentence": "0.94x"
+    },
+    {
+     "number": "1",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Year-1 revenue, plan"
+    },
+    {
+     "number": "EUR 532,224",
+     "status": "MATCHED",
+     "why": "Year-1 revenue [a]",
+     "source": "Summary!C17",
+     "kind": "MODEL",
+     "sentence": "EUR 532,224"
+    },
+    {
+     "number": "EUR 561,039",
+     "status": "MATCHED",
+     "why": "Monitor run 2026-10-17_1055: Year-1 revenue, plan at the monitored price",
+     "source": "monitor/runs/2026-10-17_1055/report.json",
+     "kind": "MONITOR RUN",
+     "sentence": "EUR 561,039"
+    },
+    {
+     "number": "14",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "14 Oct, 18:12"
+    },
+    {
+     "number": "18",
+     "status": "CONTEXT",
+     "why": "clock time or duration",
+     "sentence": "14 Oct, 18:12"
+    },
+    {
+     "number": "12",
+     "status": "CONTEXT",
+     "why": "clock time or duration",
+     "sentence": "14 Oct, 18:12"
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "2026-10-14_1809_SIM"
+    },
+    {
+     "number": "10",
+     "status": "CONTEXT",
+     "why": "date or run id",
+     "sentence": "2026-10-14_1809_SIM"
+    },
+    {
+     "number": "14",
+     "status": "CONTEXT",
+     "why": "date or run id",
+     "sentence": "2026-10-14_1809_SIM"
+    },
+    {
+     "number": "145",
+     "status": "MATCHED",
+     "why": "Luxembourg band ID business price 2025, energy + network only (0.1083 + 0.0366 EUR/kWh), EUR/MWh; the model's savings basis until 2026-10-13",
+     "source": "research/r4-lux-solar-inputs.md; Eurostat nrg_pc_205_c",
+     "kind": "EXTERNAL",
+     "sentence": "Drift-detection test with simulated host_cost=145; not market data"
+    },
+    {
+     "number": "14",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "14 Oct, 18:12"
+    },
+    {
+     "number": "18",
+     "status": "CONTEXT",
+     "why": "clock time or duration",
+     "sentence": "14 Oct, 18:12"
+    },
+    {
+     "number": "12",
+     "status": "CONTEXT",
+     "why": "clock time or duration",
+     "sentence": "14 Oct, 18:12"
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "2026-10-14_1809_SIM-2"
+    },
+    {
+     "number": "10",
+     "status": "CONTEXT",
+     "why": "date or run id",
+     "sentence": "2026-10-14_1809_SIM-2"
+    },
+    {
+     "number": "14",
+     "status": "CONTEXT",
+     "why": "date or run id",
+     "sentence": "2026-10-14_1809_SIM-2"
+    },
+    {
+     "number": "2",
+     "status": "MATCHED-WEAK",
+     "why": "Number of rooftops in the programme (one bond) (count)",
+     "source": "Inputs!C7",
+     "kind": "FICTIONAL",
+     "sentence": "2026-10-14_1809_SIM-2"
+    },
+    {
+     "number": "30",
+     "status": "MATCHED",
+     "why": "8th tender closes 30 Oct 2026",
+     "source": "https://guichet.public.lu/dam-assets/catalogue-pdf/appel-offres-electricite/8e-ao-photovoltaique-grande-centrale/avis-publication-fr.pdf",
+     "kind": "EXTERNAL",
+     "sentence": "Drift-detection test with simulated capture=30; not market data"
+    },
+    {
+     "number": "14",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "14 Oct, 19:09"
+    },
+    {
+     "number": "19",
+     "status": "CONTEXT",
+     "why": "clock time or duration",
+     "sentence": "14 Oct, 19:09"
+    },
+    {
+     "number": "09",
+     "status": "CONTEXT",
+     "why": "clock time or duration",
+     "sentence": "14 Oct, 19:09"
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "2026-10-14_1852"
+    },
+    {
+     "number": "10",
+     "status": "CONTEXT",
+     "why": "date or run id",
+     "sentence": "2026-10-14_1852"
+    },
+    {
+     "number": "14",
+     "status": "CONTEXT",
+     "why": "date or run id",
+     "sentence": "2026-10-14_1852"
+    },
+    {
+     "number": "2025",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "Keep calendar-2025 value (EUR 45) as conservative base; trailing 12-month value noted; review next semester"
+    },
+    {
+     "number": "EUR 45",
+     "status": "MATCHED",
+     "why": "DE-LU solar market value 2025, EUR/MWh",
+     "source": "https://www.green-2-market.de/marktwert-solar/",
+     "kind": "EXTERNAL",
+     "sentence": "Keep calendar-2025 value (EUR 45) as conservative base; trailing 12-month value noted; review next semester"
+    },
+    {
+     "number": "12",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Keep calendar-2025 value (EUR 45) as conservative base; trailing 12-month value noted; review next semester"
+    },
+    {
+     "number": "17",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "17 Oct, 12:06"
+    },
+    {
+     "number": "12",
+     "status": "CONTEXT",
+     "why": "clock time or duration",
+     "sentence": "17 Oct, 12:06"
+    },
+    {
+     "number": "06",
+     "status": "CONTEXT",
+     "why": "clock time or duration",
+     "sentence": "17 Oct, 12:06"
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "2026-10-17_1055"
+    },
+    {
+     "number": "10",
+     "status": "CONTEXT",
+     "why": "date or run id",
+     "sentence": "2026-10-17_1055"
+    },
+    {
+     "number": "17",
+     "status": "CONTEXT",
+     "why": "date or run id",
+     "sentence": "2026-10-17_1055"
+    },
+    {
+     "number": "14",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "Same as 14 Oct: keep the official 2025 value (EUR 45) as the conservative base; 12-month value EUR 61.17 noted"
+    },
+    {
+     "number": "2025",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "Same as 14 Oct: keep the official 2025 value (EUR 45) as the conservative base; 12-month value EUR 61.17 noted"
+    },
+    {
+     "number": "EUR 45",
+     "status": "MATCHED",
+     "why": "DE-LU solar market value 2025, EUR/MWh",
+     "source": "https://www.green-2-market.de/marktwert-solar/",
+     "kind": "EXTERNAL",
+     "sentence": "Same as 14 Oct: keep the official 2025 value (EUR 45) as the conservative base; 12-month value EUR 61.17 noted"
+    },
+    {
+     "number": "12",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Same as 14 Oct: keep the official 2025 value (EUR 45) as the conservative base; 12-month value EUR 61.17 noted"
+    },
+    {
+     "number": "EUR 61.17",
+     "status": "MATCHED",
+     "why": "Monitor run 2026-10-17_1055: DE-LU solar capture price, trailing 12 months 2025-10-17 to 2026-10-16 (EUR/MWh)",
+     "source": "monitor/runs/2026-10-17_1055/report.json",
+     "kind": "MONITOR RUN",
+     "sentence": "Same as 14 Oct: keep the official 2025 value (EUR 45) as the conservative base; 12-month value EUR 61.17 noted"
+    },
+    {
+     "number": "14",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "Run reports: 14 Oct, 17 Oct."
+    },
+    {
+     "number": "17",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "Run reports: 14 Oct, 17 Oct."
+    },
+    {
+     "number": "1",
+     "status": "MATCHED-WEAK",
+     "why": "Availability (%)",
+     "source": "Inputs!C10",
+     "kind": "ASSUMPTION",
+     "sentence": "Open the factsheet (PDF, 1 page)"
+    },
+    {
+     "number": "4",
+     "status": "MATCHED-WEAK",
+     "why": "Roof lease (EUR/kWp/yr)",
+     "source": "Inputs!C34",
+     "kind": "SOURCED (DE)",
+     "sentence": "A blind test of the claim checker, with mistakes planted by an AI agent that had not seen its code (Question 4)."
+    },
+    {
+     "number": "5",
+     "status": "CONTEXT",
+     "why": "clock time or duration",
+     "sentence": "Video walkthroughMP4, 5:17, 24 MB"
+    },
+    {
+     "number": "17",
+     "status": "CONTEXT",
+     "why": "clock time or duration",
+     "sentence": "Video walkthroughMP4, 5:17, 24 MB"
+    },
+    {
+     "number": "24",
+     "status": "CONTEXT",
+     "why": "file size",
+     "sentence": "Video walkthroughMP4, 5:17, 24 MB"
+    },
+    {
+     "number": "3",
+     "status": "MATCHED-WEAK",
+     "why": "Direct marketing fee (EUR/MWh exported)",
+     "source": "Inputs!C28",
+     "kind": "SOURCED (DE)",
+     "sentence": "ProposalPDF, 3 pages"
+    },
+    {
+     "number": "1",
+     "status": "MATCHED-WEAK",
+     "why": "Availability (%)",
+     "source": "Inputs!C10",
+     "kind": "ASSUMPTION",
+     "sentence": "Investor factsheetPDF, 1 page"
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "Latest monitor run17 Oct 2026, rejected: EUR 45 kept"
+    },
+    {
+     "number": "EUR 45",
+     "status": "MATCHED",
+     "why": "Merchant solar capture price, year 1 (EUR/MWh)",
+     "source": "Inputs!C21",
+     "kind": "SOURCED",
+     "sentence": "Latest monitor run17 Oct 2026, rejected: EUR 45 kept"
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "Fictional case for the LHoFT Best Case Study Competition 2026 (STOKR challenge)."
+    },
+    {
+     "number": "5.5",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "Tools: Excel, Python, Claude Opus 5.5 in Claude Code; video built with HyperFrames; voice: Manuel Suhrcke."
+    }
+   ],
+   "wording": [
+    {
+     "phrase": "guaranteed",
+     "status": "OK-NEGATED",
+     "why": "implies guaranteed repayment",
+     "sentence": "Power sales from two 3.0 MWp roofs only; not guaranteed"
+    },
+    {
+     "phrase": "guaranteed",
+     "status": "OK-NEGATED",
+     "why": "implies guaranteed repayment",
+     "sentence": "Not guaranteed by"
+    },
+    {
+     "phrase": "guaranteed",
+     "status": "OK-QUOTED",
+     "why": "implies guaranteed repayment",
+     "sentence": "A word list flags risky words such as \"guaranteed\" unless negated."
+    }
+   ],
+   "promises": {
+    "findings": [],
+    "model": "claude-opus-5-5",
+    "usage": {
+     "input_tokens": 9533,
+     "output_tokens": 1809
+    }
+   }
+  }
+ ]
+}

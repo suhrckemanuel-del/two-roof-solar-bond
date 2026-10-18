@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Investor factsheet</title>
+<style>
+  @page { size: A4; margin: 12mm 14mm 10mm; }
+  :root { --ink: #1b2430; --muted: #5b6573; --line: #d3d9e0; --soft: #eef1f4; --navy: #1f3a5f; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, Helvetica, sans-serif; color: var(--ink); font-size: 8.6pt; line-height: 1.34; background: #fff; }
+  .mark { font-size: 7.2pt; color: var(--muted); }
+  h1 { font-size: 17pt; line-height: 1.1; margin: 1mm 0 1mm; color: var(--navy); }
+  h1 span { font-size: 11pt; color: var(--muted); font-weight: 400; }
+  .lede { font-size: 9.4pt; max-width: 170mm; margin-bottom: 2mm; }
+  h2 { font-size: 9.6pt; color: var(--navy); margin: 2.5mm 0 .9mm; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; column-gap: 8mm; }
+  table { width: 100%; border-collapse: collapse; }
+  td, th { padding: .6mm 0; vertical-align: top; border-bottom: 1px solid var(--soft); text-align: left; }
+  td.k { color: var(--muted); width: 30%; padding-right: 2mm; }
+  th { font-size: 7.4pt; color: var(--muted); font-weight: 700; border-bottom: 1px solid var(--line); }
+  .num td, .num th { text-align: right; padding-left: 2mm; }
+  .num td:first-child, .num th:first-child { text-align: left; padding-left: 0; }
+  .big { font-size: 13pt; white-space: nowrap; font-weight: 700; color: var(--navy); line-height: 1.1; }
+  .pay { display: grid; grid-template-columns: 1fr 1fr 1.25fr; column-gap: 4mm; margin: 1mm 0 1.5mm; }
+  .pay div span { display: block; font-size: 7.4pt; color: var(--muted); }
+  ul { padding-left: 4mm; }
+  li { margin-bottom: .8mm; }
+  p + p { margin-top: 1.2mm; }
+  th.cap { font-weight: 400; }
+  .foot { margin-top: 2mm; padding-top: 1.5mm; border-top: 1px solid var(--line); font-size: 6.8pt; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="mark">Fictional case study and mock-up, not an offer. Company, roofs, hosts, owners and contracts are invented. (A) = my assumption, not a sourced fact.</div>
+<h1>Two-Roof Solar Bond<br><span>Investor factsheet, plain-language version</span></h1>
+<p class="lede">You lend money to a small Luxembourg company that owns solar panels on two commercial roofs. It plans to pay you back over 15 years from what it earns selling the electricity, one of the safest income streams there is. If the panels or the power contracts underperform, payments can be late or lower, and you could lose money. Your bond is recorded as a token on the Liquid network, but it is designed to be an ordinary bond under financial law (this needs a legal opinion).</p>
+
+<div class="cols">
+<div>
+  <h2>Key terms</h2>
+  <table>
+    <tr><td class="k">Issuer</td><td>Two-Roof Solar S.&agrave; r.l. (fictional)</td></tr>
+    <tr><td class="k">Amount raised</td><td>EUR 2,000,000</td></tr>
+    <tr><td class="k">Interest, term</td><td>6.5% a year, fixed, for 15 years</td></tr>
+    <tr><td class="k">Repayment</td><td>Interest paid each year, with all of your money repaid in one amount at the end</td></tr>
+    <tr><td class="k">Minimum</td><td>EUR 500 (one token), after the selling bank's identity and appropriateness checks. Retail and professional investors have equal rights.</td></tr>
+    <tr><td class="k">Paid in</td><td>EUR, to your bank account (A)</td></tr>
+    <tr><td class="k">Late payments</td><td>A missed amount stays owed with interest and is paid first from later cash, so you still receive everything you are owed, just later. Owners get nothing meanwhile (A)</td></tr>
+    <tr><td class="k">Security</td><td>Pledge over the company's shares, bank accounts and power contracts, held for all investors by a bondholder representative (A). It is the only debt, ahead of EUR 3.1M of owner money, so your capital is protected. A failing project's assets may be worth little.</td></tr>
+    <tr><td class="k">Cash reserve</td><td>EUR 110,000, half of one yearly payment, set aside at the start</td></tr>
+    <tr><td class="k">Fees for you</td><td>None planned; the company pays custody (A); your bank may charge its own</td></tr>
+  </table>
+
+  <h2>What you get for each EUR 500</h2>
+  <div class="pay">
+    <div><div class="big">EUR 53.18</div><span>paid each year if all goes to plan</span></div>
+    <div><div class="big">EUR 32.50</div><span>of the first payment is interest</span></div>
+    <div><div class="big">EUR 797.65</div><span>in total over 15 years if every payment is made</span></div>
+  </div>
+  <p>Each payment is interest plus a growing part of your EUR 500 back. None of these amounts is guaranteed.</p>
+
+  <h2>Where the money to pay you comes from</h2>
+  <p>Only from selling electricity from the two roofs (each 3 MWp):</p>
+  <ul>
+    <li>Two businesses in the buildings (the hosts) each buy 70% of their roof's power for 20 years at EUR 110 per MWh in year 1, rising 1% a year; only these contracts run past the bond. A host may stop early: the model assumes a 2% yearly chance per host (A), so about a 36% chance one stops by year 15.</li>
+    <li>The rest goes to the grid at the market price: about EUR 45 per MWh in 2023, changing every year.</li>
+    <li>If a host stops buying, that roof's power goes to the grid with the state premium (the bond is issued only once the 2026 tender is won, A): a top-up to about EUR 92.5 per MWh until year 15, but nothing in negative-price hours (about 15% of that power, A). The tender rules allow on-site sale.</li>
+  </ul>
+  <p>The hosts' shared holding company owns the company, so if the hosts struggle, both its main income and its owners' support weaken. Nobody else backs the payments: not STOKR, the selling bank, the state or the token itself.</p>
+</div>
+
+<div>
+  <h2>Downside: both hosts stop buying in year 5</h2>
+  <p>All power then goes to the grid, and the state steps in through the premium where the hosts left off. Cash available after running costs and taxes falls by about a quarter at first and by more than a third by year 15.</p>
+  <table class="num">
+    <tr><th colspan="4" class="cap">Cash available (EUR, model); payment due each year: EUR 212,706</th></tr>
+    <tr><th>Year</th><th>Plan</th><th>Hosts gone</th><th>Cover, hosts gone</th></tr>
+    <tr><td>1</td><td>350,692</td><td>350,692</td><td>1.65x</td></tr>
+    <tr><td>5</td><td>346,144</td><td>252,378</td><td>1.19x</td></tr>
+    <tr><td>11</td><td>332,173</td><td>222,273</td><td>1.04x</td></tr>
+    <tr><td>15</td><td>318,179</td><td>199,940</td><td>0.94x, paid</td></tr>
+  </table>
+  <p style="margin-top:1.2mm">A bond term (A) stops the owners taking money out in any year when cash available is below 1.01 times the payment due, so from year 9 cash builds up inside the company and covers the gap in years 13-15. In the model every payment is still made, from cash held back from the owners and with the reserve untouched, only if the premium is won and output stays near the central estimate. That is why the bond is issued only once the premium is won. With years of weak sunshine (P90), the reserve runs out and payments are late from year 14.</p>
+  <p>Worse things can happen: long breakdowns, much lower power prices, or several problems at once. Then payments could be late, missed or cut, and you could lose part or all of your money.</p>
+
+  <h2>What this bond is not</h2>
+  <ul>
+    <li>Not a bank deposit. No deposit guarantee scheme covers it.</li>
+    <li>Not guaranteed by STOKR, the bank selling it, the hosts, the owners or the state.</li>
+    <li>Not easy to sell. You can only sell to other approved investors, there may be no buyer, and the price may be below what you paid.</li>
+  </ul>
+
+  <h2>Costs inside the project</h2>
+  <p>Raising the bond costs EUR 200,000 (8% of the amount: placement fee for the bank and STOKR, legal work, register and token set-up), counted in start-up costs. Running it costs about EUR 20,000 a year, paid before you are. Both are estimates (A).</p>
+
+  <h2>If your token or a payment goes wrong</h2>
+  <ul>
+    <li>The official record of who owns the bond is to be kept on the Liquid network by a control agent, a licensed bank, which checks every transfer and payment (to be confirmed).</li>
+    <li>Your bond is held for you in an account at a bank or another custodian licensed for financial instruments, so you never handle keys and can pass it to a buyer straight from your banking app (to be confirmed before launch).</li>
+    <li>Lost access: the custodian resets your login after an identity check; the bond terms are designed to let the control agent freeze lost tokens and reissue them to you (A, not yet final).</li>
+    <li>Wrong payment or balance: tell the selling bank, then if needed the CSSF, Luxembourg's financial regulator.</li>
+  </ul>
+</div>
+</div>
+
+<div class="foot">Fictional case for the LHoFT Best Case Study Competition 2026 (STOKR challenge). Company, roofs, contracts and tender award are invented; market inputs (sunshine, power prices, tender levels, interest-rate benchmarks) are real and dated 2025-2026. Not investment, tax or legal advice.</div>
+</body>
+</html>

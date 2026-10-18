@@ -1,0 +1,969 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Two-Roof Solar Bond</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" href="data:,">
+<meta name="description" content="Demo page for a tokenised EUR 2M solar bond case (LHoFT Best Case Study Competition 2026, STOKR challenge): the model, the downside, the token case and the tools that keep the documents honest.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: a single reading column that continues the proposal PDF (paper, navy, locked chart colours);
+   charts and the checker break out to a wider measure; a thin sticky contents bar under the masthead. */
+:root {
+  --paper: #f6f5f1;
+  --sheet: #ffffff;
+  --ink: #1b2430;
+  --muted: #5b6573;
+  --rule: #d6dadf;
+  --navy: #1f3a5f;
+  --plan: #2a78d6;
+  --stress: #eb6834;
+  --late: #b42318;
+  --neutral: #9aa3ae;
+  --flag: #b07800;
+  --fill-plan: rgba(42, 120, 214, 0.12);
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: Inter, "Segoe UI", system-ui, -apple-system, sans-serif;
+  --measure: 46rem;
+  --wide: 64rem;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #12161c; --sheet: #1a2029; --ink: #e6e9ee; --muted: #9aa4b1; --rule: #2c3440; --navy: #9cb8de;
+    --plan: #5b9ae6; --stress: #f08a5d; --late: #ef6b5b; --neutral: #7d8794; --flag: #e0a93a;
+    --fill-plan: rgba(91, 154, 230, 0.16); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #12161c; --sheet: #1a2029; --ink: #e6e9ee; --muted: #9aa4b1; --rule: #2c3440; --navy: #9cb8de;
+  --plan: #5b9ae6; --stress: #f08a5d; --late: #ef6b5b; --neutral: #7d8794; --flag: #e0a93a;
+  --fill-plan: rgba(91, 154, 230, 0.16); color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font: 400 17px/1.6 var(--sans); font-variant-numeric: tabular-nums;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper); }
+a { color: var(--navy); text-underline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--plan); outline-offset: 2px; border-radius: 2px; }
+.col { max-width: var(--measure); margin: 0 auto; }
+.wide { max-width: var(--wide); margin: 0 auto; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; color: var(--navy); text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2.3rem, 6vw, 3.4rem); line-height: 1.05; letter-spacing: -0.01em; }
+h2 { font-size: clamp(1.6rem, 3.6vw, 2.1rem); line-height: 1.15; }
+h3 { font-size: 1.2rem; line-height: 1.3; }
+p { margin: 0; }
+.eyebrow { font: 600 0.78rem/1.3 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.lead { font-size: 1.15rem; line-height: 1.55; }
+.small { font-size: 0.86rem; color: var(--muted); line-height: 1.5; }
+.stack { display: flex; flex-direction: column; gap: 1rem; }
+.num { font-family: var(--sans); font-weight: 700; color: var(--navy); letter-spacing: -0.02em; }
+.a { color: var(--muted); font-size: 0.85em; }
+
+/* masthead */
+header.mast { padding-block: 3.5rem 2rem; }
+header.mast .stack { gap: 1.1rem; }
+.byline { font-size: 0.9rem; color: var(--muted); }
+.byline b { color: var(--ink); font-weight: 600; }
+.docs { display: flex; flex-wrap: wrap; gap: 0.5rem 1.4rem; font-size: 0.95rem; }
+.docs a { font-weight: 600; }
+
+/* term sheet */
+.terms { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.terms th, .terms td { text-align: left; vertical-align: top; padding: 0.55rem 0; border-top: 1px solid var(--rule); }
+.terms th { font-weight: 500; color: var(--muted); width: 34%; padding-right: 1rem; }
+.terms tr:last-child th, .terms tr:last-child td { border-bottom: 1px solid var(--rule); }
+
+/* contents bar */
+nav.toc { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--paper); border-bottom: 1px solid var(--rule); margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); padding-inline: max(16px, env(safe-area-inset-left, 0px)); }
+nav.toc ol { list-style: none; margin: 0 auto; padding: 0; max-width: var(--wide); display: flex; gap: 1.4rem; overflow-x: auto; scrollbar-width: none; }
+nav.toc li { flex: none; }
+nav.toc a { display: block; padding: 0.8rem 0; font-size: 0.88rem; color: var(--muted); text-decoration: none; border-bottom: 2px solid transparent; }
+nav.toc a b { color: var(--ink); font-weight: 600; margin-right: 0.3rem; }
+nav.toc a.on { color: var(--navy); border-bottom-color: var(--navy); }
+
+section.q { padding-block: 4rem 1rem; scroll-margin-top: 3.2rem; }
+section.q > .col > .stack { gap: 1.2rem; }
+.qnum { font: 600 0.85rem/1 var(--sans); color: var(--muted); letter-spacing: 0.06em; }
+.takeaway { font-family: var(--serif); font-size: 1.25rem; line-height: 1.45; color: var(--ink); }
+.block { margin-top: 2.2rem; }
+.block > h3 { margin-bottom: 0.7rem; }
+
+/* power split */
+.split { display: grid; grid-template-columns: 70fr 30fr; gap: 3px; margin-top: 0.4rem; }
+.split > div { min-width: 0; }
+.split .bar { height: 2.4rem; }
+.split .h .bar { background: var(--navy); }
+.split .g .bar { background: var(--neutral); }
+.split .lab { margin-top: 0.5rem; font-size: 0.9rem; line-height: 1.4; }
+.split .lab b { display: block; font-size: 1.6rem; font-weight: 700; color: var(--navy); }
+.split .g .lab b { color: var(--muted); }
+
+/* payment order */
+ol.order { list-style: none; margin: 0; padding: 0; counter-reset: o; }
+ol.order li { counter-increment: o; display: grid; grid-template-columns: 2rem 1fr; gap: 0.2rem 0.6rem; padding: 0.7rem 0; border-top: 1px solid var(--rule); }
+ol.order li::before { content: counter(o); font: 700 1rem/1.5 var(--sans); color: var(--muted); }
+ol.order li.inv::before { color: var(--navy); }
+ol.order li b { font-weight: 600; }
+ol.order li > span { grid-column: 2; font-size: 0.9rem; color: var(--muted); }
+ol.order li.inv b { color: var(--navy); }
+
+.not { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; font-size: 1.05rem; }
+.not s { text-decoration-thickness: 2px; text-decoration-color: var(--late); color: var(--muted); }
+
+.hero-num { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 1rem; }
+.hero-num .num { font-size: 3.4rem; line-height: 1; }
+
+/* chart */
+.panel { background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; padding: 1.2rem; }
+.seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
+.seg button { font: 500 0.88rem/1.2 var(--sans); padding: 0.55rem 0.9rem; border: 0; border-right: 1px solid var(--rule); background: var(--sheet); color: var(--ink); cursor: pointer; }
+.seg button:last-child { border-right: 0; }
+.seg button[aria-pressed="true"] { background: var(--navy); color: var(--paper); }
+.chart-wrap { overflow-x: auto; margin-top: 1rem; }
+svg.chart { display: block; width: 100%; min-width: 34rem; height: auto; }
+svg.chart text { font: 500 13px var(--sans); fill: var(--muted); }
+svg.chart .end { font-weight: 700; font-size: 15px; }
+.readout { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 1rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
+.readout div { min-width: 0; }
+.readout .k { font-size: 0.8rem; color: var(--muted); }
+.readout .v { font-size: 1.15rem; font-weight: 700; }
+.cond { font-size: 0.9rem; margin-top: 0.8rem; }
+.cond b { font-weight: 600; }
+
+table.data { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+table.data th, table.data td { padding: 0.5rem 0.6rem 0.5rem 0; border-top: 1px solid var(--rule); text-align: left; vertical-align: top; }
+table.data th { font-weight: 600; color: var(--muted); font-size: 0.8rem; }
+table.data td.r, table.data th.r { text-align: right; }
+table.data td.nw { white-space: nowrap; }
+table.data .id { font-size: 0.78rem; color: var(--muted); }
+.tbl { overflow-x: auto; }
+.late { color: var(--late); font-weight: 600; }
+
+/* monte carlo */
+.mc-bar { display: flex; height: 2.6rem; margin-top: 1rem; border-radius: 3px; overflow: hidden; }
+.mc-bar i { display: block; height: 100%; transition: width 0.35s ease; }
+.mc-legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: 0.8rem; margin-top: 0.8rem; font-size: 0.88rem; }
+.mc-legend b { display: block; font-size: 1.25rem; }
+.sw { display: inline-block; width: 0.75rem; height: 0.75rem; margin-right: 0.4rem; vertical-align: -1px; }
+
+/* compare */
+.cost { display: grid; gap: 0.8rem; margin-top: 0.6rem; }
+.cost .row { display: grid; grid-template-columns: 7rem minmax(0, 1fr) 6.5rem; align-items: center; gap: 0.8rem; }
+.cost .track { height: 1.4rem; background: transparent; position: relative; border-left: 1px solid var(--rule); }
+.cost .fill { position: absolute; inset: 0 auto 0 0; }
+.cost .v { font-weight: 700; text-align: right; }
+
+ul.plain { margin: 0; padding-left: 1.1rem; }
+ul.plain li { margin: 0.35rem 0; }
+
+/* checker */
+.checker { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.2rem; }
+@media (max-width: 760px) { .checker { grid-template-columns: 1fr; } }
+.sents { list-style: none; margin: 0; padding: 0; }
+.sents button { width: 100%; text-align: left; display: grid; grid-template-columns: 1.4rem 1fr auto; gap: 0.6rem; align-items: start; padding: 0.7rem 0.6rem; border: 0; border-top: 1px solid var(--rule); background: transparent; color: var(--ink); font: 400 0.93rem/1.45 var(--sans); cursor: pointer; }
+.sents li:last-child button { border-bottom: 1px solid var(--rule); }
+.sents button:hover { background: var(--fill-plan); }
+.sents button[aria-pressed="true"] { background: var(--fill-plan); }
+.sents .n { color: var(--muted); font-weight: 600; }
+.dots { display: flex; gap: 4px; padding-top: 0.25rem; }
+.dots i { width: 0.7rem; height: 0.7rem; border-radius: 2px; border: 1px solid var(--rule); }
+.dots i.on1 { background: var(--late); border-color: var(--late); }
+.dots i.on2 { background: var(--flag); border-color: var(--flag); }
+.dots i.on3 { background: var(--navy); border-color: var(--navy); }
+.detail h4 { font: 600 0.8rem/1.3 var(--sans); letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 1.1rem 0 0.35rem; }
+.detail h4:first-of-type { margin-top: 0.4rem; }
+.detail .quote { font-family: var(--serif); font-size: 1.15rem; line-height: 1.4; }
+.detail .hit { font-weight: 600; }
+.detail .miss { color: var(--muted); }
+.detail .rw { font-size: 0.92rem; }
+
+/* monitor */
+.pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1rem 2rem; align-items: end; }
+.pair > div { min-width: 0; }
+.pair .num { font-size: 3rem; line-height: 1; }
+.pair .old { color: var(--muted); }
+.status { display: inline-block; font: 600 0.75rem/1 var(--sans); letter-spacing: 0.05em; text-transform: uppercase; padding: 0.3rem 0.5rem; border: 1px solid currentColor; border-radius: 3px; }
+.status.rej { color: var(--navy); }
+.status.wait { color: var(--flag); }
+.status.sim { color: var(--muted); }
+
+details { border-top: 1px solid var(--rule); padding-block: 0.2rem; }
+details:last-of-type { border-bottom: 1px solid var(--rule); }
+summary { cursor: pointer; padding: 0.7rem 0; font-weight: 600; color: var(--navy); list-style-position: inside; }
+details > div { padding-bottom: 1rem; font-size: 0.95rem; }
+details > div > * + * { margin-top: 0.6rem; }
+
+/* video */
+.video { margin-bottom: 2.2rem; }
+.video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; background: #f5f5f1; border: 1px solid var(--rule); border-radius: 6px; }
+.video p { margin-top: 0.6rem; }
+
+/* premium in plain words */
+.terms.prem th { width: 26%; }
+
+/* price setting */
+.px-row { margin-bottom: 1.3rem; }
+.px-lab { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.2rem 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+.px-lab b { color: var(--navy); font-size: 1.2rem; }
+input[type="range"] { display: block; width: 100%; margin: 0; accent-color: var(--navy); }
+.px-scale { position: relative; height: 2.7rem; margin: 0.25rem 8px 0; font-size: 0.78rem; line-height: 1.25; color: var(--muted); }
+.px-scale span { position: absolute; top: 0; transform: translateX(-50%); white-space: nowrap; text-align: center; }
+.px-scale span::before { content: ""; display: block; width: 1px; height: 0.35rem; margin: 0 auto 0.15rem; background: var(--muted); }
+.px-scale span.mk { color: var(--ink); font-weight: 600; }
+.px-scale span.tk { width: 1px; }
+.px-check { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.95rem; cursor: pointer; }
+.px-check input { margin-top: 0.3rem; accent-color: var(--navy); width: 1.05rem; height: 1.05rem; flex: none; }
+
+
+/* start here */
+.start { margin-top: 0.3rem; }
+.start ol { margin: 0.45rem 0 0; padding-left: 1.3rem; }
+.start li { margin: 0.3rem 0; }
+.start li a { font-weight: 600; }
+.start li span { color: var(--muted); }
+
+/* premium number line: EUR per MWh of grid power */
+.nl { position: relative; height: 8.6rem; margin: 0.8rem 0 0.2rem; }
+.nl .track { position: absolute; left: 0; right: 0; top: 3.3rem; height: 2px; background: var(--rule); }
+.nl .band { position: absolute; top: calc(3.3rem - 5px); height: 12px; background: var(--plan); border-radius: 2px; }
+.nl .tick { position: absolute; top: calc(3.3rem - 8px); width: 2px; height: 18px; margin-left: -1px; background: var(--ink); }
+.nl .lab { position: absolute; font-size: 0.8rem; line-height: 1.25; color: var(--muted); white-space: nowrap; }
+.nl .lab b { display: block; font-size: 0.95rem; color: var(--ink); }
+.nl .lab.bid b { color: var(--navy); }
+.nl .lab.l { transform: none; }
+.nl .lab.c { transform: translateX(-50%); text-align: center; }
+.nl .lab.r { transform: translateX(-100%); text-align: right; }
+.nl .lab.gap { color: var(--plan); font-weight: 600; }
+@media (max-width: 560px) { .nl .lab.gap { display: none; } }
+
+/* worst case by bid: the bars are the controls */
+.bc-plot { position: relative; height: 12rem; margin-top: 0.6rem; }
+.bc-cols, .bc-axis { display: grid; grid-template-columns: 1fr 0.35fr repeat(5, 1fr); }
+.bc-cols { position: absolute; inset: 0; }
+.bc-col { position: relative; border: 0; padding: 0; margin: 0; background: transparent; color: var(--ink); font: inherit; cursor: pointer; border-radius: 4px; }
+.bc-col:hover { background: var(--fill-plan); }
+.bc-col[aria-pressed="true"] { background: transparent; }
+.bc-val b { background: var(--sheet); padding: 0 0.2rem; border-radius: 2px; }
+.bc-axis .on { font-weight: 700; color: var(--navy); }
+.bc-bar { position: absolute; left: 24%; right: 24%; border-radius: 2px; }
+.bc-col[aria-pressed="false"] .bc-bar { opacity: 0.5; }
+.bc-val { position: absolute; left: 0; right: 0; text-align: center; font-weight: 700; font-size: 0.85rem; }
+.bc-line { position: absolute; left: 0; right: 0; height: 0; pointer-events: none; }
+.bc-line.one { border-top: 1.5px solid var(--ink); }
+.bc-line.zero { border-top: 1px solid var(--rule); }
+.bc-line span { position: absolute; left: 0; top: -1.15rem; font-size: 0.75rem; color: var(--muted); }
+.bc-award { position: absolute; top: 0; bottom: 0; border-left: 1px dashed var(--muted); pointer-events: none; }
+.bc-axis { margin-top: 0.35rem; font-size: 0.85rem; text-align: center; line-height: 1.3; }
+.bc-axis small { display: block; font-size: 0.72rem; color: var(--muted); }
+
+/* monte carlo: all four settings at once, one shared scale */
+.mc-title { font-family: var(--serif); font-size: 1.1rem; line-height: 1.45; margin-bottom: 0.9rem; }
+.mc-t { display: grid; grid-template-columns: minmax(4.2rem, 0.75fr) repeat(3, minmax(0, 1fr)); gap: 0.6rem 0.9rem; align-items: end; }
+.mc-t .h { font-size: 0.76rem; line-height: 1.3; color: var(--muted); align-self: end; }
+.mc-t .rl { font-size: 0.9rem; align-self: center; line-height: 1.25; }
+.mc-t .rl small { display: block; font-size: 0.72rem; color: var(--muted); }
+.mc-t .c { min-width: 0; }
+.mc-t .c span { display: block; font-size: 0.95rem; font-weight: 600; }
+.mc-t .c i { display: block; height: 0.6rem; margin-top: 0.2rem; border-radius: 1px; }
+.mc-t .base { font-weight: 700; }
+.mc-t .miss span { color: var(--late); font-weight: 700; }
+
+.factsheet img { display: block; width: 100%; max-width: 20rem; border: 1px solid var(--rule); background: #fff; }
+.files { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 0 2rem; }
+.files a { display: block; padding: 0.7rem 0; border-top: 1px solid var(--rule); text-decoration: none; }
+.files a b { display: block; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.files a span { font-size: 0.85rem; color: var(--muted); }
+footer { padding-block: 3rem 4rem; }
+</style>
+</head>
+<body>
+<script src="data.js"></script>
+
+<header class="mast">
+  <div class="col stack">
+    <p class="eyebrow">LHoFT Best Case Study Competition 2026 · STOKR challenge</p>
+    <h1>Two-Roof Solar Bond</h1>
+    <p class="lead">A EUR 2 million bond, issued as tokens, that finances solar panels on two business roofs in Luxembourg. Investors are repaid only from the power the roofs sell. This page lets you check how that works, what happens when it goes wrong, and how the documents were kept true to the model.</p>
+    <p class="byline"><b>Manuel Suhrcke</b> · October 2026 · <b>Fictional:</b> company, roofs, hosts, contracts, tender award. <b>Real:</b> market data, dated 2025-2026. (A) marks my assumptions. Not an offer or advice.</p>
+    <p class="docs"><a href="#video">Video (5:17)</a><a href="files/two-roof-solar-bond-proposal.pdf">Proposal (PDF, 3 pages)</a><a href="files/two-roof-solar-bond-factsheet.pdf">Investor factsheet (PDF)</a><a href="files/two-roof-solar-bond-model.xlsx">Excel model</a></p>
+    <div class="start">
+      <p class="eyebrow">Start here: three things to try</p>
+      <ol>
+        <li><a href="#prices" data-go="notwon">What if the premium is not won?</a> <span>The worst case without the state's top-up, from a real model rerun.</span></li>
+        <li><a href="#honest" data-go="s4">Catch a hidden promise.</a> <span>The planted sentence that only Claude caught.</span></li>
+        <li><a href="files/two-roof-solar-bond-model.xlsx">Open the Excel model.</a> <span>The numbers on this page come from it or from dated sources.</span></li>
+      </ol>
+    </div>
+  </div>
+</header>
+
+<div class="col">
+  <table class="terms" id="terms" aria-label="Term sheet"></table>
+</div>
+
+<div class="col video" id="video" style="margin-top:2.2rem">
+  <video controls preload="metadata" playsinline poster="files/video-poster.jpg" width="1920" height="1080" aria-label="Video walkthrough of the Two-Roof Solar Bond, 5 minutes 17 seconds, captions on screen">
+    <source src="files/two-roof-solar-bond-demo.mp4" type="video/mp4">
+  </video>
+  <p class="small">The case in 5:17, in my voice, with captions on screen. <a href="files/two-roof-solar-bond-demo.mp4" download>Download the MP4 (24 MB)</a></p>
+</div>
+
+<nav class="toc" aria-label="Contents">
+  <ol>
+    <li><a href="#pays"><b>1</b>Who pays investors back?</a></li>
+    <li><a href="#wrong"><b>2</b>What if it goes wrong?</a></li>
+    <li><a href="#tokens"><b>3</b>Are tokens worth it?</a></li>
+    <li><a href="#honest"><b>4</b>How do the documents stay honest?</a></li>
+    <li><a href="#factsheet">Factsheet</a></li>
+    <li><a href="#files">Files</a></li>
+  </ol>
+</nav>
+
+<!-- 1 -->
+<section class="q" id="pays">
+  <div class="col"><div class="stack">
+    <p class="qnum">QUESTION 1</p>
+    <h2>Who pays investors back?</h2>
+    <p class="takeaway">Only the two roofs. Nobody else stands behind the payments.</p>
+  </div>
+
+  <div class="block">
+    <h3>Where each year's power goes</h3>
+    <div class="split" aria-label="Power split">
+      <div class="h"><div class="bar"></div><p class="lab"><b id="t-share-h"></b>bought on site by the two businesses in the buildings, at <span id="t-ppa"></span>, set for <span id="t-ppa-y"></span> years</p></div>
+      <div class="g"><div class="bar"></div><p class="lab"><b id="t-share-g"></b>sold to the grid at about <span id="t-cap"></span></p></div>
+    </div>
+    <p class="small" style="margin-top:0.9rem">Both sides gain: the businesses pay less than their own grid bill of about <span id="t-hostcost"></span> (Eurostat, H1 2026; in the model both prices rise 1% a year, A), and the bond gets a steady price for most of its income while they keep buying.</p>
+  </div>
+
+  <div class="block">
+    <h3>Not guaranteed by</h3>
+    <p class="not"><s>the selling bank</s><s>STOKR</s><s>the state</s><s>the owners</s></p>
+    <p style="margin-top:0.8rem">What protects investors instead:</p>
+    <ul class="plain">
+      <li><b>A pledge</b> over the company's shares, bank accounts and power contracts, held for all investors by a bondholder representative (A). Two thirds of the amount owed can vote to enforce it, which may not recover everything.</li>
+      <li><b>A fixed order of payment.</b> All income lands in one pledged account and is paid out in this order:</li>
+    </ul>
+    <ol class="order" style="margin-top:0.6rem">
+      <li><b>Running costs and tax</b><span>operations, insurance, roof lease, the bond's running costs</span></li>
+      <li class="inv"><b>Investors: <span id="t-ds"></span> a year</b><span>a missed payment stays owed with interest and is paid first from later cash, but may never be paid in full</span></li>
+      <li><b>Reserve</b><span>topped up to half a yearly payment (<span id="t-res"></span>)</span></li>
+      <li><b>Owners, last</b><span>nothing while cover is below <span id="t-lock"></span> or anything is owed (lock-up)</span></li>
+    </ol>
+  </div>
+
+  <div class="block">
+    <h3>How well is the payment covered?</h3>
+    <p>Cover is the cash available after costs and tax, divided by the payment due. It is a safety margin, not a return.</p>
+    <div class="hero-num" style="margin-top:0.8rem"><span class="num" id="t-cov"></span><span>lowest year in the plan: <span id="t-cov-eur"></span> of cash for every EUR 1 owed</span></div>
+    <details style="margin-top:1rem">
+      <summary>Where the 1.50x comes from</summary>
+      <div>
+        <p>It is the central case, before any risk: expected sunshine for the site (PVGIS, 1,000 kWh per kWp in year 1, 0.4% loss a year), the contract prices above, and running costs from published studies and my assumptions, each labelled in the model. The downside, the weak-sunshine case and the simulation below are the risk views.</p>
+        <p class="small">Excel: Summary!C20. The Python engine that drives the simulation reproduces the workbook to the euro on every row.</p>
+      </div>
+    </details>
+  </div>
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="q" id="wrong">
+  <div class="col"><div class="stack">
+    <p class="qnum">QUESTION 2</p>
+    <h2>What if it goes wrong?</h2>
+    <p class="takeaway">My worst case is both businesses stopping in year 5. The state premium is what protects investors then. With it, payments hold in the model, unless weak sunshine or more negative-price hours come on top.</p>
+    <p>If the businesses move out or fail, they stop buying the power (investors keep their tokens) and all of it goes to the grid, which on its own pays only about <span data-v="case.capture|eur"></span> per MWh. Luxembourg runs a solar tender every year. A winner gets the market price topped up to a fixed level, its bid, for 15 years, on power sold to the grid.</p>
+  </div>
+
+  <div class="block">
+    <h3>The state premium: protection for investors</h3>
+    <div class="nl" id="prem-line" aria-label="Grid price, last award, my bid and the cap, in EUR per MWh"></div>
+    <p class="small" style="margin-bottom:0.9rem">EUR per MWh of power sold to the grid. If the premium is won, the state pays the blue gap to the company for 15 years, except in hours when the market price is negative.</p>
+    <table class="terms prem" aria-label="The state premium">
+      <tr><th scope="row">The plan</th><td>Needs no premium: lowest cover is <span data-v="case.nw_plan|x"></span> with or without it. While the businesses buy 70% of the power, the other 30% goes to the grid at the market price, <span data-v="case.capture|eur"></span> per MWh (official 2025 value). The tender rules would pay the premium on that 30% too, but the model leaves it out: counting it would lift plan cover to <span data-v="case.p2_plan|x"></span>.</td></tr>
+      <tr><th scope="row">What it protects</th><td>If both businesses leave, all power goes to the grid. On the market price alone, the roofs would make only <span data-v="case.nw_exit|eur2"></span> for every EUR 1 owed in year 5 (cover <span data-v="case.nw_exit|x"></span>), falling to <span data-v="case.nw_min|x"></span> by year 15, and <span data-v="case.nw_unpaid|eur"></span> of payments would not be paid when due. With the premium, the state tops the price up to my bid, <span data-v="case.ref|eur2"></span> per MWh (A), for 15 years (cap <span data-v="case.tender_cap|eur"></span>; the last round's rooftop award was <span data-v="case.tender_award7|eur2"></span>). Take off the hours when the market price is negative and no premium is paid (<span data-v="case.neg|pct0"></span> of grid power, A) and a <span data-v="case.dm_fee|eur"></span> per MWh fee to the company that sells the power, and cover is <span data-v="case.min_down|x"></span>: in years 13-15 the roofs make slightly less than they owe, and cash held back from the owners since year 9 fills the gap, so in the model every payment is made.</td></tr>
+      <tr><th scope="row">So it comes first</th><td>The bond is offered only once both roofs have won the premium and been built: the owners and a bridge loan pay for the build, and investors pay in at completion, so they carry neither the tender result nor the build. This round's bids close on 30 October 2026.</td></tr>
+      <tr><th scope="row">No award</th><td>No bond. Nobody has invested yet, so investors keep their money, and the build waits: the project bids again when the next yearly round opens (the last three opened in July).</td></tr>
+      <tr><th scope="row">Past rounds</th><td>Recent rounds had more capacity on offer than bids to fill it: the 6th round (2024) awarded <span data-v="tender.6th_awarded_mw|n"></span> of the <span data-v="tender.6th_volume_mw|n"></span> MW offered (<span data-v="tender.6th_awarded_share|pct0"></span>), the 7th round (2025) <span data-v="tender.7th_awarded_mw|n"></span> of <span data-v="tender.7th_volume_mw|n"></span> MW (about <span data-v="tender.7th_awarded_share|pct0"></span>). That points to too few bids rather than tough competition, though a bid above the cap or one that fails the tender's competitiveness test is still rejected. The 8th round offers <span data-v="tender.8th_rooftop_volume_mw|n"></span> MW for rooftop plants like ours.<br><span class="small">Round summaries on guichet.public.lu: <a href="https://guichet.public.lu/dam-assets/catalogue-pdf/energie/appel-offre/aperu-sur-le-droulement-du-sixime-appel-doffres-du-19-juillet-2024.pdf">6th</a>, <a href="https://guichet.public.lu/dam-assets/catalogue-pdf/energie/appel-offre/apercu-7ao-2025.pdf">7th</a> (published 13 Feb 2026); <a href="https://guichet.public.lu/dam-assets/catalogue-pdf/appel-offres-electricite/8e-ao-photovoltaique-grande-centrale/avis-publication-fr.pdf">8th round notice</a> (27 Jul 2026).</span></td></tr>
+    </table>
+  </div>
+  </div>
+
+  <div class="wide block">
+    <div class="panel">
+      <div class="seg" role="group" aria-label="Scenario">
+        <button type="button" id="sc-plan" data-sc="plan" aria-pressed="false">Plan</button>
+        <button type="button" id="sc-down" data-sc="down" aria-pressed="true">Both businesses leave in year 5</button>
+        <button type="button" id="sc-p90" data-sc="p90" aria-pressed="false">+ weak sunshine every year (P90)</button>
+        <button type="button" id="sc-nw" data-sc="nw" aria-pressed="false">Both leave, premium not won</button>
+      </div>
+      <div class="chart-wrap"><svg class="chart" id="cover-chart" viewBox="0 0 760 330" role="img" aria-label="Cover by year"></svg></div>
+      <div class="readout" id="readout"></div>
+      <p class="cond small" id="cond"></p>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="block">
+      <h3>Where it breaks</h3>
+      <div class="tbl"><table class="data" id="breaks"></table></div>
+      <p class="small" style="margin-top:0.6rem">Lowest cover in the 15 years, in the model. Weak sunshine is the 10-year P90 output, <span id="t-p90f"></span> of the central estimate every year, about a 1 in 10 chance.</p>
+    </div>
+
+    <div class="block" id="prices">
+      <h3>Try other prices</h3>
+      <p>Pick a bid and see what happens to the worst case, both businesses leaving in year 5. Every setting shows its own rerun of the Excel model, run on 18 October 2026 and labelled simulated: none of them is market data. Nothing is calculated in your browser.</p>
+      <div class="panel" style="margin-top:1rem">
+        <p class="px-lab" id="px-ref-lab"><span>Worst case, lowest cover, by bid in the tender (EUR per MWh)</span></p>
+        <div class="bc-plot" id="px-chart"></div>
+        <p class="small" style="margin-top:0.6rem">Click a bar. Red: some payments are not paid when due. My bid is EUR 92.50 (A), the cap EUR 95; the last round's rooftop award was EUR 89.75, just under 90.</p>
+        <div class="readout" id="px-out" aria-live="polite"></div>
+        <div class="px-row" style="margin-top:1.4rem">
+          <label class="px-lab" for="px-cap"><span>Market price for grid power, flat every year</span><b id="px-cap-v"></b></label>
+          <input type="range" id="px-cap" min="0" step="1">
+          <div class="px-scale" id="px-scale" aria-hidden="true"></div>
+          <p class="small">Moves the plan, and the worst case only when the premium is not won. EUR 45: the official 2025 value, used in the model. EUR 61.17: the monitor's 12-month value on 17 October 2026, which I rejected (decision log in Question 4).</p>
+        </div>
+        <label class="px-check"><input type="checkbox" id="px-p2"><span>Count the premium on the 30% sold to the grid while the businesses buy (the model does not)</span></label>
+        <p class="small" id="px-src" style="margin-top:0.8rem"></p>
+      </div>
+      <p class="small" style="margin-top:0.6rem">With the premium won, the grid price moves only the plan, and only while the premium is not counted: once it applies it tops the price up to the bid, so the worst case depends on the bid alone. Without the premium, the worst case moves with the grid price.</p>
+    </div>
+
+    <div class="block">
+      <h3>20,000 random futures</h3>
+      <p>A Monte Carlo simulation draws sunshine, prices and businesses leaving at random for each of 20,000 fifteen-year paths, with the premium won, and counts how often investors miss a payment. The rows show how much one assumption matters: the chance that a business leaves.</p>
+      <div class="panel" style="margin-top:1rem">
+        <p class="mc-title" id="mc-title"></p>
+        <div class="mc-t" id="mc-table" role="table" aria-label="Monte Carlo results for each yearly chance that a business leaves"></div>
+        <p class="small" style="margin-top:0.9rem">Bars share one scale. Every other path pays every payment on time from the roofs' own cash. It tests my assumptions and is not a forecast: long breakdowns, cost overruns, rule changes and fraud are left out.</p>
+      </div>
+      <details style="margin-top:1rem">
+        <summary>What the simulation varies, and what it leaves out</summary>
+        <div>
+          <p id="mc-config"></p>
+          <p>Left out: long breakdowns, cost overruns, rule changes, fraud. It tests my assumptions; it is not a forecast.</p>
+          <p class="small">Code: <a href="files/code/mc_engine.py">mc_engine.py</a> (reconciled to the Excel model), <a href="files/code/mc_run.py">mc_run.py</a>, results <a href="files/reports/mc_results.json">mc_results.json</a>.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="q" id="tokens">
+  <div class="col"><div class="stack">
+    <p class="qnum">QUESTION 3</p>
+    <h2>Are tokens worth it?</h2>
+    <p class="takeaway">For one project, no: a bank loan is cheaper. Tokens can pay off when the same setup is reused across many roofs, which the pilot has to show.</p>
+  </div>
+
+  <div class="block">
+    <h3>Legally, most likely an ordinary bond</h3>
+    <div class="tbl"><table class="data">
+      <tr><th></th><th>A plain bond</th><th>This bond</th></tr>
+      <tr><td>Legal form</td><td>A bond</td><td>A bond, likely a transferable security under MiFID II, so outside MiCAR. A legal opinion is needed.</td></tr>
+      <tr><td>Register</td><td>The bank's books</td><td>Tokens on Liquid, the blockchain STOKR uses, kept by a licensed bank as control agent. STOKR runs the investor portal and the payouts.</td></tr>
+      <tr><td>Who can invest</td><td>Usually the bank alone</td><td>Professional and retail investors from EUR 500, after the bank's identity and appropriateness checks</td></tr>
+      <tr><td>Selling</td><td>Rarely possible</td><td>Only to other approved investors. There may be no buyer, or only below what you paid.</td></tr>
+    </table></div>
+  </div>
+
+  <div class="block">
+    <h3>All-in cost a year for one project</h3>
+    <div class="cost" id="cost"></div>
+    <p class="small" style="margin-top:0.7rem">The bond's 6.5% interest plus raising costs of <span id="t-iss"></span> and running costs of <span id="t-run"></span> a year (A). Bank: KfW 270 rates, +1% fee (A); there is no public Luxembourg rate.</p>
+  </div>
+
+  <div class="block">
+    <h3>When tokens add value</h3>
+    <ul class="plain">
+      <li>The documents and token setup are reused for each new roof.</li>
+      <li>Many small investors need cheap servicing: about <span id="t-cpi"></span> per investor a year at 300 investors (A). The pilot has to show this falls as roofs are added.</li>
+      <li>Local investors, not a bank, earn the interest, as long as the roofs earn enough to pay it.</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h3>Before the bond can be issued</h3>
+    <ul class="plain">
+      <li>The tender award for both roofs (bids close 30 October 2026), and a <span id="t-guar"></span> completion security to the state, lost if the roofs are not built within 24 months.</li>
+      <li>A legal opinion and the prospectus exemption memo; the placement and control-agent agreement with a licensed bank.</li>
+      <li>A registered 25-year roof right that survives a sale of the building.</li>
+    </ul>
+    <details style="margin-top:1rem">
+      <summary>What the Ministry of the Economy confirmed</summary>
+      <div>
+        <p>I asked the Ministry whether a plant that wins the tender may sell part of its power on site, and whether the premium is then paid on the rest. On 16 October 2026 it sent the tender rules (cahier des charges, 8th round, art. 2.2): every use of the power that Luxembourg's 2007 electricity law allows is accepted, and the premium is paid only on power sent to the grid. The model does not count the premium on the 30% surplus while the businesses buy power, so on this one point the plan is cautious. Still open: the rule for negative-price hours (asked, no answer yet) and the legal form of the on-site sale.</p>
+      </div>
+    </details>
+  </div>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="q" id="honest">
+  <div class="col"><div class="stack">
+    <p class="qnum">QUESTION 4</p>
+    <h2>How do the documents stay honest?</h2>
+    <p class="takeaway">Two tools: a claim checker that tests every sentence against the model, and a monitor that reruns the model on new prices. A person decides every change.</p>
+    <p>The claim checker reads a document in three layers. Every number must match a cell in the Excel model or a dated source. A word list flags risky words such as "guaranteed" unless negated. Claude (Opus 5.5) reads each sentence for promises the other two cannot see. To test it, I wrote a factsheet with seven planted mistakes. Pick a sentence:</p>
+  </div></div>
+
+  <div class="wide block">
+    <div class="checker">
+      <div>
+        <p class="small" style="margin-bottom:0.4rem"><span class="sw" style="background:var(--late)"></span>numbers <span class="sw" style="background:var(--flag);margin-left:0.6rem"></span>word list <span class="sw" style="background:var(--navy);margin-left:0.6rem"></span>Claude</p>
+        <ul class="sents" id="sents"></ul>
+        <p class="small" style="margin-top:0.7rem"><b>7 of 7</b> caught. Only Claude caught sentence 4: it has no number and no flagged word, yet it promises easy selling.</p>
+      </div>
+      <div class="panel detail" id="detail" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="block stack" id="blind" style="gap:0.75rem">
+      <h3>A blind test: someone else plants the mistakes</h3>
+      <p>The planted test above is my own. For a fairer one, a separate AI agent that never saw the checker's code was given the real factsheet and a description of what the checker looks for, and planted 10 mistakes in a copy, leaving every other sentence word for word. Then the checker ran blind.</p>
+      <p><b>8 of 10 caught, and no false alarms</b> on the unchanged sentences, including two traps: "Liquid network" (a name, not a liquidity claim) and "guaranteed" in sentences that say the bond is not guaranteed.</p>
+      <p>Missed: a wrong year on the market price (2023 instead of 2025), and "the state steps in through the premium where the hosts left off", which implies state backing. The numbers layer also let two wrong figures through, EUR 110,000 and 8%, because each happens to equal an unrelated cell in the model; Claude caught both. A person still reads every document before it goes out.</p>
+      <p class="small">Files: <a href="files/reports/blind-test/factsheet-planted.html">planted factsheet</a>, <a href="files/reports/blind-test/answer-key.json">answer key</a>, <a href="files/reports/blind-test/blind-report.json">checker report</a>, <a href="files/reports/blind-test/blind-score.json">score</a> (18 Oct 2026).</p>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="block">
+      <h3>The real documents</h3>
+      <div class="tbl"><table class="data" id="real"></table></div>
+      <p style="margin-top:0.6rem">The two points on the factsheet, both low severity: Claude wanted a source for the line that the tender rules allow on-site sale (it is art. 2.2 of the tender rules the Ministry sent, cited in the proposal), and wanted the factsheet to say how investors can enforce the pledge (two thirds of the amount owed can vote to, as the proposal says). I left both off the one-page factsheet for space.</p>
+      <p class="small" style="margin-top:0.6rem">Reports: <a href="files/reports/claim-report.json">factsheet</a>, <a href="files/reports/proposal-claim-report.json">proposal</a>, <a href="files/reports/demo-bad-factsheet-report.json">planted test</a>. Code: <a href="files/code/claim_checker.py">claim_checker.py</a>. No investor data goes to the AI.</p>
+    </div>
+
+    <div class="block">
+      <h3>The monitor: a price moved, a person decided</h3>
+      <p>The monitor fetches public prices, reruns a copy of the Excel model, checks it against the engine, and lists every sentence the new numbers would change. Nothing changes until an analyst approves.</p>
+      <div class="pair" style="margin-top:1rem">
+        <div><p class="small" id="m-new-k"></p><p class="num" id="m-new"></p><p class="small" id="m-new-src"></p></div>
+        <div><p class="small">Used in the model, kept</p><p class="num old" id="m-old"></p><p class="small">official full-year 2025 value, the one the state premium uses</p></div>
+      </div>
+      <p style="margin-top:1rem">A first run on 14 Oct found EUR 60.67. Both times I kept EUR 45. The bond runs 15 years and the past year includes the 2026 gas price shock; only the 30% sold to the grid depends on this price. <a href="#prices">Try other prices</a> in Question 2.</p>
+      <div class="tbl" style="margin-top:1rem"><table class="data" id="m-out"></table></div>
+      <h3 style="margin-top:1.8rem;font-size:1.05rem">Decision log</h3>
+      <div class="tbl" style="margin-top:0.5rem"><table class="data" id="m-log"></table></div>
+      <p class="small" style="margin-top:0.6rem">Every analyst who uses the tool logs decisions the same way, so a reviewer can see who changed what, and why. Run reports: <a href="files/reports/monitor-run-2026-10-14.html">14 Oct</a>, <a href="files/reports/monitor-run-2026-10-17.html">17 Oct</a>. Code: <a href="files/code/monitor/README.md">monitor</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- factsheet -->
+<section class="q" id="factsheet">
+  <div class="col stack">
+    <p class="qnum">INVESTOR FACTSHEET</p>
+    <h2>What a retail investor would read</h2>
+    <p>One page in plain language: what you own, where the money comes from, what happens if both businesses stop buying, and what the bond is not. It is a fictional mock-up.</p>
+    <a class="factsheet" href="files/two-roof-solar-bond-factsheet.pdf"><img src="files/factsheet.png" alt="The one-page investor factsheet for the Two-Roof Solar Bond" width="909" height="1287"></a>
+    <p><a href="files/two-roof-solar-bond-factsheet.pdf">Open the factsheet (PDF, 1 page)</a></p>
+  </div>
+</section>
+
+<!-- checked -->
+<section class="q" id="checked">
+  <div class="col stack">
+    <p class="qnum">HOW THIS WAS CHECKED</p>
+    <h2>What was tested, and what was not</h2>
+    <ul class="plain">
+      <li>The Python engine reproduces the Excel workbook to the euro, row by row, for the plan, the worst case and the weak-sunshine case.</li>
+      <li>The proposal and the factsheet pass the claim checker with no unmatched numbers and no flagged words. Claude found no promises in the proposal and raised two low-severity points on the factsheet (a source for the tender rule, how the pledge is enforced); I left both, because the proposal covers them.</li>
+      <li>A blind test of the claim checker, with mistakes planted by an AI agent that had not seen its code (Question 4).</li>
+      <li>This page passes the same check on its text as rendered, leaving out the planted test sentences and the simulated price reruns: no unmatched numbers, no flagged words, no promises found by Claude.</li>
+      <li>Four review rounds by independent AI reviewers (facts, defensibility, clarity, a first-time reader, a finance professional, an information designer), each triaged and decided by me; the review files are kept with the model.</li>
+      <li>Not verified: there is no legal opinion; costs, the bid level and the reserve are my assumptions (A); the negative-price rule is still open with the Ministry.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- files -->
+<section class="q" id="files">
+  <div class="col stack">
+    <p class="qnum">FILES</p>
+    <h2>Everything on this page</h2>
+    <div class="files">
+      <a href="files/two-roof-solar-bond-demo.mp4" download><b>Video walkthrough</b><span>MP4, 5:17, 24 MB</span></a>
+      <a href="files/two-roof-solar-bond-proposal.pdf"><b>Proposal</b><span>PDF, 3 pages</span></a>
+      <a href="files/two-roof-solar-bond-factsheet.pdf"><b>Investor factsheet</b><span>PDF, 1 page</span></a>
+      <a href="files/two-roof-solar-bond-model.xlsx"><b>Excel model</b><span>inputs with sources, plan, worst case, debt</span></a>
+      <a href="files/code/mc_engine.py"><b>Monte Carlo engine</b><span>Python, reconciled to the workbook</span></a>
+      <a href="files/code/mc_run.py"><b>Monte Carlo settings</b><span>Python; results in mc_results.json</span></a>
+      <a href="files/code/claim_checker.py"><b>Claim checker</b><span>Python, three layers</span></a>
+      <a href="files/code/monitor/README.md"><b>Price monitor</b><span>Python, with the approvals log</span></a>
+      <a href="files/reports/monitor-run-2026-10-17.html"><b>Latest monitor run</b><span>17 Oct 2026, rejected: EUR 45 kept</span></a>
+      <a href="files/reports/price-grid.json"><b>Price setting reruns</b><span>JSON, one simulated model run per setting; code in <code>price_grid.py</code></span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="col small">
+    <p>Fictional case for the LHoFT Best Case Study Competition 2026 (STOKR challenge). Company, roofs, hosts, holding, contracts and tender award are invented; market data is real and dated. Not an offer or investment advice.</p>
+    <p style="margin-top:0.6rem">Tools: Excel, Python, Claude Opus 5.5 in Claude Code; video built with HyperFrames; voice: Manuel Suhrcke.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  var D = window.DATA, C = D.case;
+  var $ = function (id) { return document.getElementById(id); };
+  var eur = function (v, d) { return "EUR " + Number(v).toLocaleString("en-GB", { minimumFractionDigits: d || 0, maximumFractionDigits: d || 0 }); };
+  var x2 = function (v) { return (Math.round(v * 100) / 100).toFixed(2) + "x"; };
+  var pct = function (v, d) { return (v * 100).toFixed(d === undefined ? 1 : d) + "%"; };
+  function when(t) { var d = new Date(t.slice(0, 19)); return d.getDate() + " " + ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][d.getMonth()] + ", " + t.slice(11, 16); }
+  var css = function (n) { return getComputedStyle(document.documentElement).getPropertyValue(n).trim(); };
+
+  // term sheet
+  var terms = [
+    ["Amount", eur(C.bond.v) + ", one class, same terms for every investor"],
+    ["Interest and term", pct(C.coupon.v) + " fixed, " + C.tenor.v + " years, one equal yearly payment of interest and capital"],
+    ["Per EUR 500 token", eur(C.pay_y1.v, 2) + " a year; " + eur(C.total.v, 2) + " in total if every payment is made"],
+    ["Repaid from", "Power sales from two 3.0 MWp roofs only; not guaranteed"],
+    ["Lowest cover", x2(C.min_plan.v) + " in the plan; " + x2(C.min_down.v) + " if both businesses leave in year 5 (premium won)"],
+    ["Issued", "Only after both roofs win the state premium (bids close 30 Oct 2026), the main protection if the businesses leave"]
+  ];
+  $("terms").innerHTML = terms.map(function (r) { return "<tr><th scope=\"row\">" + r[0] + "</th><td>" + r[1] + "</td></tr>"; }).join("");
+
+  // question 1
+  $("t-share-h").textContent = pct(C.host_share.v, 0);
+  $("t-share-g").textContent = pct(1 - C.host_share.v, 0);
+  $("t-ppa").textContent = eur(C.ppa.v) + " per MWh, +1% a year";
+  $("t-ppa-y").textContent = C.ppa_tenor.v;
+  $("t-cap").textContent = eur(C.capture.v) + " per MWh";
+  $("t-hostcost").textContent = eur(C.host_cost.v, 1) + " per MWh";
+  $("t-ds").textContent = eur(C.debt_service.v);
+  $("t-res").textContent = eur(C.reserve.v);
+  $("t-lock").textContent = x2(C.lockup.v);
+  $("t-cov").textContent = x2(C.min_plan.v);
+  $("t-cov-eur").textContent = eur(C.min_plan.v, 2);
+  $("t-p90f").textContent = pct(C.p90_factor.v, 1);
+
+  // numbers written into prose: data-v="section.key|format", all from data.js
+  var FMT = { eur: function (v) { return eur(v); }, eur2: function (v) { return eur(v, 2); }, x: x2,
+              pct0: function (v) { return pct(v, 0); }, n: function (v) { return Number(v).toLocaleString("en-GB", { maximumFractionDigits: 2 }); } };
+  document.querySelectorAll("[data-v]").forEach(function (el) {
+    var p = el.dataset.v.split("|"), k = p[0].split(".");
+    el.textContent = FMT[p[1]](D[k[0]][k[1]].v);
+  });
+
+  // question 2: cover chart
+  var S = D.cover.series, Y = D.cover.years;
+  var W = 760, H = 330, L = 56, R = 120, T = 18, B = 40;
+  var ymin = 0.7, ymax = 1.8, ticks = [0.8, 1.0, 1.2, 1.4, 1.6];
+  var X = function (yr) { return L + (yr - 1) / 14 * (W - L - R); };
+  var Yp = function (v) { return T + (ymax - v) / (ymax - ymin) * (H - T - B); };
+  var NS = "http://www.w3.org/2000/svg";
+  var svg = $("cover-chart");
+  var mk = function (tag, a, txt) { var e = document.createElementNS(NS, tag); for (var k in a) e.setAttribute(k, a[k]); if (txt !== undefined) e.textContent = txt; svg.appendChild(e); return e; };
+  var path = function (s) { return s.map(function (v, i) { return (i ? "L" : "M") + X(Y[i]).toFixed(1) + " " + Yp(v).toFixed(1); }).join(" "); };
+  var scen = {
+    plan: { key: "plan", color: "--plan", label: "Plan" },
+    down: { key: "down", color: "--stress", label: "Both leave" },
+    p90: { key: "p90", color: "--late", label: "+ weak sun", dash: "8 6" },
+    nw: { key: "notwon", color: "--neutral", label: "Not won" }
+  };
+  function drawChart(active) {
+    svg.innerHTML = "";
+    ymin = active === "nw" ? 0 : 0.7;
+    ticks = active === "nw" ? [0, 0.4, 0.8, 1.2, 1.6] : [0.8, 1.0, 1.2, 1.4, 1.6];
+    ticks.forEach(function (v) {
+      mk("line", { x1: L, x2: W - R, y1: Yp(v), y2: Yp(v), stroke: css("--rule"), "stroke-width": 1 });
+      mk("text", { x: L - 10, y: Yp(v) + 4, "text-anchor": "end" }, v.toFixed(1) + "x");
+    });
+    mk("line", { x1: L, x2: W - R, y1: Yp(1), y2: Yp(1), stroke: css("--ink"), "stroke-width": 1.5 });
+    mk("text", { x: L + 6, y: active === "nw" ? Yp(1) + 16 : Yp(1) - 6 }, "1.0x: cash just covers the payment");
+    mk("line", { x1: L, x2: W - R, y1: Yp(C.lockup.v), y2: Yp(C.lockup.v), stroke: css("--muted"), "stroke-width": 1, "stroke-dasharray": "3 4" });
+    mk("text", { x: L + 6, y: Yp(C.lockup.v) - 6 }, "1.1x: owners' lock-up");
+    [1, 5, 10, 15].forEach(function (yr) { mk("text", { x: X(yr), y: H - 14, "text-anchor": "middle" }, yr === 15 ? "year 15" : String(yr)); });
+    if (active !== "plan") {
+      var ex = C.nw_exit && D.cover.years[4];
+      mk("line", { x1: X(5), x2: X(5), y1: T, y2: H - B, stroke: css("--muted"), "stroke-width": 1, "stroke-dasharray": "2 4" });
+      mk("text", { x: X(5) + 6, y: T + 10 }, "year 5: both businesses leave");
+    }
+    if (active === "down") {
+      // cash held back from the owners while cover is between 1.0x and the lock-up, then used where cover is below 1.0x
+      var sd = S.down, hb = [];
+      for (var j = 0; j < sd.length; j++) if (sd[j] < C.lockup.v && sd[j] > 1) hb.push(j);
+      if (hb.length) {
+        var lastHb = hb[hb.length - 1], nx = lastHb + 1;
+        var xc = Y[lastHb] + (sd[lastHb] - 1) / (sd[lastHb] - sd[nx]);
+        var dh = "M" + X(Y[hb[0]]).toFixed(1) + " " + Yp(1).toFixed(1);
+        hb.forEach(function (i) { dh += " L" + X(Y[i]).toFixed(1) + " " + Yp(sd[i]).toFixed(1); });
+        dh += " L" + X(xc).toFixed(1) + " " + Yp(1).toFixed(1) + " Z";
+        mk("path", { d: dh, fill: css("--stress"), "fill-opacity": 0.12, stroke: "none" });
+        mk("text", { x: (X(Y[hb[0]]) + X(xc)) / 2, y: Yp(1) + 17, "text-anchor": "middle" }, "held back from owners, years " + Y[hb[0]] + "-" + Y[lastHb]);
+        mk("text", { x: X(13.2), y: Yp(0.86), "text-anchor": "middle" }, "used in years " + Y[nx] + "-15");
+      }
+    }
+    if (active !== "plan") {
+      // held-back cash pays the years below 1.0x in the worst case
+      var s = S.down, pts = [];
+      for (var i = 0; i < s.length; i++) if (s[i] < 1) pts.push(i);
+      if (pts.length && active === "down") {
+        var a = pts[0] - 1, d = "M" + X(Y[a] + (1 - s[a]) / (s[a + 1] - s[a]) * 1).toFixed(1) + " " + Yp(1).toFixed(1);
+        pts.forEach(function (i) { d += " L" + X(Y[i]).toFixed(1) + " " + Yp(s[i]).toFixed(1); });
+        d += " L" + X(Y[pts[pts.length - 1]]).toFixed(1) + " " + Yp(1).toFixed(1) + " Z";
+        mk("path", { d: d, fill: css("--stress"), "fill-opacity": 0.25, stroke: "none" });
+      }
+    }
+    ["plan", "down", "p90", "nw"].forEach(function (k) {
+      var sc = scen[k];
+      var on = k === active || k === "plan" || ((active === "p90" || active === "nw") && k === "down");
+      if (!on) return;
+      var faded = k !== active, ser = S[sc.key];
+      var a = { d: path(ser), fill: "none", stroke: css(sc.color), "stroke-width": faded ? 2 : 3.5, "stroke-linejoin": "round", "stroke-linecap": "round", opacity: faded ? 0.35 : 1 };
+      if (sc.dash) a["stroke-dasharray"] = sc.dash;
+      mk("path", a);
+      var last = ser[ser.length - 1];
+      mk("circle", { cx: X(15), cy: Yp(last), r: faded ? 3 : 5, fill: css(sc.color), opacity: faded ? 0.5 : 1 });
+      var t = mk("text", { x: X(15) + 10, y: Yp(last) + 5, class: "end", fill: css(sc.color), opacity: faded ? 0.6 : 1 }, x2(last));
+      t.style.fill = css(sc.color);
+    });
+  }
+  var readouts = {
+    plan: [["Lowest cover", x2(C.min_plan.v)], ["Payments", "all on time"], ["Owners", "paid every year"]],
+    down: [["Lowest cover", x2(C.min_down.v)], ["Payments", "all on time, in the model"], ["Years 13-15", "below 1.0x, paid from cash held back from the owners"]],
+    p90: [["Lowest cover", x2(C.min_p90.v)], ["Payments", "late from year " + C.p90_late.v]],
+  };
+  readouts.p90.push(["Still owed at year 15", eur(Math.round(C.p90_owed.v / 100) * 100)]);
+  readouts.nw = [["Lowest cover", x2(C.nw_min.v)], ["Payments", eur(C.nw_unpaid.v) + " not paid when due"], ["From year 5", x2(C.nw_exit.v) + " and falling"]];
+  var conds = {
+    plan: "Central case: expected sunshine, contract prices, sourced costs, before any risk.",
+    down: "<b>With the premium won</b> (bids close 30 Oct 2026) and output holding. On the market price alone cover would fall to " + x2(C.nw_exit.v) + " from year 5: pick Not won in the price setting below.",
+    p90: "Both businesses gone and weak sunshine at the same time: a stress test, not a forecast. The " + eur(C.reserve.v) + " reserve is used up.",
+    nw: "What investors would face if the bond were issued without the premium. It is not: without an award there is no bond, and nobody has invested yet."
+  };
+  function setScenario(k) {
+    drawChart(k);
+    document.querySelectorAll("[data-sc]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.sc === k)); });
+    $("readout").innerHTML = readouts[k].map(function (r, i) {
+      var cls = (k === "p90" || k === "nw") && i === 1 ? " late" : "";
+      return "<div><div class=\"k\">" + r[0] + "</div><div class=\"v" + cls + "\">" + r[1] + "</div></div>";
+    }).join("");
+    $("cond").innerHTML = conds[k];
+  }
+  document.querySelectorAll("[data-sc]").forEach(function (b) { b.addEventListener("click", function () { setScenario(b.dataset.sc); }); });
+  setScenario("down");
+  var mq = window.matchMedia("(prefers-color-scheme: dark)");
+  if (mq.addEventListener) mq.addEventListener("change", function () { var on = document.querySelector("[data-sc][aria-pressed=true]"); setScenario(on ? on.dataset.sc : "down"); });
+
+  // where it breaks
+  $("breaks").innerHTML = "<tr><th>Case</th><th class=\"r\">Lowest cover</th><th>Payments</th></tr>" + D.breaks.map(function (b) {
+    var late = b.late && b.late.v > 0;
+    var pay = late ? "<span class=\"late\">late from year " + b.first_late.v + "; " + eur(Math.round(b.owed_y15.v / 100) * 100) + " owed at year 15</span>" : "on time";
+    return "<tr><td>" + b.label + (b.note ? " <span class=\"a\">(" + b.note + ")</span>" : "") + "</td><td class=\"r\">" + x2(b.min.v) + "</td><td>" + pay + "</td></tr>";
+  }).join("");
+
+  // price setting: each setting looks up a stored model rerun (data.js prices.runs); nothing is computed here
+  var PX = D.prices, caps = PX.capture, refs = PX.ref, capIn = $("px-cap"), pxRef = C.ref.v;
+  var money = function (v) { return eur(v, v % 1 ? 2 : 0); };
+  capIn.max = caps.length - 1;
+  capIn.value = caps.indexOf(C.capture.v);
+  var marks = { "30": "30", "45": "45<br>used", "61.17": "61.17<br>monitor", "90": "90" };
+  $("px-scale").innerHTML = caps.map(function (c, i) {
+    var lab = marks[String(c)], cls = lab ? (c === 45 || c === 61.17 ? "mk" : "") : "tk";
+    return "<span class=\"" + cls + "\" style=\"left:" + (i / (caps.length - 1) * 100).toFixed(3) + "%\">" + (lab || "") + "</span>";
+  }).join("");
+  var bmin = -0.4, bmax = 1.3, bids = ["none", null].concat(refs);
+  var By = function (v) { return ((Math.max(bmin, Math.min(bmax, v)) - bmin) / (bmax - bmin) * 100).toFixed(2) + "%"; };
+  var label = function (r) { return r === "none" ? "Not won" : (r % 1 ? r.toFixed(2) : String(r)); };
+  function runFor(r, c, p2) { return PX.runs[r === "none" ? "capture=" + c + ",ref=" + C.ref.v + ",p2=0,p1=0" : "capture=" + c + ",ref=" + r + ",p2=" + p2]; }
+  function drawBids(c, p2) {
+    $("px-chart").innerHTML =
+      "<div class=\"bc-line zero\" style=\"bottom:" + By(0) + "\"></div>" +
+      "<div class=\"bc-line one\" style=\"bottom:" + By(1) + "\"><span>1.0x</span></div>" +
+      "<div class=\"bc-cols\">" + bids.map(function (r) {
+        if (r === null) return "<span></span>";
+        var run = runFor(r, c, p2), on = String(r) === String(pxRef);
+        var name = r === "none" ? "Premium not won" : "Bid EUR " + label(r);
+        if (!run) return "<button type=\"button\" class=\"bc-col\" data-ref=\"" + r + "\" aria-pressed=\"" + on + "\" aria-label=\"" + name + ": no rerun at this grid price\"><span class=\"bc-val\" style=\"bottom:" + By(0) + "\">no rerun</span></button>";
+        var v = run.down, neg = v < 0, col = run.down_missed > 0 ? "var(--late)" : "var(--stress)";
+        var bar = "bottom:" + (neg ? By(v) : By(0)) + ";height:calc(" + (neg ? By(0) : By(v)) + " - " + (neg ? By(v) : By(0)) + ")";
+        var val = neg ? "bottom:calc(" + By(v) + " - 1.3rem)" : "bottom:calc(" + By(v) + " + 0.2rem)";
+        return "<button type=\"button\" class=\"bc-col\" data-ref=\"" + r + "\" aria-pressed=\"" + on + "\" aria-label=\"" + name + ": worst-case cover " + x2(v) + "\">" +
+          "<span class=\"bc-bar\" style=\"" + bar + ";background:" + col + "\"></span><span class=\"bc-val\" style=\"" + val + "\"><b>" + x2(v) + "</b></span></button>";
+      }).join("") + "</div>";
+    $("px-chart").insertAdjacentHTML("afterend", "");
+    var ax = document.getElementById("px-axis");
+    if (!ax) { ax = document.createElement("div"); ax.id = "px-axis"; ax.className = "bc-axis"; ax.setAttribute("aria-hidden", "true"); $("px-chart").after(ax); }
+    ax.innerHTML = bids.map(function (r) {
+      if (r === null) return "<span></span>";
+      var sub = r === "none" ? "no bond" : r === C.ref.v ? "my bid" : r === C.tender_cap.v ? "cap" : r === 90 ? "last award " + C.tender_award7.v.toFixed(2) : "";
+      return "<span" + (String(r) === String(pxRef) ? " class=\"on\"" : "") + ">" + label(r) + (sub ? "<small>" + sub + "</small>" : "") + "</span>";
+    }).join("");
+    document.querySelectorAll("#px-chart [data-ref]").forEach(function (b) {
+      b.addEventListener("click", function () { pxRef = b.dataset.ref === "none" ? "none" : +b.dataset.ref; setPrices(); });
+    });
+  }
+  function setPrices() {
+    var won = pxRef !== "none", chk = $("px-p2");
+    chk.disabled = !won;
+    if (!won) chk.checked = false;
+    chk.closest("label").style.opacity = won ? "" : "0.5";
+    var c = caps[+capIn.value], p2 = chk.checked ? 1 : 0;
+    var r = runFor(pxRef, c, p2);
+    $("px-cap-v").textContent = money(c) + " per MWh";
+    capIn.setAttribute("aria-valuetext", money(c) + " per MWh");
+    drawBids(c, p2);
+    if (!r) {
+      $("px-out").innerHTML = "<div><div class=\"k\">No rerun for this setting yet</div><div class=\"v\">pick another price</div></div>";
+      $("px-src").textContent = "";
+      return;
+    }
+    var late = r.down_missed > 0;
+    $("px-out").innerHTML =
+      "<div><div class=\"k\">Plan, lowest cover</div><div class=\"v\">" + x2(r.plan) + "</div></div>" +
+      "<div><div class=\"k\">Worst case, lowest cover</div><div class=\"v\">" + x2(r.down) + "</div></div>" +
+      "<div><div class=\"k\">Worst case, payments</div><div class=\"v" + (late ? " late" : "") + "\">" + (late ? eur(r.down_missed) + " not paid when due" : "all on time") + "</div></div>";
+    var changed = Object.keys(r.cells).length > 0;
+    $("px-src").innerHTML = "Model rerun <b>" + r.run + "</b>, simulated: " +
+      (changed ? "a copy of the Excel model with grid price " + money(c) + " (Inputs!C21), " + (won ? "bid " + money(pxRef) + " (C25), premium on the 30% " + (p2 ? "counted" : "not counted") + " (C24)" : "premium not won (C23)") + ", recalculated in Excel"
+               : "no input changed, so this is the published model") +
+      "; engine check " + r.rec + ".";
+  }
+  capIn.addEventListener("input", setPrices);
+  $("px-p2").addEventListener("change", setPrices);
+  setPrices();
+
+  // monte carlo
+  var M = D.montecarlo, keys = ["0%", "1%", "2%", "4%"];
+  var HZ = M.by_host_hazard, b2 = HZ["2%"], b4 = HZ["4%"], scale = 0.6;
+  $("mc-title").textContent = "At my 2% assumption, " + pct(b2.p_missed) + " of " + M.n_paths.toLocaleString("en-GB") + " futures miss a payment and " +
+    pct(b2.p_all_on_time) + " pay on time. At 4%, misses roughly double, to " + pct(b4.p_missed) + ".";
+  var cols = [["p_any_host_left_by_15", "A business has left by year 15", "var(--neutral)", 0, ""],
+              ["p_reserve_no_miss", "Reserve drawn, all paid", "var(--stress)", 1, ""],
+              ["p_missed", "A payment missed", "var(--late)", 1, " miss"]];
+  $("mc-table").innerHTML = "<div class=\"h\" role=\"columnheader\">Yearly chance each business leaves</div>" +
+    cols.map(function (c) { return "<div class=\"h\" role=\"columnheader\">" + c[1] + "</div>"; }).join("") +
+    keys.map(function (k) {
+      var r = HZ[k], base = k === "2%";
+      return "<div class=\"rl" + (base ? " base" : "") + "\" role=\"rowheader\">" + k + (base ? "<small>my base case (A)</small>" : "") + "</div>" +
+        cols.map(function (c) {
+          var v = r[c[0]];
+          return "<div class=\"c" + c[4] + (base ? " base" : "") + "\" role=\"cell\"><span>" + pct(v, c[3]) + "</span><i style=\"width:" + (v / scale * 100).toFixed(2) + "%;background:" + c[2] + "\"></i></div>";
+        }).join("");
+    }).join("");
+  var cf = M.config;
+  $("mc-config").textContent = M.n_paths.toLocaleString("en-GB") + " paths, fixed seed " + M.seed + ". Each year's sunshine varies with a standard deviation of " + pct(cf.weather_sd) +
+    "; a lasting error in the sunshine estimate of " + pct(cf.p50_error_sd, 0) + "; market prices with " + pct(cf.capture_vol, 0) +
+    " volatility; each business leaves with a " + pct(cf.hazard_each + cf.hazard_common, 0) + " chance a year, half of it a shared shock that hits both (A).";
+
+  // question 3
+  $("t-iss").textContent = eur(C.issuance.v);
+  $("t-run").textContent = eur(C.running.v);
+  $("t-cpi").textContent = eur(C.cost_per_investor.v);
+  $("t-guar").textContent = eur(C.guarantee.v);
+  var maxc = 0.11;
+  $("cost").innerHTML =
+    "<div class=\"row\"><span>Bank loan<br><span class=\"small\">15 years</span></span><span class=\"track\"><span class=\"fill\" style=\"width:" + (C.bank_lo.v / maxc * 100) + "%;background:var(--neutral)\"></span><span class=\"fill\" style=\"left:" + (C.bank_lo.v / maxc * 100) + "%;width:" + ((C.bank_hi.v - C.bank_lo.v) / maxc * 100) + "%;background:var(--neutral);opacity:0.45\"></span></span><span class=\"v\">" + pct(C.bank_lo.v) + "-" + pct(C.bank_hi.v) + "</span></div>" +
+    "<div class=\"row\"><span>This bond<br><span class=\"small\">tokenised</span></span><span class=\"track\"><span class=\"fill\" style=\"width:" + (C.bond_allin.v / maxc * 100) + "%;background:var(--navy)\"></span></span><span class=\"v\">" + pct(C.bond_allin.v) + "</span></div>";
+
+  // question 4: checker
+  var P = D.checker.planted;
+  function layers(p) {
+    return [p.numbers.some(function (n) { return n.status === "UNMATCHED"; }), p.words.length > 0, p.claude.length > 0];
+  }
+  $("sents").innerHTML = P.map(function (p, i) {
+    var l = layers(p);
+    return "<li><button type=\"button\" id=\"s" + (i + 1) + "\" data-s=\"" + i + "\" aria-pressed=\"false\"><span class=\"n\">" + (i + 1) + "</span><span>" + p.sentence + "</span><span class=\"dots\" aria-label=\"flagged by " +
+      ["numbers", "word list", "Claude"].filter(function (_, j) { return l[j]; }).join(", ") + "\">" +
+      l.map(function (on, j) { return "<i class=\"" + (on ? "on" + (j + 1) : "") + "\"></i>"; }).join("") + "</span></button></li>";
+  }).join("");
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;" }[c]; }); }
+  function setSent(i) {
+    var p = P[i];
+    document.querySelectorAll("[data-s]").forEach(function (b) { b.setAttribute("aria-pressed", String(+b.dataset.s === i)); });
+    var nums = p.numbers.length ? p.numbers.map(function (n) {
+      return n.status === "UNMATCHED"
+        ? "<p class=\"hit late\">" + esc(n.number) + " is in no model cell or dated source.</p>"
+        : "<p class=\"miss\">" + esc(n.number) + " matches " + esc(n.source) + " (" + esc(n.why) + ").</p>";
+    }).join("") : "<p class=\"miss\">No number to check.</p>";
+    var words = p.words.length ? p.words.map(function (w) { return "<p class=\"hit\">\"" + esc(w.phrase) + "\": " + esc(w.why) + ".</p>"; }).join("") : "<p class=\"miss\">No flagged word.</p>";
+    var cl = p.claude.map(function (c) { return "<p>" + esc(c.why) + "</p><p class=\"rw\"><b>Suggested rewrite:</b> " + esc(c.rewrite) + "</p>"; }).join("");
+    $("detail").innerHTML = "<p class=\"small\">Planted sentence " + (i + 1) + "</p><p class=\"quote\">" + esc(p.sentence) + "</p>" +
+      "<h4>1 Numbers vs the Excel model</h4>" + nums + "<h4>2 Word list</h4>" + words + "<h4>3 Claude</h4>" + cl;
+  }
+  document.querySelectorAll("[data-s]").forEach(function (b) { b.addEventListener("click", function () { setSent(+b.dataset.s); }); });
+  setSent(3);
+  $("real").innerHTML = "<tr><th>Document</th><th class=\"r\">Numbers checked</th><th class=\"r\">Unmatched</th><th class=\"r\">Flagged words</th><th class=\"r\">Points raised by Claude</th></tr>" +
+    D.checker.real.map(function (r) { return "<tr><td>" + (r.file === "factsheet.html" ? "Investor factsheet" : "Proposal") + "</td><td class=\"r\">" + r.numbers + "</td><td class=\"r\">" + r.unmatched + "</td><td class=\"r\">" + r.flags + "</td><td class=\"r\">" + r.promises + "</td></tr>"; }).join("");
+
+  // monitor
+  var MO = D.monitor, dec = MO.decided, lat = MO.latest;
+  var capOf = function (run) { return run.fetched.filter(function (f) { return /capture/i.test(f.name); })[0]; };
+  var cNew = capOf(lat);
+  $("m-new-k").textContent = "Found on " + when(lat.created) + ": solar price, last 12 months";
+  $("m-new").textContent = eur(cNew.value, 2);
+  $("m-new-src").textContent = cNew.period.replace(" to ", " to ") + "; " + cNew.source.split(" (")[0];
+  $("m-old").textContent = eur(C.capture.v);
+  var want = ["Lowest cover, plan", "Lowest cover, both hosts leave yr 5", "Year-1 revenue, plan"];
+  var fmt = function (o, v) { return o.format === "x" ? x2(v) : eur(v); };
+  $("m-out").innerHTML = "<tr><th>In the model</th><th class=\"r\">At EUR 45</th><th class=\"r\">At " + eur(cNew.value, 2) + "</th></tr>" +
+    lat.key_outputs.filter(function (o) { return want.indexOf(o.label) >= 0; }).map(function (o) {
+      return "<tr><td>" + o.label.replace("both hosts leave yr 5", "both businesses leave in year 5") + "</td><td class=\"r\">" + fmt(o, o.base) + "</td><td class=\"r\">" + fmt(o, o.market) + "</td></tr>";
+    }).join("");
+  var logged = MO.log.map(function (r) {
+    var sim = r.simulated === "True";
+    return "<tr><td class=\"nw\">" + when(r.decided_at) + "<br><span class=\"id\">" + r.run_id + "</span></td><td><span class=\"status " + (sim ? "sim" : "rej") + "\">" + r.decision + "</span></td><td>" + esc(r.by) + "</td><td>" + esc(r.note) + "</td></tr>";
+  });
+  var known = MO.log.some(function (r) { return r.run_id === lat.run_id; });
+  if (!known) {
+    var cl2 = capOf(lat);
+    logged.push("<tr><td class=\"nw\">" + when(lat.created) + "<br><span class=\"id\">" + lat.run_id + "</span></td><td><span class=\"status wait\">awaiting review</span></td><td></td><td>Found " + eur(cl2.value, 2) + "; " + lat.stale_count + " sentences would change</td></tr>");
+  }
+  $("m-log").innerHTML = "<tr><th>When, run</th><th>Decision</th><th>By</th><th>Note</th></tr>" + logged.join("");
+
+  // premium number line, EUR per MWh, from data.js
+  (function () {
+    var lo = 40, hi = 100, at = function (v) { return ((v - lo) / (hi - lo) * 100).toFixed(2) + "%"; };
+    var cap = C.capture.v, bid = C.ref.v, aw = C.tender_award7.v, top = C.tender_cap.v;
+    $("prem-line").innerHTML =
+      "<div class=\"track\"></div>" +
+      "<div class=\"band\" style=\"left:" + at(cap) + ";width:calc(" + at(bid) + " - " + at(cap) + ")\"></div>" +
+      [cap, aw, bid, top].map(function (v) { return "<div class=\"tick\" style=\"left:" + at(v) + "\"></div>"; }).join("") +
+      "<div class=\"lab l\" style=\"left:" + at(cap) + ";top:0.4rem\"><b>" + eur(cap) + "</b>grid price, 2025</div>" +
+      "<div class=\"lab r bid\" style=\"left:" + at(bid) + ";top:0.4rem\"><b>" + eur(bid, 2) + "</b>my bid (A)</div>" +
+      "<div class=\"lab c gap\" style=\"left:" + at((cap + bid) / 2) + ";top:0.6rem\">the state<br>pays this gap</div>" +
+      "<div class=\"lab r\" style=\"left:" + at(aw) + ";top:4.1rem\"><b>" + eur(aw, 2) + "</b>last round's award</div>" +
+      "<div class=\"lab r\" style=\"left:" + at(top) + ";top:6.3rem\"><b>" + eur(top) + "</b>cap</div>";
+  })();
+
+  document.querySelectorAll("[data-go]").forEach(function (a) {
+    a.addEventListener("click", function () {
+      if (a.dataset.go === "notwon") { pxRef = "none"; setPrices(); }
+      if (a.dataset.go === "s4") setSent(3);
+    });
+  });
+
+  // contents bar: mark the section in view
+  var links = Array.prototype.slice.call(document.querySelectorAll("nav.toc a"));
+  var secs = links.map(function (a) { return document.querySelector(a.getAttribute("href")); });
+  function onScroll() {
+    var y = window.scrollY + 120, cur = -1;
+    secs.forEach(function (s, i) { if (s && s.offsetTop <= y) cur = i; });
+    links.forEach(function (a, i) { a.classList.toggle("on", i === cur); });
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+</body>
+</html>

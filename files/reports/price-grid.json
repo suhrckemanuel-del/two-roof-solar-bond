@@ -1,0 +1,3244 @@
+{
+ "runs": {
+  "capture=30,ref=92.5,p2=0": {
+   "run_id": "2026-10-18_0042_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 30.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4054156049457405,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=35,ref=92.5,p2=0": {
+   "run_id": "2026-10-18_0045_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 35.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4355654731063698,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=40,ref=92.5,p2=0": {
+   "run_id": "2026-10-18_0045_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 40.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4657153412669996,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=45,ref=92.5,p2=0": {
+   "run_id": "2026-10-18_0045_SIM-3",
+   "simulated": true,
+   "inputs_changed": {},
+   "reconciliation": "PASS",
+   "plan": 1.4958652094276292,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=50,ref=92.5,p2=0": {
+   "run_id": "2026-10-18_0045_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 50.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.526015077588259,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=55,ref=92.5,p2=0": {
+   "run_id": "2026-10-18_0045_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 55.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.5561649457488884,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=60,ref=92.5,p2=0": {
+   "run_id": "2026-10-18_0045_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 60.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.586314813909518,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=61.17,ref=92.5,p2=0": {
+   "run_id": "2026-10-18_0045_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 61.17
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.5933698830591057,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=65,ref=92.5,p2=0": {
+   "run_id": "2026-10-18_0046_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 65.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6164646820701478,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=70,ref=92.5,p2=0": {
+   "run_id": "2026-10-18_0046_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 70.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6466145502307774,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=75,ref=92.5,p2=0": {
+   "run_id": "2026-10-18_0046_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 75.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.676764418391407,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=80,ref=92.5,p2=0": {
+   "run_id": "2026-10-18_0046_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 80.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7069142865520366,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=85,ref=92.5,p2=0": {
+   "run_id": "2026-10-18_0046_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 85.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7370641547126664,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=90,ref=92.5,p2=0": {
+   "run_id": "2026-10-18_0046_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 90.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.767214022873296,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=30,ref=92.5,p2=1": {
+   "run_id": "2026-10-18_0046_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 30.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.70133656094232,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=35,ref=92.5,p2=1": {
+   "run_id": "2026-10-18_0047_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 35.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.70133656094232,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=40,ref=92.5,p2=1": {
+   "run_id": "2026-10-18_0047_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 40.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.70133656094232,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=45,ref=92.5,p2=1": {
+   "run_id": "2026-10-18_0047_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.70133656094232,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=50,ref=92.5,p2=1": {
+   "run_id": "2026-10-18_0047_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 50.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.70133656094232,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=55,ref=92.5,p2=1": {
+   "run_id": "2026-10-18_0047_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 55.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.70133656094232,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=60,ref=92.5,p2=1": {
+   "run_id": "2026-10-18_0047_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 60.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.70133656094232,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=61.17,ref=92.5,p2=1": {
+   "run_id": "2026-10-18_0047_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 61.17
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.70133656094232,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=65,ref=92.5,p2=1": {
+   "run_id": "2026-10-18_0048_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 65.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.70133656094232,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=70,ref=92.5,p2=1": {
+   "run_id": "2026-10-18_0048_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 70.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.70133656094232,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=75,ref=92.5,p2=1": {
+   "run_id": "2026-10-18_0048_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 75.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.70133656094232,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=80,ref=92.5,p2=1": {
+   "run_id": "2026-10-18_0048_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 80.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.70133656094232,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=85,ref=92.5,p2=1": {
+   "run_id": "2026-10-18_0048_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 85.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.70133656094232,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=90,ref=92.5,p2=1": {
+   "run_id": "2026-10-18_0048_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 90.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.70133656094232,
+   "down": 0.9399831383602909,
+   "down_missed": 0
+  },
+  "capture=30,ref=85,p2=0": {
+   "run_id": "2026-10-18_0048_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 30.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4054156049457405,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=35,ref=85,p2=0": {
+   "run_id": "2026-10-18_0048_SIM-8",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 35.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4355654731063698,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=40,ref=85,p2=0": {
+   "run_id": "2026-10-18_0049_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 40.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4657153412669996,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=45,ref=85,p2=0": {
+   "run_id": "2026-10-18_0049_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4958652094276292,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=50,ref=85,p2=0": {
+   "run_id": "2026-10-18_0049_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 50.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.526015077588259,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=55,ref=85,p2=0": {
+   "run_id": "2026-10-18_0049_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 55.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.5561649457488884,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=60,ref=85,p2=0": {
+   "run_id": "2026-10-18_0049_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 60.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.586314813909518,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=61.17,ref=85,p2=0": {
+   "run_id": "2026-10-18_0049_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 61.17
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.5933698830591057,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=65,ref=85,p2=0": {
+   "run_id": "2026-10-18_0049_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 65.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6164646820701478,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=70,ref=85,p2=0": {
+   "run_id": "2026-10-18_0050_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 70.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6466145502307774,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=75,ref=85,p2=0": {
+   "run_id": "2026-10-18_0050_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 75.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.676764418391407,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=80,ref=85,p2=0": {
+   "run_id": "2026-10-18_0050_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 80.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7069142865520366,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=85,ref=85,p2=0": {
+   "run_id": "2026-10-18_0050_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 85.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7370641547126664,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=90,ref=85,p2=0": {
+   "run_id": "2026-10-18_0050_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 90.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.767214022873296,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=30,ref=85,p2=1": {
+   "run_id": "2026-10-18_0050_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 30.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6628954790375172,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=35,ref=85,p2=1": {
+   "run_id": "2026-10-18_0050_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 35.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6628954790375172,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=40,ref=85,p2=1": {
+   "run_id": "2026-10-18_0051_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 40.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6628954790375172,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=45,ref=85,p2=1": {
+   "run_id": "2026-10-18_0051_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6628954790375172,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=50,ref=85,p2=1": {
+   "run_id": "2026-10-18_0051_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 50.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6628954790375172,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=55,ref=85,p2=1": {
+   "run_id": "2026-10-18_0051_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 55.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6628954790375172,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=60,ref=85,p2=1": {
+   "run_id": "2026-10-18_0051_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 60.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6628954790375172,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=61.17,ref=85,p2=1": {
+   "run_id": "2026-10-18_0051_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 61.17
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6628954790375172,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=65,ref=85,p2=1": {
+   "run_id": "2026-10-18_0051_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 65.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6628954790375172,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=70,ref=85,p2=1": {
+   "run_id": "2026-10-18_0051_SIM-8",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 70.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6628954790375172,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=75,ref=85,p2=1": {
+   "run_id": "2026-10-18_0052_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 75.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6628954790375172,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=80,ref=85,p2=1": {
+   "run_id": "2026-10-18_0052_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 80.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6628954790375172,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=85,ref=85,p2=1": {
+   "run_id": "2026-10-18_0052_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 85.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6628954790375172,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=90,ref=85,p2=1": {
+   "run_id": "2026-10-18_0052_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 90.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 85.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6628954790375172,
+   "down": 0.7772218494589885,
+   "down_missed": 284275.7617071023
+  },
+  "capture=30,ref=87.5,p2=0": {
+   "run_id": "2026-10-18_0052_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 30.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4054156049457405,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=35,ref=87.5,p2=0": {
+   "run_id": "2026-10-18_0052_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 35.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4355654731063698,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=40,ref=87.5,p2=0": {
+   "run_id": "2026-10-18_0052_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 40.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4657153412669996,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=45,ref=87.5,p2=0": {
+   "run_id": "2026-10-18_0053_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4958652094276292,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=50,ref=87.5,p2=0": {
+   "run_id": "2026-10-18_0053_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 50.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.526015077588259,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=55,ref=87.5,p2=0": {
+   "run_id": "2026-10-18_0053_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 55.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.5561649457488884,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=60,ref=87.5,p2=0": {
+   "run_id": "2026-10-18_0053_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 60.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.586314813909518,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=61.17,ref=87.5,p2=0": {
+   "run_id": "2026-10-18_0053_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 61.17
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.5933698830591057,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=65,ref=87.5,p2=0": {
+   "run_id": "2026-10-18_0053_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 65.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6164646820701478,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=70,ref=87.5,p2=0": {
+   "run_id": "2026-10-18_0053_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 70.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6466145502307774,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=75,ref=87.5,p2=0": {
+   "run_id": "2026-10-18_0054_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 75.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.676764418391407,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=80,ref=87.5,p2=0": {
+   "run_id": "2026-10-18_0054_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 80.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7069142865520366,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=85,ref=87.5,p2=0": {
+   "run_id": "2026-10-18_0054_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 85.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7370641547126664,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=90,ref=87.5,p2=0": {
+   "run_id": "2026-10-18_0054_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 90.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.767214022873296,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=30,ref=87.5,p2=1": {
+   "run_id": "2026-10-18_0054_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 30.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6757091730057854,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=35,ref=87.5,p2=1": {
+   "run_id": "2026-10-18_0054_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 35.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6757091730057854,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=40,ref=87.5,p2=1": {
+   "run_id": "2026-10-18_0054_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 40.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6757091730057854,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=45,ref=87.5,p2=1": {
+   "run_id": "2026-10-18_0055_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6757091730057854,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=50,ref=87.5,p2=1": {
+   "run_id": "2026-10-18_0055_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 50.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6757091730057854,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=55,ref=87.5,p2=1": {
+   "run_id": "2026-10-18_0055_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 55.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6757091730057854,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=60,ref=87.5,p2=1": {
+   "run_id": "2026-10-18_0055_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 60.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6757091730057854,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=61.17,ref=87.5,p2=1": {
+   "run_id": "2026-10-18_0055_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 61.17
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6757091730057854,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=65,ref=87.5,p2=1": {
+   "run_id": "2026-10-18_0055_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 65.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6757091730057854,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=70,ref=87.5,p2=1": {
+   "run_id": "2026-10-18_0055_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 70.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6757091730057854,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=75,ref=87.5,p2=1": {
+   "run_id": "2026-10-18_0056_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 75.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6757091730057854,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=80,ref=87.5,p2=1": {
+   "run_id": "2026-10-18_0056_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 80.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6757091730057854,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=85,ref=87.5,p2=1": {
+   "run_id": "2026-10-18_0056_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 85.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6757091730057854,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=90,ref=87.5,p2=1": {
+   "run_id": "2026-10-18_0056_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 90.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 87.5
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6757091730057854,
+   "down": 0.8304429822163975,
+   "down_missed": 2903.7705102066684
+  },
+  "capture=30,ref=90,p2=0": {
+   "run_id": "2026-10-18_0056_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 30.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4054156049457405,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=35,ref=90,p2=0": {
+   "run_id": "2026-10-18_0056_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 35.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4355654731063698,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=40,ref=90,p2=0": {
+   "run_id": "2026-10-18_0056_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 40.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4657153412669996,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=45,ref=90,p2=0": {
+   "run_id": "2026-10-18_0057_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4958652094276292,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=50,ref=90,p2=0": {
+   "run_id": "2026-10-18_0057_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 50.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.526015077588259,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=55,ref=90,p2=0": {
+   "run_id": "2026-10-18_0057_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 55.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.5561649457488884,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=60,ref=90,p2=0": {
+   "run_id": "2026-10-18_0057_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 60.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.586314813909518,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=61.17,ref=90,p2=0": {
+   "run_id": "2026-10-18_0057_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 61.17
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.5933698830591057,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=65,ref=90,p2=0": {
+   "run_id": "2026-10-18_0057_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 65.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6164646820701478,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=70,ref=90,p2=0": {
+   "run_id": "2026-10-18_0057_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 70.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6466145502307774,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=75,ref=90,p2=0": {
+   "run_id": "2026-10-18_0058_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 75.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.676764418391407,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=80,ref=90,p2=0": {
+   "run_id": "2026-10-18_0058_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 80.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7069142865520366,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=85,ref=90,p2=0": {
+   "run_id": "2026-10-18_0058_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 85.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7370641547126664,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=90,ref=90,p2=0": {
+   "run_id": "2026-10-18_0058_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 90.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.767214022873296,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=30,ref=90,p2=1": {
+   "run_id": "2026-10-18_0058_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 30.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6885228669740524,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=35,ref=90,p2=1": {
+   "run_id": "2026-10-18_0058_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 35.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6885228669740524,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=40,ref=90,p2=1": {
+   "run_id": "2026-10-18_0058_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 40.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6885228669740524,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=45,ref=90,p2=1": {
+   "run_id": "2026-10-18_0059_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6885228669740524,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=50,ref=90,p2=1": {
+   "run_id": "2026-10-18_0059_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 50.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6885228669740524,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=55,ref=90,p2=1": {
+   "run_id": "2026-10-18_0059_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 55.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6885228669740524,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=60,ref=90,p2=1": {
+   "run_id": "2026-10-18_0059_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 60.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6885228669740524,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=61.17,ref=90,p2=1": {
+   "run_id": "2026-10-18_0059_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 61.17
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6885228669740524,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=65,ref=90,p2=1": {
+   "run_id": "2026-10-18_0059_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 65.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6885228669740524,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=70,ref=90,p2=1": {
+   "run_id": "2026-10-18_0059_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 70.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6885228669740524,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=75,ref=90,p2=1": {
+   "run_id": "2026-10-18_0100_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 75.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6885228669740524,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=80,ref=90,p2=1": {
+   "run_id": "2026-10-18_0100_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 80.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6885228669740524,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=85,ref=90,p2=1": {
+   "run_id": "2026-10-18_0100_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 85.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6885228669740524,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=90,ref=90,p2=1": {
+   "run_id": "2026-10-18_0100_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 90.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 90.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6885228669740524,
+   "down": 0.8848657417413575,
+   "down_missed": 0
+  },
+  "capture=30,ref=95,p2=0": {
+   "run_id": "2026-10-18_0100_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 30.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4054156049457405,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=35,ref=95,p2=0": {
+   "run_id": "2026-10-18_0100_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 35.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4355654731063698,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=40,ref=95,p2=0": {
+   "run_id": "2026-10-18_0100_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 40.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4657153412669996,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=45,ref=95,p2=0": {
+   "run_id": "2026-10-18_0101_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4958652094276292,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=50,ref=95,p2=0": {
+   "run_id": "2026-10-18_0101_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 50.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.526015077588259,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=55,ref=95,p2=0": {
+   "run_id": "2026-10-18_0101_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 55.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.5561649457488884,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=60,ref=95,p2=0": {
+   "run_id": "2026-10-18_0101_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 60.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.586314813909518,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=61.17,ref=95,p2=0": {
+   "run_id": "2026-10-18_0101_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 61.17
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.5933698830591057,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=65,ref=95,p2=0": {
+   "run_id": "2026-10-18_0101_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 65.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6164646820701478,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=70,ref=95,p2=0": {
+   "run_id": "2026-10-18_0101_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 70.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6466145502307774,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=75,ref=95,p2=0": {
+   "run_id": "2026-10-18_0102_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 75.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.676764418391407,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=80,ref=95,p2=0": {
+   "run_id": "2026-10-18_0102_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 80.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7069142865520366,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=85,ref=95,p2=0": {
+   "run_id": "2026-10-18_0102_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 85.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7370641547126664,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=90,ref=95,p2=0": {
+   "run_id": "2026-10-18_0102_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 90.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.767214022873296,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=30,ref=95,p2=1": {
+   "run_id": "2026-10-18_0102_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 30.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7141502549105876,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=35,ref=95,p2=1": {
+   "run_id": "2026-10-18_0102_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 35.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7141502549105876,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=40,ref=95,p2=1": {
+   "run_id": "2026-10-18_0102_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 40.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7141502549105876,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=45,ref=95,p2=1": {
+   "run_id": "2026-10-18_0103_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7141502549105876,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=50,ref=95,p2=1": {
+   "run_id": "2026-10-18_0103_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 50.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7141502549105876,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=55,ref=95,p2=1": {
+   "run_id": "2026-10-18_0103_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 55.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7141502549105876,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=60,ref=95,p2=1": {
+   "run_id": "2026-10-18_0103_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 60.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7141502549105876,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=61.17,ref=95,p2=1": {
+   "run_id": "2026-10-18_0103_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 61.17
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7141502549105876,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=65,ref=95,p2=1": {
+   "run_id": "2026-10-18_0103_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 65.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7141502549105876,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=70,ref=95,p2=1": {
+   "run_id": "2026-10-18_0104_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 70.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7141502549105876,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=75,ref=95,p2=1": {
+   "run_id": "2026-10-18_0104_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 75.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7141502549105876,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=80,ref=95,p2=1": {
+   "run_id": "2026-10-18_1058_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 80.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7141502549105876,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=85,ref=95,p2=1": {
+   "run_id": "2026-10-18_1058_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 85.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7141502549105876,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=90,ref=95,p2=1": {
+   "run_id": "2026-10-18_1058_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 90.0
+    },
+    "ref": {
+     "cell": "Inputs!C25",
+     "old": 92.5,
+     "new": 95.0
+    },
+    "p2": {
+     "cell": "Inputs!C24",
+     "old": 0,
+     "new": 1.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7141502549105876,
+   "down": 0.9962768581204835,
+   "down_missed": 0
+  },
+  "capture=45,ref=92.5,p2=0,p1=0": {
+   "run_id": "2026-10-18_1137_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "p1": {
+     "cell": "Inputs!C23",
+     "old": 1,
+     "new": 0.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4958652094276292,
+   "down": 0.06538926672631153,
+   "down_missed": 2180216.6599817174
+  },
+  "capture=30,ref=92.5,p2=0,p1=0": {
+   "run_id": "2026-10-18_1154_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 30.0
+    },
+    "p1": {
+     "cell": "Inputs!C23",
+     "old": 1,
+     "new": 0.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4054156049457405,
+   "down": -0.33064210278149914,
+   "down_missed": 2233408.4422663115
+  },
+  "capture=35,ref=92.5,p2=0,p1=0": {
+   "run_id": "2026-10-18_1154_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 35.0
+    },
+    "p1": {
+     "cell": "Inputs!C23",
+     "old": 1,
+     "new": 0.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4355654731063698,
+   "down": -0.19863164627889554,
+   "down_missed": 2233408.4422663115
+  },
+  "capture=40,ref=92.5,p2=0,p1=0": {
+   "run_id": "2026-10-18_1154_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 40.0
+    },
+    "p1": {
+     "cell": "Inputs!C23",
+     "old": 1,
+     "new": 0.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.4657153412669996,
+   "down": -0.06662118977629193,
+   "down_missed": 2209444.3035861207
+  },
+  "capture=50,ref=92.5,p2=0,p1=0": {
+   "run_id": "2026-10-18_1154_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 50.0
+    },
+    "p1": {
+     "cell": "Inputs!C23",
+     "old": 1,
+     "new": 0.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.526015077588259,
+   "down": 0.19739972322891514,
+   "down_missed": 2097453.457525939
+  },
+  "capture=55,ref=92.5,p2=0,p1=0": {
+   "run_id": "2026-10-18_1155_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 55.0
+    },
+    "p1": {
+     "cell": "Inputs!C23",
+     "old": 1,
+     "new": 0.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.5561649457488884,
+   "down": 0.3294101797315186,
+   "down_missed": 2013772.193823563
+  },
+  "capture=60,ref=92.5,p2=0,p1=0": {
+   "run_id": "2026-10-18_1155_SIM-2",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 60.0
+    },
+    "p1": {
+     "cell": "Inputs!C23",
+     "old": 1,
+     "new": 0.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.586314813909518,
+   "down": 0.46142063623412205,
+   "down_missed": 1866538.8740266678
+  },
+  "capture=61.17,ref=92.5,p2=0,p1=0": {
+   "run_id": "2026-10-18_1155_SIM-3",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 61.17
+    },
+    "p1": {
+     "cell": "Inputs!C23",
+     "old": 1,
+     "new": 0.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.5933698830591057,
+   "down": 0.4922832505211538,
+   "down_missed": 1805280.4481481453
+  },
+  "capture=65,ref=92.5,p2=0,p1=0": {
+   "run_id": "2026-10-18_1155_SIM-4",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 65.0
+    },
+    "p1": {
+     "cell": "Inputs!C23",
+     "old": 1,
+     "new": 0.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6164646820701478,
+   "down": 0.5866665052918674,
+   "down_missed": 1559513.1252144882
+  },
+  "capture=70,ref=92.5,p2=0,p1=0": {
+   "run_id": "2026-10-18_1155_SIM-5",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 70.0
+    },
+    "p1": {
+     "cell": "Inputs!C23",
+     "old": 1,
+     "new": 0.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.6466145502307774,
+   "down": 0.7101375826038933,
+   "down_missed": 897911.4283163393
+  },
+  "capture=75,ref=92.5,p2=0,p1=0": {
+   "run_id": "2026-10-18_1155_SIM-6",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 75.0
+    },
+    "p1": {
+     "cell": "Inputs!C23",
+     "old": 1,
+     "new": 0.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.676764418391407,
+   "down": 0.8348324472591168,
+   "down_missed": 0
+  },
+  "capture=80,ref=92.5,p2=0,p1=0": {
+   "run_id": "2026-10-18_1155_SIM-7",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 80.0
+    },
+    "p1": {
+     "cell": "Inputs!C23",
+     "old": 1,
+     "new": 0.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7069142865520366,
+   "down": 0.9642553408575602,
+   "down_missed": 0
+  },
+  "capture=85,ref=92.5,p2=0,p1=0": {
+   "run_id": "2026-10-18_1156_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 85.0
+    },
+    "p1": {
+     "cell": "Inputs!C23",
+     "old": 1,
+     "new": 0.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.7370641547126664,
+   "down": 1.0973637883067695,
+   "down_missed": 0
+  },
+  "capture=90,ref=92.5,p2=0,p1=0": {
+   "run_id": "2026-10-18_2303_SIM",
+   "simulated": true,
+   "inputs_changed": {
+    "capture": {
+     "cell": "Inputs!C21",
+     "old": 45,
+     "new": 90.0
+    },
+    "p1": {
+     "cell": "Inputs!C23",
+     "old": 1,
+     "new": 0.0
+    }
+   },
+   "reconciliation": "PASS",
+   "plan": 1.767214022873296,
+   "down": 1.2122652097260926,
+   "down_missed": 0
+  }
+ },
+ "about": "Precompute the demo page's price setting from real model reruns.",
+ "outputs": {
+  "plan": "scenario.minimum_dscr_over_bond_life.a",
+  "down": "scenario.minimum_dscr_over_bond_life.downside",
+  "down_missed": "scenario.scheduled_debt_service_not_paid_when_due_eur.downside"
+ }
+}

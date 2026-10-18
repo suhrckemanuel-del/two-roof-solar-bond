@@ -1,0 +1,176 @@
+{
+ "documents": [
+  {
+   "file": "bad-factsheet.html",
+   "numbers": [
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "Two-Roof Solar Bond 2026"
+    },
+    {
+     "number": "6.5%",
+     "status": "MATCHED",
+     "why": "Bond coupon (15y amortising, senior) (%)",
+     "source": "Inputs!C50",
+     "kind": "DERIVED",
+     "sentence": "Earn a guaranteed 6.5% a year from clean energy."
+    },
+    {
+     "number": "EUR 500",
+     "status": "MATCHED",
+     "why": "Principal per bond token (also the minimum ticket) (EUR)",
+     "source": "Inputs!C57",
+     "kind": "ASSUMPTION",
+     "sentence": "Each EUR 500 token pays EUR 55.00 every year for 15 years."
+    },
+    {
+     "number": "EUR 55.00",
+     "status": "UNMATCHED",
+     "why": "no model cell or sourced fact at this precision",
+     "sentence": "Each EUR 500 token pays EUR 55.00 every year for 15 years."
+    },
+    {
+     "number": "15",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Each EUR 500 token pays EUR 55.00 every year for 15 years."
+    },
+    {
+     "number": "1.6x",
+     "status": "MATCHED",
+     "why": "Average DSCR over bond life [a]",
+     "source": "Summary!C21",
+     "kind": "MODEL",
+     "sentence": "The project covers its payments 1.6x over, so your money is safe."
+    },
+    {
+     "number": "EUR 500",
+     "status": "MATCHED",
+     "why": "Principal per bond token (also the minimum ticket) (EUR)",
+     "source": "Inputs!C57",
+     "kind": "ASSUMPTION",
+     "sentence": "Anyone can invest from EUR 500 with no paperwork."
+    },
+    {
+     "number": "25",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "The building owners have signed 25-year contracts, so you will be repaid in full."
+    }
+   ],
+   "wording": [
+    {
+     "phrase": "guaranteed",
+     "status": "FLAG",
+     "why": "implies guaranteed repayment",
+     "sentence": "Earn a guaranteed 6.5% a year from clean energy."
+    },
+    {
+     "phrase": "safe",
+     "status": "FLAG",
+     "why": "implies safety",
+     "sentence": "The project covers its payments 1.6x over, so your money is safe."
+    },
+    {
+     "phrase": "Anyone can",
+     "status": "FLAG",
+     "why": "implies unrestricted access",
+     "sentence": "Anyone can invest from EUR 500 with no paperwork."
+    },
+    {
+     "phrase": "will be repaid",
+     "status": "FLAG",
+     "why": "implies certainty",
+     "sentence": "The building owners have signed 25-year contracts, so you will be repaid in full."
+    },
+    {
+     "phrase": "risk-free",
+     "status": "FLAG",
+     "why": "implies no risk",
+     "sentence": "The Luxembourg government backs the market premium, which makes this investment risk-free."
+    }
+   ],
+   "promises": {
+    "findings": [
+     {
+      "quote": "Earn a guaranteed 6.5% a year from clean energy.",
+      "issue": "implied_guarantee",
+      "severity": "high",
+      "explanation": "The 6.5% is the bond's coupon rate, not a guaranteed return. The model shows missed payments in 2.26% of base-case paths and minimum DSCR as low as 0.94 in case b and the downside case. The bond also amortises, so 6.5% applies only to principal still outstanding.",
+      "suggested_rewrite": "The bond pays interest at 6.5% a year on the principal still outstanding. Payments are not guaranteed and you could lose some or all of your money."
+     },
+     {
+      "quote": "Each EUR 500 token pays EUR 55.00 every year for 15 years.",
+      "issue": "contradicts_terms",
+      "severity": "high",
+      "explanation": "The model gives a year 1 payment per token of about EUR 53.18 (EUR 32.50 interest plus EUR 20.68 principal), and about EUR 797.65 over the bond life if every payment is made. EUR 55.00 does not appear in the figures. The sentence also presents the payments as certain.",
+      "suggested_rewrite": "If the project makes every payment, each EUR 500 token receives about EUR 53.18 a year for 15 years, about EUR 797.65 in total. In year 1 this is EUR 32.50 interest and EUR 20.68 repayment of principal. Payments are not guaranteed."
+     },
+     {
+      "quote": "The project covers its payments 1.6x over, so your money is safe.",
+      "issue": "contradicts_terms",
+      "severity": "high",
+      "explanation": "The model's minimum debt service cover ratio is about 1.50 in case a and 0.94 in case b and the downside case. In those cases cash flow does not fully cover payments in at least one year. 1.6x is not supported.",
+      "suggested_rewrite": "In our main case, the project's cash flow is at least about 1.5 times the bond payments in every year. In weaker cases it falls to about 0.94 times, which means cash flow does not fully cover payments in some years."
+     },
+     {
+      "quote": "The project covers its payments 1.6x over, so your money is safe.",
+      "issue": "implied_guarantee",
+      "severity": "high",
+      "explanation": "Calling the money safe implies certain repayment. In the base simulation, 2.26% of paths have at least one missed payment, averaging about EUR 135,700 missed. The reserve is drawn in 15.6% of paths.",
+      "suggested_rewrite": "Your money is at risk. In our simulation, about 2 in 100 scenarios had at least one missed bond payment, and the debt service reserve was used in about 16 in 100."
+     },
+     {
+      "quote": "Because the bond is a token, you can sell it any time on the blockchain.",
+      "issue": "implied_liquidity",
+      "severity": "high",
+      "explanation": "Being a token does not create a market. Nothing in the term sheet supports a buyer being available at any time or at a fair price. Transfers may also be restricted to eligible, checked investors.",
+      "suggested_rewrite": "The bond is recorded as a token, but there may be no buyer when you want to sell, and any sale may be at a price below what you paid. You should be prepared to hold it for the full 15 years."
+     },
+     {
+      "quote": "Anyone can invest from EUR 500 with no paperwork.",
+      "issue": "unrestricted_access",
+      "severity": "high",
+      "explanation": "The EUR 500 minimum ticket matches the term sheet. However, a retail bond offering requires investor identity and suitability checks, so claiming anyone can invest with no paperwork is not supported.",
+      "suggested_rewrite": "The minimum investment is EUR 500. Investors must pass identity and eligibility checks before they can buy or hold tokens."
+     },
+     {
+      "quote": "The building owners have signed 25-year contracts, so you will be repaid in full.",
+      "issue": "contradicts_terms",
+      "severity": "high",
+      "explanation": "The term sheet gives a PPA tenor of 20 years, not 25.",
+      "suggested_rewrite": "The building owners have agreed to buy power under 20-year contracts."
+     },
+     {
+      "quote": "The building owners have signed 25-year contracts, so you will be repaid in full.",
+      "issue": "implied_guarantee",
+      "severity": "high",
+      "explanation": "A contract does not guarantee repayment. The model assumes a 2% yearly chance each host stops buying, and in 36% of base paths a host has stopped buying by year 15. Missed payments still occur in some paths.",
+      "suggested_rewrite": "These contracts support the project's income, but a building owner may stop buying power before the contract ends. Full repayment is not guaranteed."
+     },
+     {
+      "quote": "The Luxembourg government backs the market premium, which makes this investment risk-free.",
+      "issue": "implied_guarantee",
+      "severity": "high",
+      "explanation": "No investment here is risk-free. The model shows missed payments, reserve draws and owner lockouts in a share of paths. Any premium support covers only part of revenue and only for 15 years.",
+      "suggested_rewrite": "This investment carries risk, and you could lose some or all of your money. A state-backed premium, if awarded, would support part of the project's revenue for 15 years, but it does not guarantee bond payments."
+     },
+     {
+      "quote": "The Luxembourg government backs the market premium, which makes this investment risk-free.",
+      "issue": "unlabelled_fiction",
+      "severity": "medium",
+      "explanation": "The term sheet treats the tender reference value of EUR 92.5/MWh as 'our bid, assumed won'. The text states government backing as fact without saying the award is an assumption in this case study.",
+      "suggested_rewrite": "This case study assumes the project wins a government premium tender at a reference value of EUR 92.5/MWh for 15 years. This has not been awarded."
+     }
+    ],
+    "model": "claude-opus-5-5",
+    "usage": {
+     "input_tokens": 2362,
+     "output_tokens": 2805
+    }
+   }
+  }
+ ]
+}

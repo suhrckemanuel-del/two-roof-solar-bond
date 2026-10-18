@@ -1,0 +1,5 @@
+decided_at,run_id,decision,by,note,simulated,stale_sentences,reconciliation
+2026-10-14T18:12:06+02:00,2026-10-14_1809_SIM,rejected,Claude (agent test),Drift-detection test with simulated host_cost=145; not market data,True,3,PASS
+2026-10-14T18:12:07+02:00,2026-10-14_1809_SIM-2,rejected,Claude (agent test),Drift-detection test with simulated capture=30; not market data,True,15,PASS
+2026-10-14T19:09:28+02:00,2026-10-14_1852,rejected,Manuel Suhrcke,Keep calendar-2025 value (EUR 45) as conservative base; trailing 12-month value noted; review next semester,False,16,PASS
+2026-10-17T12:06:05+02:00,2026-10-17_1055,rejected,Manuel Suhrcke,Same as 14 Oct: keep the official 2025 value (EUR 45) as the conservative base; 12-month value EUR 61.17 noted,False,20,PASS
