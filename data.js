@@ -645,7 +645,7 @@ window.DATA = {
    },
    {
     "file": "proposal.html",
-    "numbers": 172,
+    "numbers": 166,
     "unmatched": 0,
     "flags": 0,
     "promises": 0,

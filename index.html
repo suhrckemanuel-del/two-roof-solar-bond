@@ -278,6 +278,22 @@ input[type="range"] { display: block; width: 100%; margin: 0; accent-color: var(
 .mc-t .base { font-weight: 700; }
 .mc-t .miss span { color: var(--late); font-weight: 700; }
 
+
+/* the brief, point by point */
+table.brief td { font-size: 0.86rem; line-height: 1.45; }
+table.brief td.ask { font-weight: 600; width: 20%; }
+table.brief td.where { width: 15%; font-size: 0.8rem; }
+table.brief td.w { color: var(--muted); width: 28%; }
+table.brief tr.grp th { padding-top: 1.3rem; border-top: 0; color: var(--navy); font-size: 0.76rem; letter-spacing: 0.06em; text-transform: uppercase; }
+@media (max-width: 720px) {
+  table.brief thead { display: none; }
+  table.brief tr, table.brief td, table.brief th { display: block; width: auto !important; }
+  table.brief tr { border-top: 1px solid var(--rule); padding: 0.55rem 0; }
+  table.brief tr.grp { border-top: 0; }
+  table.brief td { border-top: 0; padding: 0.15rem 0; }
+  table.brief td.w::before { content: "Weakest point: "; font-weight: 600; color: var(--ink); }
+}
+
 .factsheet img { display: block; width: 100%; max-width: 20rem; border: 1px solid var(--rule); background: #fff; }
 .files { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 0 2rem; }
 .files a { display: block; padding: 0.7rem 0; border-top: 1px solid var(--rule); text-decoration: none; }
@@ -295,7 +311,7 @@ footer { padding-block: 3rem 4rem; }
     <h1>Two-Roof Solar Bond</h1>
     <p class="lead">A EUR 2 million bond, issued as tokens, that finances solar panels on two business roofs in Luxembourg. Investors are repaid only from the power the roofs sell. This page lets you check how that works, what happens when it goes wrong, and how the documents were kept true to the model.</p>
     <p class="byline"><b>Manuel Suhrcke</b> · October 2026 · <b>Fictional:</b> company, roofs, hosts, contracts, tender award. <b>Real:</b> market data, dated 2025-2026. (A) marks my assumptions. Not an offer or advice.</p>
-    <p class="docs"><a href="#video">Video (5:17)</a><a href="files/two-roof-solar-bond-proposal.pdf">Proposal (PDF, 3 pages)</a><a href="files/two-roof-solar-bond-factsheet.pdf">Investor factsheet (PDF)</a><a href="files/two-roof-solar-bond-model.xlsx">Excel model</a></p>
+    <p class="docs"><a href="#brief">The brief, point by point</a><a href="#video">Video (5:17)</a><a href="files/two-roof-solar-bond-proposal.pdf">Proposal (PDF, 3 pages)</a><a href="files/two-roof-solar-bond-factsheet.pdf">Investor factsheet (PDF)</a><a href="files/two-roof-solar-bond-model.xlsx">Excel model</a></p>
     <div class="start">
       <p class="eyebrow">Start here: three things to try</p>
       <ol>
@@ -318,8 +334,48 @@ footer { padding-block: 3rem 4rem; }
   <p class="small">The case in 5:17, in my voice, with captions on screen. <a href="files/two-roof-solar-bond-demo.mp4" download>Download the MP4 (24 MB)</a></p>
 </div>
 
+
+<section class="q" id="brief">
+  <div class="col stack">
+    <p class="qnum">THE BRIEF, POINT BY POINT</p>
+    <h2>How this entry answers the brief</h2>
+    <p>Every requirement in the LHoFT brief and the STOKR challenge: where it is answered, what it shows, and the weakest point I know of. Proposal references open the PDF at that page.</p>
+  </div>
+  <div class="wide block">
+    <div class="tbl"><table class="data brief">
+      <thead><tr><th>The brief asks for</th><th>Where</th><th>What it shows</th><th>Weakest point</th></tr></thead>
+      <tbody>
+      <tr class="grp"><th colspan="4">Proposal requirements (LHoFT)</th></tr>
+      <tr><td class="ask">Summary: problem, idea, users, benefits</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=1">§1, p. 1</a> · <a href="#pays">Q1</a></td><td class="what">A EUR 2M bond repaid only from two roofs' power sales; lowest plan cover 1.50x; who gains and why, in six lines.</td><td class="w">The premium condition can read as a contradiction at first; Question 2 explains it.</td></tr>
+      <tr><td class="ask">AI approach: how it works, data, role of AI, where people stay involved</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=3">§10, Exhibit 14, p. 3</a> · <a href="#honest">Q4</a></td><td class="what">A claim checker (numbers, word list, Claude) and a market monitor that reruns the Excel model; a person approves every change, and the decision log shows it.</td><td class="w">Tested on my own documents, my planted test and one blind test planted by another AI agent; no outside human test yet.</td></tr>
+      <tr><td class="ask">Fairness: bias, understandable outputs, accessibility, error correction</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=3">§8, p. 3</a> · <a href="#factsheet">factsheet</a></td><td class="what">One class and the same terms for everyone; a plain-language factsheet; EUR paid to a bank account; a custodian holds the tokens; errors fixed within 5 business days (A).</td><td class="w">The factsheet has not been tested on real readers yet; the understanding indicator in Exhibit 13 is how it would be.</td></tr>
+      <tr><td class="ask">Plan: pilot, people, timeline, costs, resources, checks</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=3">§9, Exhibit 12, p. 3</a></td><td class="what">Month by month, each step with who does it, what it costs and the check before the next one; professionals first, then retail.</td><td class="w">Roles are generic (a bank, counsel, a contractor): the company and its partners are fictional.</td></tr>
+      <tr><td class="ask">Impact: two or three measurable indicators, assumptions labelled</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=3">Exhibit 13, p. 3</a></td><td class="what">Clean power, investor understanding (three factsheet questions at purchase) and local reach, each reported yearly.</td><td class="w">All three are assumptions (A), with no targets set yet.</td></tr>
+      <tr><td class="ask">Risks: privacy, security, ethics, legal, case-specific</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=2">§6 and §8, p. 2</a> · <a href="#wrong">Q2</a></td><td class="what">A real Liquid incident (6 Sep 2026), GDPR and no investor data on the chain, an arm's-length check on the hosts' price, and where the model breaks.</td><td class="w">If the checker wrongly finds no promise in a sentence, only the person's review catches it.</td></tr>
+      <tr><td class="ask">Tools: disclose tools, cite sources, label fiction and assumptions</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=3">§10 and footers, p. 3</a> · <a href="#files">files</a></td><td class="what">Tools named in the proposal and the form; every number traced to the model or a dated source; fiction and (A) labelled on every page.</td><td class="w">No gap found in review.</td></tr>
+      <tr class="grp"><th colspan="4">STOKR challenge</th></tr>
+      <tr><td class="ask">Financing journey, from issuer preparation to investor reporting</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=1">§2, Exhibit 7, p. 1</a></td><td class="what">The owners build with equity and a bridge loan; at completion the bond raises EUR 2M and repays the bridge; reporting after issue.</td><td class="w">Bridge interest and refinancing if the offer fails sit with the owners and are not modelled.</td></tr>
+      <tr><td class="ask">The instrument: rights, repayment source, costs, risks</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=1">§3, Exhibits 1-2, p. 1</a> · <a href="#pays">Q1</a></td><td class="what">One equal yearly payment of EUR 212,706, paid right after running costs and tax; a pledge for all investors; two thirds of the amount owed can vote to enforce it.</td><td class="w">The proposal uses lender terms (DSCR, DSRA, P90); the factsheet and this page explain them.</td></tr>
+      <tr><td class="ask">Tokenisation vs a conventional route, and when it adds value</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=2">§4, Exhibits 5-6, p. 2</a> · <a href="#tokens">Q3</a></td><td class="what">For one project a bank loan is cheaper: 5.1-7.0% against 9.9% all-in. Tokens help when the setup is reused across many roofs and many small investors.</td><td class="w">The saving across a programme is not modelled; the pilot has to show it.</td></tr>
+      <tr><td class="ask">A simple issuance flow</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=2">§5, Exhibit 7, p. 2</a></td><td class="what">Six steps from preparation to reporting, each with who does it and the check that must pass.</td><td class="w">No gap found in review.</td></tr>
+      <tr><td class="ask">A plain-language investor factsheet</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=3">factsheet extract, p. 3</a> · <a href="#factsheet">full page</a></td><td class="what">One page: what you own, where the money comes from, what happens if both hosts leave, what the bond is not.</td><td class="w">Claude raised two low points (a source for the tender rule, how the pledge is enforced); the proposal answers both, the one-page factsheet does not.</td></tr>
+      <tr><td class="ask">One downside scenario and its effect on repayment</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=2">§6, Exhibits 8-10, p. 2</a> · <a href="#wrong">Q2</a></td><td class="what">Both businesses leave in year 5: cover 0.94x; in the model every payment is still made, from cash held back from the owners, with the premium won.</td><td class="w">Without the premium, cover would fall to 0.25x, so there is no bond without the award; with weak sunshine on top, payments run late from year 14.</td></tr>
+      <tr><td class="ask">Assumptions on revenue, operating costs, interest and maturity</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=1">Exhibit 4, p. 1</a></td><td class="what">Each input with its source and date, or labelled (A).</td><td class="w">Costs, the bid and the reserve are my assumptions.</td></tr>
+      <tr><td class="ask">Likely legal classification, approvals, specialist checks</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=3">§7, Exhibit 11, p. 3</a> · <a href="#tokens">Q3</a></td><td class="what">Likely a transferable security under MiFID II, so outside MiCAR; the EU prospectus exemption; a CSSF notice; the gates and checks before launch.</td><td class="w">No legal opinion yet; it is one of the gates before launch.</td></tr>
+      <tr class="grp"><th colspan="4">STOKR success measures</th></tr>
+      <tr><td class="ask">Clarity of rights</td><td class="where"><a href="#pays">Q1</a> · <a href="files/two-roof-solar-bond-proposal.pdf#page=1">§3, p. 1</a></td><td class="what">What you own, the order of payment, the pledge and the vote, and that you can sell only to approved investors.</td><td class="w">How the pledge is enforced is in the proposal, not on the factsheet.</td></tr>
+      <tr><td class="ask">Feasibility</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=1">Exhibit 3, p. 1</a> · <a href="#wrong">Q2</a></td><td class="what">Lowest plan cover 1.50x without the premium; the tender rules for on-site sale confirmed by the Ministry (16 Oct 2026).</td><td class="w">The project earns less than the coupon: the owners' return falls from 4.6% without debt to 3.1% with the bond; they do it for cheaper power and a programme.</td></tr>
+      <tr><td class="ask">Cost awareness</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=2">Exhibit 6, p. 2</a> · <a href="#tokens">Q3</a></td><td class="what">9.9% all-in against 5.1-7.0% for a bank, said plainly; EUR 200,000 to raise the bond and EUR 20,000 a year to run it (A).</td><td class="w">The costs are estimates (A).</td></tr>
+      <tr><td class="ask">Risk disclosure</td><td class="where"><a href="files/two-roof-solar-bond-proposal.pdf#page=2">Exhibits 9-10, p. 2</a> · <a href="#wrong">Q2</a></td><td class="what">Where the model breaks; 2.3% of 20,000 simulated futures miss a payment; not guaranteed by anyone.</td><td class="w">The simulation leaves out long breakdowns, cost overruns, rule changes and fraud.</td></tr>
+      <tr><td class="ask">No promise of liquidity, repayment or open access</td><td class="where"><a href="#honest">Q4</a> · <a href="files/two-roof-solar-bond-proposal.pdf#page=3">factsheet extract, p. 3</a></td><td class="what">Not guaranteed; selling only to approved investors, maybe at a loss; buying only after the bank's checks; the checker flags any sentence that implies otherwise.</td><td class="w">None found in the final checks.</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
 <nav class="toc" aria-label="Contents">
   <ol>
+    <li><a href="#brief">The brief</a></li>
     <li><a href="#pays"><b>1</b>Who pays investors back?</a></li>
     <li><a href="#wrong"><b>2</b>What if it goes wrong?</a></li>
     <li><a href="#tokens"><b>3</b>Are tokens worth it?</a></li>

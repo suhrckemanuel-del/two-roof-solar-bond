@@ -35,13 +35,13 @@
      "number": "2026",
      "status": "CONTEXT",
      "why": "calendar year",
-     "sentence": "Issued only if both roofs win the October 2026 tender; in the model it is then paid on time even if both hosts leave in year 5, if output holds."
+     "sentence": "The plan needs no premium; the bond is issued only once both roofs win it (October 2026 tender), then pays on time in the model even if both hosts leave in year 5, if output holds."
     },
     {
      "number": "5",
      "status": "CONTEXT",
      "why": "time period or year index",
-     "sentence": "Issued only if both roofs win the October 2026 tender; in the model it is then paid on time even if both hosts leave in year 5, if output holds."
+     "sentence": "The plan needs no premium; the bond is issued only once both roofs win it (October 2026 tender), then pays on time in the model even if both hosts leave in year 5, if output holds."
     },
     {
      "number": "2026",
@@ -90,8 +90,8 @@
     {
      "number": "0.94x",
      "status": "MATCHED",
-     "why": "Monitor run 2026-10-14_1852: Lowest cover, both hosts leave yr 5 at the monitored price",
-     "source": "monitor/runs/2026-10-14_1852/report.json",
+     "why": "Monitor run 2026-10-17_1055: Lowest cover, both hosts leave yr 5 at the monitored price",
+     "source": "monitor/runs/2026-10-17_1055/report.json",
      "kind": "MONITOR RUN",
      "sentence": "0.94x lowest cover if both hosts leave in year 5; in the model still paid on time, if the premium is won and output holds"
     },
@@ -784,7 +784,7 @@
     {
      "number": "2026",
      "status": "CONTEXT",
-     "why": "calendar year",
+     "why": "date or run id",
      "sentence": "Sources: Excel model and research notes, dated 2025-2026. 1 / 3"
     },
     {
@@ -1073,10 +1073,8 @@
     },
     {
      "number": "30",
-     "status": "MATCHED",
-     "why": "8th tender closes 30 Oct 2026",
-     "source": "https://guichet.public.lu/dam-assets/catalogue-pdf/appel-offres-electricite/8e-ao-photovoltaique-grande-centrale/avis-publication-fr.pdf",
-     "kind": "EXTERNAL",
+     "status": "CONTEXT",
+     "why": "date",
      "sentence": "Power contracts, tender bid (closes 30 Oct 2026), build with a bridge."
     },
     {
@@ -1218,9 +1216,9 @@
     {
      "number": "1.0x",
      "status": "MATCHED",
-     "why": "Investment-aid route, 1 host(s) leave yr 5: any payment late (1 = yes)",
-     "source": "proposal_facts.py:aid_1host_late",
-     "kind": "MODEL (engine)",
+     "why": "Share of paths paid in full from cash, reserve untouched [hazard_0%]",
+     "source": "mc_results.json:by_host_hazard.0%.p_clean",
+     "kind": "MONTE CARLO",
      "sentence": "Cover = cash available / payment due; below 1.1x owners get nothing; at 1.0x cash just pays."
     },
     {
@@ -1239,10 +1237,8 @@
     },
     {
      "number": "16",
-     "status": "MATCHED-WEAK",
-     "why": "Investment-aid route, EUR 2M bond, 1 host(s) leave yr 5: year arrears are fully repaid (0 = never)",
-     "source": "feasibility_facts.py:aid_2m.leave1_cleared",
-     "kind": "MODEL (engine)",
+     "status": "CONTEXT",
+     "why": "date",
      "sentence": "On 16 Oct 2026 the Ministry of the Economy sent me the tender rules: any use the electricity law allows is accepted, and the premium is paid only on power sent to the grid."
     },
     {
@@ -1463,10 +1459,8 @@
     },
     {
      "number": "6",
-     "status": "MATCHED-WEAK",
-     "why": "DSRA size (months of next year's debt service)",
-     "source": "Inputs!C58",
-     "kind": "ASSUMPTION",
+     "status": "CONTEXT",
+     "why": "date",
      "sentence": "On 6 Sep 2026 a bug let about 4,000 BTC leave Liquid wrongly and blocks stopped for about three days (STOKR's incident post)."
     },
     {
@@ -1505,7 +1499,7 @@
      "number": "13",
      "status": "CONTEXT",
      "why": "part of a name or legal reference",
-     "sentence": "Exhibit 13 lists three impact indicators, all my assumptions."
+     "sentence": "Exhibit 13 lists three impact indicators, all my assumptions, each reported yearly."
     },
     {
      "number": "10",
@@ -1539,10 +1533,8 @@
     },
     {
      "number": "30",
-     "status": "MATCHED",
-     "why": "8th tender closes 30 Oct 2026",
-     "source": "https://guichet.public.lu/dam-assets/catalogue-pdf/appel-offres-electricite/8e-ao-photovoltaique-grande-centrale/avis-publication-fr.pdf",
-     "kind": "EXTERNAL",
+     "status": "CONTEXT",
+     "why": "date",
      "sentence": "Gates: tender award for both roofs (bid closes 30 Oct 2026) and its completion security; legal opinion and exemption memo; placement and control-agent deal; a registered 25-year roof right that survives a sale or the landlord's insolvency."
     },
     {
@@ -1677,21 +1669,21 @@
      "why": "Generation year 1, both roofs (MWh)",
      "source": "proposal_facts.py:gen_y1",
      "kind": "MODEL (engine)",
-     "sentence": "5,940 MWh in year 1, about 4,200 MWh on site; measured output reported"
+     "sentence": "5,940 MWh in year 1 (4,200 on site); about 1,800 t CO2 at 0.3 t per MWh"
     },
     {
      "number": "1",
      "status": "CONTEXT",
      "why": "time period or year index",
-     "sentence": "5,940 MWh in year 1, about 4,200 MWh on site; measured output reported"
+     "sentence": "5,940 MWh in year 1 (4,200 on site); about 1,800 t CO2 at 0.3 t per MWh"
     },
     {
-     "number": "4,200 MWh",
+     "number": "4,200",
      "status": "MATCHED",
      "why": "Sold to hosts year 1, rounded to 100 MWh",
      "source": "proposal_facts.py:host_mwh_y1_round",
      "kind": "MODEL (engine)",
-     "sentence": "5,940 MWh in year 1, about 4,200 MWh on site; measured output reported"
+     "sentence": "5,940 MWh in year 1 (4,200 on site); about 1,800 t CO2 at 0.3 t per MWh"
     },
     {
      "number": "1,800",
@@ -1699,7 +1691,7 @@
      "why": "CO2 avoided per year, rounded to 100 t, at the assumed factor (ASSUMPTION)",
      "source": "proposal_facts.py:co2_t",
      "kind": "ASSUMPTION",
-     "sentence": "About 1,800 t a year at an assumed 0.3 t per MWh, later an audited factor"
+     "sentence": "5,940 MWh in year 1 (4,200 on site); about 1,800 t CO2 at 0.3 t per MWh"
     },
     {
      "number": "0.3",
@@ -1707,7 +1699,7 @@
      "why": "Assumed grid emission factor, t CO2 per MWh (ASSUMPTION, replace with audited factor)",
      "source": "proposal_facts.py:co2_factor",
      "kind": "ASSUMPTION",
-     "sentence": "About 1,800 t a year at an assumed 0.3 t per MWh, later an audited factor"
+     "sentence": "5,940 MWh in year 1 (4,200 on site); about 1,800 t CO2 at 0.3 t per MWh"
     },
     {
      "number": "300",
@@ -1733,10 +1725,8 @@
     },
     {
      "number": "14",
-     "status": "MATCHED-WEAK",
-     "why": "Owner simple payback on capex, project cash + after-tax savings (years) [a]",
-     "source": "Summary!C34",
-     "kind": "MODEL",
+     "status": "CONTEXT",
+     "why": "date",
      "sentence": "Exhibit 14: Monitor run, 14 Oct 2026"
     },
     {
@@ -1754,8 +1744,8 @@
     {
      "number": "EUR 61",
      "status": "MATCHED",
-     "why": "Monitor run 2026-10-14_1852: DE-LU solar capture price, trailing 12 months 2025-10-14 to 2026-10-13 (EUR/MWh)",
-     "source": "monitor/runs/2026-10-14_1852/report.json",
+     "why": "Monitor run 2026-10-17_1055: DE-LU solar capture price, trailing 12 months 2025-10-17 to 2026-10-16 (EUR/MWh)",
+     "source": "monitor/runs/2026-10-17_1055/report.json",
      "kind": "MONITOR RUN",
      "sentence": "about EUR 61"
     },
@@ -1776,8 +1766,8 @@
     {
      "number": "61",
      "status": "MATCHED",
-     "why": "Monitor run 2026-10-14_1852: DE-LU solar capture price, trailing 12 months 2025-10-14 to 2026-10-13 (EUR/MWh)",
-     "source": "monitor/runs/2026-10-14_1852/report.json",
+     "why": "Monitor run 2026-10-17_1055: DE-LU solar capture price, trailing 12 months 2025-10-17 to 2026-10-16 (EUR/MWh)",
+     "source": "monitor/runs/2026-10-17_1055/report.json",
      "kind": "MONITOR RUN",
      "sentence": "Plan cover at 61"
     },
@@ -1898,8 +1888,8 @@
     {
      "number": "1%",
      "status": "MATCHED",
-     "why": "Monitor run 2026-10-14_1852: Lowest cover, both hosts leave yr 5 at the monitored price",
-     "source": "monitor/runs/2026-10-14_1852/report.json",
+     "why": "Monitor run 2026-10-17_1055: Lowest cover, both hosts leave yr 5 at the monitored price",
+     "source": "monitor/runs/2026-10-17_1055/report.json",
      "kind": "MONITOR RUN",
      "sentence": "Only from the two roofs' electricity: 70% to the businesses in the buildings (the hosts) at EUR 110 per MWh, +1% a year; the rest to the grid at about EUR 45."
     },
@@ -1910,6 +1900,18 @@
      "source": "Inputs!C21",
      "kind": "SOURCED",
      "sentence": "Only from the two roofs' electricity: 70% to the businesses in the buildings (the hosts) at EUR 110 per MWh, +1% a year; the rest to the grid at about EUR 45."
+    },
+    {
+     "number": "30",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "If a host stops buying, the state premium tops up grid sales; the bond is issued only once it is won (bids close 30 Oct 2026)."
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "If a host stops buying, the state premium tops up grid sales; the bond is issued only once it is won (bids close 30 Oct 2026)."
     },
     {
      "number": "5",
@@ -1934,7 +1936,7 @@
     {
      "number": "2026",
      "status": "CONTEXT",
-     "why": "calendar year",
+     "why": "date or run id",
      "sentence": "Real: market data dated 2025-2026."
     },
     {
@@ -1996,8 +1998,8 @@
     "findings": [],
     "model": "claude-opus-5-5",
     "usage": {
-     "input_tokens": 8826,
-     "output_tokens": 2042
+     "input_tokens": 9141,
+     "output_tokens": 2434
     }
    }
   }

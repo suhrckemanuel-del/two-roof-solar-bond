@@ -39,13 +39,13 @@
      "number": "5",
      "status": "CONTEXT",
      "why": "clock time or duration",
-     "sentence": "Video (5:17)Proposal (PDF, 3 pages)Investor factsheet (PDF)Excel model"
+     "sentence": "The brief, point by pointVideo (5:17)Proposal (PDF, 3 pages)Investor factsheet (PDF)Excel model"
     },
     {
      "number": "17",
      "status": "CONTEXT",
      "why": "clock time or duration",
-     "sentence": "Video (5:17)Proposal (PDF, 3 pages)Investor factsheet (PDF)Excel model"
+     "sentence": "The brief, point by pointVideo (5:17)Proposal (PDF, 3 pages)Investor factsheet (PDF)Excel model"
     },
     {
      "number": "3",
@@ -53,7 +53,7 @@
      "why": "Direct marketing fee (EUR/MWh exported)",
      "source": "Inputs!C28",
      "kind": "SOURCED (DE)",
-     "sentence": "Video (5:17)Proposal (PDF, 3 pages)Investor factsheet (PDF)Excel model"
+     "sentence": "The brief, point by pointVideo (5:17)Proposal (PDF, 3 pages)Investor factsheet (PDF)Excel model"
     },
     {
      "number": "EUR 2,000,000",
@@ -160,6 +160,568 @@
      "status": "CONTEXT",
      "why": "file size",
      "sentence": "Download the MP4 (24 MB)"
+    },
+    {
+     "number": "1",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a71, p. 1 \u00b7 Q1"
+    },
+    {
+     "number": "1",
+     "status": "MATCHED-WEAK",
+     "why": "Availability (%)",
+     "source": "Inputs!C10",
+     "kind": "ASSUMPTION",
+     "sentence": "\u00a71, p. 1 \u00b7 Q1"
+    },
+    {
+     "number": "EUR 2M",
+     "status": "MATCHED",
+     "why": "Monitor run 2026-10-17_1055: Lowest cover, plan at the monitored price",
+     "source": "monitor/runs/2026-10-17_1055/report.json",
+     "kind": "MONITOR RUN",
+     "sentence": "A EUR 2M bond repaid only from two roofs' power sales; lowest plan cover 1.50x; who gains and why, in six lines."
+    },
+    {
+     "number": "1.50x",
+     "status": "MATCHED",
+     "why": "Investment-aid route, EUR 2M bond: plan minimum cover",
+     "source": "feasibility_facts.py:aid_2m.min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "A EUR 2M bond repaid only from two roofs' power sales; lowest plan cover 1.50x; who gains and why, in six lines."
+    },
+    {
+     "number": "2",
+     "status": "MATCHED-WEAK",
+     "why": "If the premium is also paid on hosted surplus (p2 = 1): plan minimum cover",
+     "source": "feasibility_facts.py:p2.min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "The premium condition can read as a contradiction at first; Question 2 explains it."
+    },
+    {
+     "number": "10",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a710, Exhibit 14, p. 3 \u00b7 Q4"
+    },
+    {
+     "number": "14",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a710, Exhibit 14, p. 3 \u00b7 Q4"
+    },
+    {
+     "number": "3",
+     "status": "MATCHED-WEAK",
+     "why": "Direct marketing fee (EUR/MWh exported)",
+     "source": "Inputs!C28",
+     "kind": "SOURCED (DE)",
+     "sentence": "\u00a710, Exhibit 14, p. 3 \u00b7 Q4"
+    },
+    {
+     "number": "8",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a78, p. 3 \u00b7 factsheet"
+    },
+    {
+     "number": "3",
+     "status": "MATCHED-WEAK",
+     "why": "Direct marketing fee (EUR/MWh exported)",
+     "source": "Inputs!C28",
+     "kind": "SOURCED (DE)",
+     "sentence": "\u00a78, p. 3 \u00b7 factsheet"
+    },
+    {
+     "number": "5",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "One class and the same terms for everyone; a plain-language factsheet; EUR paid to a bank account; a custodian holds the tokens; errors fixed within 5 business days (A)."
+    },
+    {
+     "number": "13",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "The factsheet has not been tested on real readers yet; the understanding indicator in Exhibit 13 is how it would be."
+    },
+    {
+     "number": "9",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a79, Exhibit 12, p. 3"
+    },
+    {
+     "number": "12",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a79, Exhibit 12, p. 3"
+    },
+    {
+     "number": "3",
+     "status": "MATCHED-WEAK",
+     "why": "Direct marketing fee (EUR/MWh exported)",
+     "source": "Inputs!C28",
+     "kind": "SOURCED (DE)",
+     "sentence": "\u00a79, Exhibit 12, p. 3"
+    },
+    {
+     "number": "13",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "Exhibit 13, p. 3"
+    },
+    {
+     "number": "3",
+     "status": "MATCHED-WEAK",
+     "why": "Direct marketing fee (EUR/MWh exported)",
+     "source": "Inputs!C28",
+     "kind": "SOURCED (DE)",
+     "sentence": "Exhibit 13, p. 3"
+    },
+    {
+     "number": "6",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a76 and \u00a78, p. 2 \u00b7 Q2"
+    },
+    {
+     "number": "8",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a76 and \u00a78, p. 2 \u00b7 Q2"
+    },
+    {
+     "number": "2",
+     "status": "MATCHED-WEAK",
+     "why": "Number of rooftops in the programme (one bond) (count)",
+     "source": "Inputs!C7",
+     "kind": "FICTIONAL",
+     "sentence": "\u00a76 and \u00a78, p. 2 \u00b7 Q2"
+    },
+    {
+     "number": "6",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "A real Liquid incident (6 Sep 2026), GDPR and no investor data on the chain, an arm's-length check on the hosts' price, and where the model breaks."
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "A real Liquid incident (6 Sep 2026), GDPR and no investor data on the chain, an arm's-length check on the hosts' price, and where the model breaks."
+    },
+    {
+     "number": "10",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a710 and footers, p. 3 \u00b7 files"
+    },
+    {
+     "number": "3",
+     "status": "MATCHED-WEAK",
+     "why": "Direct marketing fee (EUR/MWh exported)",
+     "source": "Inputs!C28",
+     "kind": "SOURCED (DE)",
+     "sentence": "\u00a710 and footers, p. 3 \u00b7 files"
+    },
+    {
+     "number": "2",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a72, Exhibit 7, p. 1"
+    },
+    {
+     "number": "7",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a72, Exhibit 7, p. 1"
+    },
+    {
+     "number": "1",
+     "status": "MATCHED-WEAK",
+     "why": "Availability (%)",
+     "source": "Inputs!C10",
+     "kind": "ASSUMPTION",
+     "sentence": "\u00a72, Exhibit 7, p. 1"
+    },
+    {
+     "number": "EUR 2M",
+     "status": "MATCHED",
+     "why": "Fixed bond amount (used if mode 2, and for the EUR 2M test) (EUR)",
+     "source": "Inputs!C56",
+     "kind": "ASSUMPTION",
+     "sentence": "The owners build with equity and a bridge loan; at completion the bond raises EUR 2M and repays the bridge; reporting after issue."
+    },
+    {
+     "number": "3",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a73, Exhibits 1-2, p. 1 \u00b7 Q1"
+    },
+    {
+     "number": "1",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a73, Exhibits 1-2, p. 1 \u00b7 Q1"
+    },
+    {
+     "number": "2",
+     "status": "MATCHED-WEAK",
+     "why": "Number of rooftops in the programme (one bond) (count)",
+     "source": "Inputs!C7",
+     "kind": "FICTIONAL",
+     "sentence": "\u00a73, Exhibits 1-2, p. 1 \u00b7 Q1"
+    },
+    {
+     "number": "1",
+     "status": "MATCHED-WEAK",
+     "why": "Availability (%)",
+     "source": "Inputs!C10",
+     "kind": "ASSUMPTION",
+     "sentence": "\u00a73, Exhibits 1-2, p. 1 \u00b7 Q1"
+    },
+    {
+     "number": "EUR 212,706",
+     "status": "MATCHED",
+     "why": "Annual debt service [a]",
+     "source": "Summary!C41",
+     "kind": "MODEL",
+     "sentence": "One equal yearly payment of EUR 212,706, paid right after running costs and tax; a pledge for all investors; two thirds of the amount owed can vote to enforce it."
+    },
+    {
+     "number": "4",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a74, Exhibits 5-6, p. 2 \u00b7 Q3"
+    },
+    {
+     "number": "5",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a74, Exhibits 5-6, p. 2 \u00b7 Q3"
+    },
+    {
+     "number": "6",
+     "status": "MATCHED-WEAK",
+     "why": "DSRA size (months of next year's debt service)",
+     "source": "Inputs!C58",
+     "kind": "ASSUMPTION",
+     "sentence": "\u00a74, Exhibits 5-6, p. 2 \u00b7 Q3"
+    },
+    {
+     "number": "2",
+     "status": "MATCHED-WEAK",
+     "why": "Number of rooftops in the programme (one bond) (count)",
+     "source": "Inputs!C7",
+     "kind": "FICTIONAL",
+     "sentence": "\u00a74, Exhibits 5-6, p. 2 \u00b7 Q3"
+    },
+    {
+     "number": "5.1",
+     "status": "MATCHED",
+     "why": "Bank loan all-in cost at KfW class A + 1% fee, 15-year annuity",
+     "source": "feasibility_facts.py:cost.bank_allin_A",
+     "kind": "MODEL (engine)",
+     "sentence": "For one project a bank loan is cheaper: 5.1-7.0% against 9.9% all-in."
+    },
+    {
+     "number": "7.0%",
+     "status": "MATCHED",
+     "why": "Bank loan all-in cost at KfW class E + 1% fee, 15-year annuity",
+     "source": "feasibility_facts.py:cost.bank_allin_E",
+     "kind": "MODEL (engine)",
+     "sentence": "For one project a bank loan is cheaper: 5.1-7.0% against 9.9% all-in."
+    },
+    {
+     "number": "9.9%",
+     "status": "MATCHED",
+     "why": "Tokenised bond all-in cost a year (issuance costs + running costs)",
+     "source": "feasibility_facts.py:cost.bond_allin",
+     "kind": "MODEL (engine)",
+     "sentence": "For one project a bank loan is cheaper: 5.1-7.0% against 9.9% all-in."
+    },
+    {
+     "number": "5",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a75, Exhibit 7, p. 2"
+    },
+    {
+     "number": "7",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a75, Exhibit 7, p. 2"
+    },
+    {
+     "number": "2",
+     "status": "MATCHED-WEAK",
+     "why": "Number of rooftops in the programme (one bond) (count)",
+     "source": "Inputs!C7",
+     "kind": "FICTIONAL",
+     "sentence": "\u00a75, Exhibit 7, p. 2"
+    },
+    {
+     "number": "3",
+     "status": "MATCHED-WEAK",
+     "why": "Direct marketing fee (EUR/MWh exported)",
+     "source": "Inputs!C28",
+     "kind": "SOURCED (DE)",
+     "sentence": "factsheet extract, p. 3 \u00b7 full page"
+    },
+    {
+     "number": "6",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a76, Exhibits 8-10, p. 2 \u00b7 Q2"
+    },
+    {
+     "number": "8",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a76, Exhibits 8-10, p. 2 \u00b7 Q2"
+    },
+    {
+     "number": "10",
+     "status": "MATCHED-WEAK",
+     "why": "O&M (EUR/kWp/yr)",
+     "source": "Inputs!C32",
+     "kind": "DERIVED",
+     "sentence": "\u00a76, Exhibits 8-10, p. 2 \u00b7 Q2"
+    },
+    {
+     "number": "2",
+     "status": "MATCHED-WEAK",
+     "why": "Number of rooftops in the programme (one bond) (count)",
+     "source": "Inputs!C7",
+     "kind": "FICTIONAL",
+     "sentence": "\u00a76, Exhibits 8-10, p. 2 \u00b7 Q2"
+    },
+    {
+     "number": "5",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Both businesses leave in year 5: cover 0.94x; in the model every payment is still made, from cash held back from the owners, with the premium won."
+    },
+    {
+     "number": "0.94x",
+     "status": "MATCHED",
+     "why": "Monitor run 2026-10-17_1055: Lowest cover, both hosts leave yr 5 at the monitored price",
+     "source": "monitor/runs/2026-10-17_1055/report.json",
+     "kind": "MONITOR RUN",
+     "sentence": "Both businesses leave in year 5: cover 0.94x; in the model every payment is still made, from cash held back from the owners, with the premium won."
+    },
+    {
+     "number": "0.25x",
+     "status": "MATCHED",
+     "why": "Premium not won, no investment aid, both hosts leave yr 5: cover in the first year without hosts",
+     "source": "feasibility_facts.py:notwon.leave2_dscr_exit",
+     "kind": "MODEL (engine)",
+     "sentence": "Without the premium, cover would fall to 0.25x, so there is no bond without the award; with weak sunshine on top, payments run late from year 14."
+    },
+    {
+     "number": "14",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "Without the premium, cover would fall to 0.25x, so there is no bond without the award; with weak sunshine on top, payments run late from year 14."
+    },
+    {
+     "number": "4",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "Exhibit 4, p. 1"
+    },
+    {
+     "number": "1",
+     "status": "MATCHED-WEAK",
+     "why": "Availability (%)",
+     "source": "Inputs!C10",
+     "kind": "ASSUMPTION",
+     "sentence": "Exhibit 4, p. 1"
+    },
+    {
+     "number": "7",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a77, Exhibit 11, p. 3 \u00b7 Q3"
+    },
+    {
+     "number": "11",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "\u00a77, Exhibit 11, p. 3 \u00b7 Q3"
+    },
+    {
+     "number": "3",
+     "status": "MATCHED-WEAK",
+     "why": "Direct marketing fee (EUR/MWh exported)",
+     "source": "Inputs!C28",
+     "kind": "SOURCED (DE)",
+     "sentence": "\u00a77, Exhibit 11, p. 3 \u00b7 Q3"
+    },
+    {
+     "number": "3",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "Q1 \u00b7 \u00a73, p. 1"
+    },
+    {
+     "number": "1",
+     "status": "MATCHED-WEAK",
+     "why": "Availability (%)",
+     "source": "Inputs!C10",
+     "kind": "ASSUMPTION",
+     "sentence": "Q1 \u00b7 \u00a73, p. 1"
+    },
+    {
+     "number": "3",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "Exhibit 3, p. 1 \u00b7 Q2"
+    },
+    {
+     "number": "1",
+     "status": "MATCHED-WEAK",
+     "why": "Availability (%)",
+     "source": "Inputs!C10",
+     "kind": "ASSUMPTION",
+     "sentence": "Exhibit 3, p. 1 \u00b7 Q2"
+    },
+    {
+     "number": "1.50x",
+     "status": "MATCHED",
+     "why": "Premium not won, no investment aid: plan minimum cover",
+     "source": "feasibility_facts.py:notwon.min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "Lowest plan cover 1.50x without the premium; the tender rules for on-site sale confirmed by the Ministry (16 Oct 2026)."
+    },
+    {
+     "number": "16",
+     "status": "CONTEXT",
+     "why": "date",
+     "sentence": "Lowest plan cover 1.50x without the premium; the tender rules for on-site sale confirmed by the Ministry (16 Oct 2026)."
+    },
+    {
+     "number": "2026",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "Lowest plan cover 1.50x without the premium; the tender rules for on-site sale confirmed by the Ministry (16 Oct 2026)."
+    },
+    {
+     "number": "4.6%",
+     "status": "MATCHED",
+     "why": "Owner return if funded from cash, no bond, after-tax savings, grid EUR 121.9",
+     "source": "feasibility_facts.py:grid_121_9.sponsor_irr_cash",
+     "kind": "MODEL (engine)",
+     "sentence": "The project earns less than the coupon: the owners' return falls from 4.6% without debt to 3.1% with the bond; they do it for cheaper power and a programme."
+    },
+    {
+     "number": "3.1%",
+     "status": "MATCHED",
+     "why": "Owner equity return with the bond, after-tax savings, grid EUR 121.9",
+     "source": "feasibility_facts.py:grid_121_9.sponsor_irr_bond",
+     "kind": "MODEL (engine)",
+     "sentence": "The project earns less than the coupon: the owners' return falls from 4.6% without debt to 3.1% with the bond; they do it for cheaper power and a programme."
+    },
+    {
+     "number": "6",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "Exhibit 6, p. 2 \u00b7 Q3"
+    },
+    {
+     "number": "2",
+     "status": "MATCHED-WEAK",
+     "why": "Number of rooftops in the programme (one bond) (count)",
+     "source": "Inputs!C7",
+     "kind": "FICTIONAL",
+     "sentence": "Exhibit 6, p. 2 \u00b7 Q3"
+    },
+    {
+     "number": "9.9%",
+     "status": "MATCHED",
+     "why": "Tokenised bond all-in cost a year (issuance costs + running costs)",
+     "source": "feasibility_facts.py:cost.bond_allin",
+     "kind": "MODEL (engine)",
+     "sentence": "9.9% all-in against 5.1-7.0% for a bank, said plainly; EUR 200,000 to raise the bond and EUR 20,000 a year to run it (A)."
+    },
+    {
+     "number": "5.1",
+     "status": "MATCHED",
+     "why": "Bank loan all-in cost at KfW class A + 1% fee, 15-year annuity",
+     "source": "feasibility_facts.py:cost.bank_allin_A",
+     "kind": "MODEL (engine)",
+     "sentence": "9.9% all-in against 5.1-7.0% for a bank, said plainly; EUR 200,000 to raise the bond and EUR 20,000 a year to run it (A)."
+    },
+    {
+     "number": "7.0%",
+     "status": "MATCHED",
+     "why": "Bank loan all-in cost at KfW class E + 1% fee, 15-year annuity",
+     "source": "feasibility_facts.py:cost.bank_allin_E",
+     "kind": "MODEL (engine)",
+     "sentence": "9.9% all-in against 5.1-7.0% for a bank, said plainly; EUR 200,000 to raise the bond and EUR 20,000 a year to run it (A)."
+    },
+    {
+     "number": "EUR 200,000",
+     "status": "MATCHED",
+     "why": "Issuance costs (placement fee + legal + register/token set-up)",
+     "source": "'Sources & Uses'!C6",
+     "kind": "MODEL",
+     "sentence": "9.9% all-in against 5.1-7.0% for a bank, said plainly; EUR 200,000 to raise the bond and EUR 20,000 a year to run it (A)."
+    },
+    {
+     "number": "EUR 20,000",
+     "status": "MATCHED",
+     "why": "Bond running costs (vehicle, paying/calculation agent, platform, token ops) (EUR/yr)",
+     "source": "Inputs!C38",
+     "kind": "ASSUMPTION",
+     "sentence": "9.9% all-in against 5.1-7.0% for a bank, said plainly; EUR 200,000 to raise the bond and EUR 20,000 a year to run it (A)."
+    },
+    {
+     "number": "9",
+     "status": "CONTEXT",
+     "why": "part of a name or legal reference",
+     "sentence": "Exhibits 9-10, p. 2 \u00b7 Q2"
+    },
+    {
+     "number": "10",
+     "status": "MATCHED-WEAK",
+     "why": "O&M (EUR/kWp/yr)",
+     "source": "Inputs!C32",
+     "kind": "DERIVED",
+     "sentence": "Exhibits 9-10, p. 2 \u00b7 Q2"
+    },
+    {
+     "number": "2",
+     "status": "MATCHED-WEAK",
+     "why": "Number of rooftops in the programme (one bond) (count)",
+     "source": "Inputs!C7",
+     "kind": "FICTIONAL",
+     "sentence": "Exhibits 9-10, p. 2 \u00b7 Q2"
+    },
+    {
+     "number": "2.3%",
+     "status": "MATCHED",
+     "why": "Share of paths with at least one missed payment [base]",
+     "source": "mc_results.json:base.p_missed",
+     "kind": "MONTE CARLO",
+     "sentence": "Where the model breaks; 2.3% of 20,000 simulated futures miss a payment; not guaranteed by anyone."
+    },
+    {
+     "number": "20,000",
+     "status": "MATCHED",
+     "why": "Monte Carlo paths simulated",
+     "source": "mc_results.json:n_paths",
+     "kind": "MONTE CARLO",
+     "sentence": "Where the model breaks; 2.3% of 20,000 simulated futures miss a payment; not guaranteed by anyone."
+    },
+    {
+     "number": "3",
+     "status": "MATCHED-WEAK",
+     "why": "Direct marketing fee (EUR/MWh exported)",
+     "source": "Inputs!C28",
+     "kind": "SOURCED (DE)",
+     "sentence": "Q4 \u00b7 factsheet extract, p. 3"
     },
     {
      "number": "1",
@@ -2039,6 +2601,24 @@
      "phrase": "guaranteed",
      "status": "OK-NEGATED",
      "why": "implies guaranteed repayment",
+     "sentence": "Where the model breaks; 2.3% of 20,000 simulated futures miss a payment; not guaranteed by anyone."
+    },
+    {
+     "phrase": "liquidity",
+     "status": "OK-NEGATED",
+     "why": "implies liquidity",
+     "sentence": "No promise of liquidity, repayment or open access"
+    },
+    {
+     "phrase": "guaranteed",
+     "status": "OK-NEGATED",
+     "why": "implies guaranteed repayment",
+     "sentence": "Not guaranteed; selling only to approved investors, maybe at a loss; buying only after the bank's checks; the checker flags any sentence that implies otherwise."
+    },
+    {
+     "phrase": "guaranteed",
+     "status": "OK-NEGATED",
+     "why": "implies guaranteed repayment",
      "sentence": "Not guaranteed by"
     },
     {
@@ -2052,8 +2632,8 @@
     "findings": [],
     "model": "claude-opus-5-5",
     "usage": {
-     "input_tokens": 9533,
-     "output_tokens": 1809
+     "input_tokens": 11893,
+     "output_tokens": 2159
     }
    }
   }
