@@ -144,6 +144,82 @@
      "sentence": "Only after both roofs win the state premium (bids close 30 Oct 2026), the main protection if the businesses leave"
     },
     {
+     "number": "EUR 110",
+     "status": "MATCHED",
+     "why": "On-site PPA price, year 1 (EUR/MWh)",
+     "source": "Inputs!C16",
+     "kind": "DERIVED",
+     "sentence": "EUR 110 per MWh"
+    },
+    {
+     "number": "70%",
+     "status": "MATCHED",
+     "why": "Host share of output (Case A) (%)",
+     "source": "Inputs!C15",
+     "kind": "ASSUMPTION",
+     "sentence": "What the two businesses pay for the 70% of the power they use (contract, +1% a year)"
+    },
+    {
+     "number": "1%",
+     "status": "MATCHED",
+     "why": "Host avoidable cost escalation (%/yr)",
+     "source": "Inputs!C18",
+     "kind": "ASSUMPTION",
+     "sentence": "What the two businesses pay for the 70% of the power they use (contract, +1% a year)"
+    },
+    {
+     "number": "EUR 45",
+     "status": "MATCHED",
+     "why": "Merchant solar capture price, year 1 (EUR/MWh)",
+     "source": "Inputs!C21",
+     "kind": "SOURCED",
+     "sentence": "EUR 45 per MWh"
+    },
+    {
+     "number": "2025",
+     "status": "CONTEXT",
+     "why": "calendar year",
+     "sentence": "What the grid pays for the rest: the market price (official 2025 value)"
+    },
+    {
+     "number": "EUR 92.50",
+     "status": "MATCHED",
+     "why": "Tender reference value (our bid, assumed won) (EUR/MWh)",
+     "source": "Inputs!C25",
+     "kind": "ASSUMPTION",
+     "sentence": "EUR 92.50 per MWh"
+    },
+    {
+     "number": "1.50x",
+     "status": "MATCHED",
+     "why": "Investment-aid route, EUR 2M bond: plan minimum cover",
+     "source": "feasibility_facts.py:aid_2m.min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "1.50x cover"
+    },
+    {
+     "number": "EUR 1.50",
+     "status": "MATCHED",
+     "why": "Premium not won, no investment aid: plan minimum cover",
+     "source": "feasibility_facts.py:notwon.min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "A safety margin, not a return: EUR 1.50 of cash for every EUR 1 owed in the weakest year of the plan."
+    },
+    {
+     "number": "EUR 1",
+     "status": "CONTEXT",
+     "why": "time period or year index",
+     "sentence": "A safety margin, not a return: EUR 1.50 of cash for every EUR 1 owed in the weakest year of the plan."
+    },
+    {
+     "number": "6.5%",
+     "status": "MATCHED",
+     "why": "Premium not won, no investment aid, both hosts leave yr 5: minimum cover",
+     "source": "feasibility_facts.py:notwon.leave2_min_dscr",
+     "kind": "MODEL (engine)",
+     "sentence": "Investors are owed a fixed 6.5% a year, paid only if the roofs earn enough; it is not guaranteed."
+    },
+    {
      "number": "5",
      "status": "CONTEXT",
      "why": "clock time or duration",
@@ -2601,6 +2677,12 @@
      "phrase": "guaranteed",
      "status": "OK-NEGATED",
      "why": "implies guaranteed repayment",
+     "sentence": "Investors are owed a fixed 6.5% a year, paid only if the roofs earn enough; it is not guaranteed."
+    },
+    {
+     "phrase": "guaranteed",
+     "status": "OK-NEGATED",
+     "why": "implies guaranteed repayment",
      "sentence": "Where the model breaks; 2.3% of 20,000 simulated futures miss a payment; not guaranteed by anyone."
     },
     {
@@ -2632,8 +2714,8 @@
     "findings": [],
     "model": "claude-opus-5-5",
     "usage": {
-     "input_tokens": 11893,
-     "output_tokens": 2159
+     "input_tokens": 12132,
+     "output_tokens": 2393
     }
    }
   }

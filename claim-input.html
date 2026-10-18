@@ -293,6 +293,7 @@ table.brief tr.grp th { padding-top: 1.3rem; border-top: 0; color: var(--navy); 
   table.brief td.w::before { content: "Weakest point: "; font-weight: 600; color: var(--ink); }
 }
 
+.terms.prices th { width: 34%; color: var(--navy); font-weight: 700; }
 .factsheet img { display: block; width: 100%; max-width: 20rem; border: 1px solid var(--rule); background: #fff; }
 .files { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 0 2rem; }
 .files a { display: block; padding: 0.7rem 0; border-top: 1px solid var(--rule); text-decoration: none; }
@@ -324,6 +325,16 @@ footer { padding-block: 3rem 4rem; }
 
 <div class="col">
   <table class="terms" id="terms" aria-label="Term sheet"><tbody><tr><th scope="row">Amount</th><td>EUR 2,000,000, one class, same terms for every investor</td></tr><tr><th scope="row">Interest and term</th><td>6.5% fixed, 15 years, one equal yearly payment of interest and capital</td></tr><tr><th scope="row">Per EUR 500 token</th><td>EUR 53.18 a year; EUR 797.65 in total if every payment is made</td></tr><tr><th scope="row">Repaid from</th><td>Power sales from two 3.0 MWp roofs only; not guaranteed</td></tr><tr><th scope="row">Lowest cover</th><td>1.50x in the plan; 0.94x if both businesses leave in year 5 (premium won)</td></tr><tr><th scope="row">Issued</th><td>Only after both roofs win the state premium (bids close 30 Oct 2026), the main protection if the businesses leave</td></tr></tbody></table>
+</div>
+
+<div class="col block" id="three-prices">
+  <h3>Three prices and one ratio</h3>
+  <table class="terms prices" aria-label="Three prices and one ratio">
+    <tbody><tr><th scope="row"><span data-v="case.ppa|eur">EUR 110</span> per MWh</th><td>What the two businesses pay for the 70% of the power they use (contract, +1% a year)</td></tr>
+    <tr><th scope="row"><span data-v="case.capture|eur">EUR 45</span> per MWh</th><td>What the grid pays for the rest: the market price (official 2025 value)</td></tr>
+    <tr><th scope="row"><span data-v="case.ref|eur2">EUR 92.50</span> per MWh</th><td>What the grid pays if the state premium is won: the market price plus the state's top-up to my bid (A)</td></tr>
+    <tr><th scope="row"><span data-v="case.min_plan|x">1.50x</span> cover</th><td>A safety margin, not a return: <span data-v="case.min_plan|eur2">EUR 1.50</span> of cash for every EUR 1 owed in the weakest year of the plan. Investors are owed a fixed <span data-v="case.coupon|pct1">6.5%</span> a year, paid only if the roofs earn enough; it is not guaranteed.</td></tr>
+  </tbody></table>
 </div>
 
 <div class="col video" id="video" style="margin-top:2.2rem">
@@ -437,7 +448,7 @@ footer { padding-block: 3rem 4rem; }
   <div class="col"><div class="stack">
     <p class="qnum">QUESTION 2</p>
     <h2>What if it goes wrong?</h2>
-    <p class="takeaway">My worst case is both businesses stopping in year 5. The state premium is what protects investors then. With it, payments hold in the model, unless weak sunshine or more negative-price hours come on top.</p>
+    <p class="takeaway">My worst case is both businesses stopping in year 5. The state premium is what protects investors then. With it, this scenario pays in full in the model; weak sunshine or more negative-price hours on top would make payments late.</p>
     <p>If the businesses move out or fail, they stop buying the power (investors keep their tokens) and all of it goes to the grid, which on its own pays only about <span data-v="case.capture|eur">EUR 45</span> per MWh. Luxembourg runs a solar tender every year. A winner gets the market price topped up to a fixed level, its bid, for 15 years, on power sold to the grid.</p>
   </div>
 
@@ -707,7 +718,7 @@ footer { padding-block: 3rem 4rem; }
 
   // numbers written into prose: data-v="section.key|format", all from data.js
   var FMT = { eur: function (v) { return eur(v); }, eur2: function (v) { return eur(v, 2); }, x: x2,
-              pct0: function (v) { return pct(v, 0); }, n: function (v) { return Number(v).toLocaleString("en-GB", { maximumFractionDigits: 2 }); } };
+              pct0: function (v) { return pct(v, 0); }, pct1: function (v) { return pct(v, 1); }, n: function (v) { return Number(v).toLocaleString("en-GB", { maximumFractionDigits: 2 }); } };
   document.querySelectorAll("[data-v]").forEach(function (el) {
     var p = el.dataset.v.split("|"), k = p[0].split(".");
     el.textContent = FMT[p[1]](D[k[0]][k[1]].v);
